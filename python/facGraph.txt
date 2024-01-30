@@ -1,0 +1,38 @@
+
+graph ER {
+    splines=false
+    pack=false
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+	layout=neato
+    node [shape=circle,fontsize=10]; BB; DD; PD; PF; DG; MR; KG; AK; RM; JO; AS; VV; GZ; 
+    node [shape=circle,fontsize=10,style=filled,color=lightgray]; KJ; ED; MC; JM; 
+    AK -- KJ [penwidth=1,label="1",fontsize=10,color=cadetblue2];
+    ED -- RM [penwidth=6,label="6",fontsize=10,color=cadetblue2];
+    ED -- MC [penwidth=1,label="1",fontsize=10,color=cadetblue2];
+    BB -- RM [penwidth=1,label="1",fontsize=10,color=cadetblue2];
+    BB -- PD [penwidth=1,label="1",fontsize=10,color=cadetblue2];
+    BB -- DG [penwidth=1,label="1",fontsize=10,color=cadetblue2];
+    DG -- PD [penwidth=14,label="14",fontsize=10,color=cadetblue2];
+    AS -- MC [penwidth=3,label="3",fontsize=10,color=cadetblue2];
+    DD -- DG [penwidth=5,label="5",fontsize=10,color=cadetblue2];
+    DD -- VV [penwidth=13,label="13",fontsize=10,color=cadetblue2];
+    JM -- PD [penwidth=1,label="1",fontsize=10,color=cadetblue2];
+    DG -- JM [penwidth=1,label="1",fontsize=10,color=cadetblue2];
+    MR -- PD [penwidth=1,label="1",fontsize=10,color=cadetblue2];
+    DG -- MR [penwidth=1,label="1",fontsize=10,color=cadetblue2];
+    PD -- PF [penwidth=1,label="1",fontsize=10,color=cadetblue2];
+    KG -- PD [penwidth=9,label="9",fontsize=10,color=cadetblue2];
+    DG -- PF [penwidth=1,label="1",fontsize=10,color=cadetblue2];
+    AS -- MR [penwidth=11,label="11",fontsize=10,color=cadetblue2];
+    KG -- MR [penwidth=12,label="12",fontsize=10,color=cadetblue2];
+    AS -- KG [penwidth=6,label="6",fontsize=10,color=cadetblue2];
+    AK -- JM [penwidth=3,label="3",fontsize=10,color=cadetblue2];
+    GZ -- RM [penwidth=12,label="12",fontsize=10,color=cadetblue2];
+    AS -- RM [penwidth=2,label="2",fontsize=10,color=cadetblue2];
+    JO -- RM [penwidth=4,label="4",fontsize=10,color=cadetblue2];
+    RM -- VV [penwidth=2,label="2",fontsize=10,color=cadetblue2];
+
+label = "Faculty co-author, Sept. 2022"
+}
