@@ -2,16 +2,42 @@ import pandas as pd
 import json
 import os
 from syndiffix import Synthesizer
+from syndiffix.clustering.strategy import DefaultClustering
 import itertools
 
 import pandas as pd
 import numpy as np
 
-intCols= ['PINCP', 'POVPIP', 'NPF', 'NOC', ]
+cluster_params = {
+    'max_weight':15,       #15
+    'sample_size':2000,        #1000
+    'merge_threshold':0.1        #0.1
+}
+cluster_params = {
+    'max_weight':30,       #15
+    'sample_size':2000,        #1000
+    'merge_threshold':0.05        #0.1
+}
+cluster_params = {
+    'max_weight':22,       #15
+    'sample_size':2000,        #1000
+    'merge_threshold':0.075        #0.1
+}
+str2IntCols = ['PINCP', 'POVPIP', 'NPF', 'NOC', ]
+catCols = [ 'SEX', 'MSP', 'HISP', 'RAC1P', 'HOUSING_TYPE', 
+          'OWN_RENT', 'INDP_CAT', 'EDU', 'PINCP_DECILE',
+          'DVET', 'DREM', 'DEYE', 'DEAR', 'DPHY', 
+          ]
+stateConfig = {
+    'TX':{'state':'texas','file':'tx2019.csv'},
+    'MA':{'state':'massachusetts','file':'ma2019.csv'},
+    'NA':{'state':'national','file':'national2019.csv'},
+    }
+state = 'NA'
 
 def count_substrings(df, s):
     for col in df.columns:
-        # Find rows in column where 's' is a substring
+        # Find rows in column where s is a substring
         mask = df[col].astype(str).str.contains(s)
         return mask.sum()
 
@@ -38,10 +64,10 @@ def replace_substring(df, s):
 
 def doOneSyn(df, cols):
     if len(cols) > 12:
-        fileName = 'all_syn'
+        fileName = f"mw{cluster_params['max_weight']}_mt{cluster_params['merge_threshold']}"
     else:
         fileName = '.'.join(cols)
-    fileName = state + '_' + fileName + '.csv'
+    fileName = stateConfig[state]['state'] + '_' + fileName + '.csv'
     outPath = os.path.join(outDir, fileName)
     print(outPath)
     if os.path.exists(outPath):
@@ -49,12 +75,17 @@ def doOneSyn(df, cols):
         return
     print("type before synthesis:")
     print(df[cols].dtypes)
-    df_syn = Synthesizer(df[cols]).sample()
+    df_syn = Synthesizer(df[cols],
+                         clustering=DefaultClustering(
+                             max_weight=cluster_params['max_weight'],
+                             sample_size=cluster_params['sample_size'],
+                             merge_threshold=cluster_params['merge_threshold'],
+                         )).sample()
     # Need to convert these back to strings so that the 'N' conversion works
     print("Syn types before conversion:")
     print(df_syn.dtypes)
     for col in cols:
-        if col in intCols:
+        if col in str2IntCols :
             df_syn[col] = df_syn[col].astype(str)
     print("Syn types after conversion:")
     print(df_syn.dtypes)
@@ -64,25 +95,28 @@ def doOneSyn(df, cols):
     df_syn = df_syn.replace('<NA>', 'N')
     print(df_syn.head())
     replace_substring(df_syn, '\*')
+    nSubStr = count_substrings(df_syn, '\*')
+    print(f"Got {nSubStr} substrings")
     df_syn.to_csv(outPath, index=False)
 
-state = 'texas'
 rootPath = os.path.join('c:\\', 'paul', 'sdnist')
-inPath = os.path.join(rootPath, 'diverse_communities_data_excerpts', state, 'tx2019.csv')
-outDir = os.path.join(rootPath, 'deids', state)
+inPath = os.path.join(rootPath, 'diverse_communities_data_excerpts', stateConfig[state]['state'], stateConfig[state]['file'])
+outDir = os.path.join(rootPath, 'deids', stateConfig[state]['state'])
 print(rootPath)
-df = pd.read_csv(inPath)
+df = pd.read_csv(inPath, low_memory=False)
 df = df.replace('N',None)
 columns = list(df.columns)
 print('Types before conversion:')
 print(df.dtypes)
-for col in intCols:
+for col in str2IntCols:
     df[col] = pd.to_numeric(df[col], errors='coerce').astype('Int64')
+for col in catCols:
+    if np.issubdtype(df[col].dtypes, np.number) and df[col].isnull().sum() == 0:
+        # This is numeric with no NULL values, so convert it to strings
+        # so that syndiffix handles it correctly
+            df[col] = df[col].astype(str)
 print('Types after conversion:')
 print(df.dtypes)
-
-#doOneSyn(df, ['POVPIP'])
-#quit()
 
 with open('columns.json', 'r') as f:
     columnSets = json.load(f)
@@ -90,15 +124,7 @@ print(columnSets)
 for columnSet in columnSets:
     doOneSyn(df, columnSet)
 doOneSyn(df, columns)
-# We want every column combined with 'SEX'
-for col in columns:
-    if col == 'SEX':
-        continue
-    cols = [col, 'SEX']
-    doOneSyn(df, cols)
 quit()
-# Following are special cases for Inconsistency checks
-doOneSyn(df, ['AGEP', 'MSP', 'PINCP', 'PINCP_DECILE', 'EDU', 'DPHY', 'DREM'])
 for n_dims in [1,2,3]:
     for comb in itertools.combinations(columns,n_dims):
         cols = sorted(list(comb))

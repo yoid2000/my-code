@@ -1,15 +1,9 @@
 [
     [
-        "DPHY"
+        "DEAR"
     ],
     [
-        "POVPIP"
-    ],
-    [
-        "NPF"
-    ],
-    [
-        "AGEP"
+        "MSP"
     ],
     [
         "SEX"
@@ -18,305 +12,539 @@
         "WGTP"
     ],
     [
-        "DEYE"
+        "PWGTP"
+    ],
+    [
+        "EDU"
+    ],
+    [
+        "HOUSING_TYPE"
+    ],
+    [
+        "OWN_RENT"
     ],
     [
         "RAC1P"
     ],
     [
-        "PWGTP"
-    ],
-    [
-        "PINCP_DECILE"
-    ],
-    [
-        "MSP"
-    ],
-    [
-        "HISP"
-    ],
-    [
-        "NOC"
-    ],
-    [
-        "DENSITY"
+        "AGEP"
     ],
     [
         "DVET"
     ],
     [
-        "EDU"
+        "DEYE"
     ],
     [
-        "INDP_CAT"
-    ],
-    [
-        "HOUSING_TYPE"
-    ],
-    [
-        "DEAR"
-    ],
-    [
-        "OWN_RENT"
-    ],
-    [
-        "DREM"
+        "PINCP_DECILE"
     ],
     [
         "PINCP"
     ],
     [
-        "PUMA"
+        "NPF"
+    ],
+    [
+        "DREM"
+    ],
+    [
+        "INDP_CAT"
+    ],
+    [
+        "NOC"
+    ],
+    [
+        "POVPIP"
     ],
     [
         "INDP"
     ],
     [
-        "DVET",
-        "SEX"
-    ],
-    [
-        "HISP",
-        "HOUSING_TYPE"
-    ],
-    [
-        "NPF",
-        "PINCP_DECILE"
-    ],
-    [
-        "DPHY",
-        "INDP_CAT"
-    ],
-    [
-        "DREM",
-        "HISP"
-    ],
-    [
-        "DEAR",
-        "DPHY"
-    ],
-    [
-        "DENSITY",
-        "HISP"
-    ],
-    [
-        "AGEP",
-        "MSP"
-    ],
-    [
-        "DEYE",
-        "OWN_RENT"
-    ],
-    [
-        "DEAR",
-        "INDP_CAT"
-    ],
-    [
-        "EDU",
-        "NOC"
-    ],
-    [
-        "PINCP_DECILE",
         "PUMA"
     ],
     [
-        "DVET",
-        "RAC1P"
+        "DPHY"
     ],
     [
-        "AGEP",
+        "DENSITY"
+    ],
+    [
         "HISP"
     ],
     [
         "DPHY",
-        "HOUSING_TYPE"
-    ],
-    [
-        "DVET",
-        "EDU"
-    ],
-    [
-        "HOUSING_TYPE",
-        "NOC"
-    ],
-    [
-        "EDU",
-        "SEX"
+        "PINCP_DECILE"
     ],
     [
         "HISP",
-        "OWN_RENT"
+        "NPF"
+    ],
+    [
+        "DEYE",
+        "DVET"
+    ],
+    [
+        "DVET",
+        "PUMA"
     ],
     [
         "DEAR",
+        "NOC"
+    ],
+    [
+        "DREM",
+        "INDP_CAT"
+    ],
+    [
+        "DVET",
+        "HISP"
+    ],
+    [
+        "DENSITY",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "DREM"
+    ],
+    [
+        "EDU",
         "HOUSING_TYPE"
     ],
     [
         "NOC",
-        "SEX"
-    ],
-    [
-        "DREM",
-        "NOC"
-    ],
-    [
-        "DENSITY",
-        "NOC"
-    ],
-    [
-        "HOUSING_TYPE",
-        "SEX"
-    ],
-    [
-        "MSP",
-        "RAC1P"
-    ],
-    [
-        "RAC1P",
-        "SEX"
-    ],
-    [
-        "DEYE",
-        "PUMA"
-    ],
-    [
-        "AGEP",
-        "OWN_RENT"
-    ],
-    [
-        "DREM",
-        "SEX"
-    ],
-    [
-        "EDU",
-        "RAC1P"
-    ],
-    [
-        "DENSITY",
-        "SEX"
-    ],
-    [
-        "INDP_CAT",
-        "PUMA"
+        "PINCP_DECILE"
     ],
     [
         "DEAR",
         "NPF"
     ],
     [
-        "DVET",
-        "MSP"
-    ],
-    [
-        "AGEP",
-        "DENSITY"
-    ],
-    [
-        "OWN_RENT",
-        "SEX"
-    ],
-    [
-        "NOC",
-        "RAC1P"
-    ],
-    [
-        "DPHY",
-        "DREM"
-    ],
-    [
-        "DREM",
-        "DVET"
-    ],
-    [
-        "DENSITY",
-        "DVET"
-    ],
-    [
-        "DEYE",
-        "DPHY"
-    ],
-    [
         "HOUSING_TYPE",
-        "RAC1P"
-    ],
-    [
-        "HISP",
-        "PUMA"
-    ],
-    [
-        "MSP",
         "PINCP_DECILE"
     ],
     [
-        "DEAR",
-        "DREM"
+        "MSP",
+        "NPF"
     ],
     [
         "DEYE",
         "INDP_CAT"
     ],
     [
-        "DREM",
-        "RAC1P"
-    ],
-    [
-        "DREM",
-        "EDU"
-    ],
-    [
         "EDU",
-        "PINCP_DECILE"
-    ],
-    [
-        "DENSITY",
-        "EDU"
-    ],
-    [
-        "AGEP",
-        "INDP"
-    ],
-    [
-        "OWN_RENT",
-        "RAC1P"
-    ],
-    [
-        "EDU",
-        "MSP"
-    ],
-    [
-        "DPHY",
-        "PUMA"
-    ],
-    [
-        "DVET",
         "OWN_RENT"
     ],
     [
-        "DEYE",
-        "HOUSING_TYPE"
+        "INDP_CAT",
+        "OWN_RENT"
+    ],
+    [
+        "EDU",
+        "RAC1P"
+    ],
+    [
+        "INDP_CAT",
+        "RAC1P"
+    ],
+    [
+        "AGEP",
+        "DVET"
     ],
     [
         "EDU",
         "HISP"
     ],
     [
-        "HOUSING_TYPE",
+        "DPHY",
+        "NPF"
+    ],
+    [
+        "EDU",
         "MSP"
+    ],
+    [
+        "INDP_CAT",
+        "MSP"
+    ],
+    [
+        "EDU",
+        "SEX"
+    ],
+    [
+        "INDP_CAT",
+        "SEX"
     ],
     [
         "AGEP",
         "INDP_CAT"
     ],
     [
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "DENSITY",
+        "INDP_CAT"
+    ],
+    [
+        "DEAR",
+        "PUMA"
+    ],
+    [
+        "DREM",
+        "NOC"
+    ],
+    [
+        "DEAR",
+        "DREM"
+    ],
+    [
+        "PINCP",
+        "PINCP_DECILE"
+    ],
+    [
+        "NOC",
+        "NPF"
+    ],
+    [
+        "HOUSING_TYPE",
+        "NPF"
+    ],
+    [
+        "DEYE",
+        "NOC"
+    ],
+    [
+        "DVET",
+        "EDU"
+    ],
+    [
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "HISP",
+        "INDP_CAT"
+    ],
+    [
+        "DPHY",
+        "DREM"
+    ],
+    [
+        "DENSITY",
+        "EDU"
+    ],
+    [
+        "EDU",
+        "PINCP_DECILE"
+    ],
+    [
         "INDP_CAT",
         "PINCP_DECILE"
     ],
     [
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "DEAR",
+        "INDP_CAT"
+    ],
+    [
+        "AGEP",
+        "NOC"
+    ],
+    [
+        "OWN_RENT",
+        "RAC1P"
+    ],
+    [
         "DREM",
-        "MSP"
+        "PUMA"
+    ],
+    [
+        "NPF",
+        "OWN_RENT"
+    ],
+    [
+        "NPF",
+        "RAC1P"
+    ],
+    [
+        "DPHY",
+        "INDP_CAT"
     ],
     [
         "DEYE",
+        "PUMA"
+    ],
+    [
+        "PINCP_DECILE",
+        "RAC1P"
+    ],
+    [
+        "DEYE",
+        "DREM"
+    ],
+    [
+        "DREM",
+        "HISP"
+    ],
+    [
+        "DEYE",
+        "DPHY"
+    ],
+    [
+        "HISP",
+        "NOC"
+    ],
+    [
+        "DEAR",
+        "EDU"
+    ],
+    [
+        "OWN_RENT",
+        "SEX"
+    ],
+    [
+        "DEYE",
+        "HISP"
+    ],
+    [
+        "NPF",
+        "SEX"
+    ],
+    [
+        "DVET",
+        "HOUSING_TYPE"
+    ],
+    [
+        "PINCP_DECILE",
+        "SEX"
+    ],
+    [
+        "DVET",
+        "OWN_RENT"
+    ],
+    [
+        "INDP_CAT",
+        "NPF"
+    ],
+    [
+        "DVET",
+        "RAC1P"
+    ],
+    [
+        "MSP",
+        "NOC"
+    ],
+    [
+        "HOUSING_TYPE",
+        "INDP_CAT"
+    ],
+    [
+        "AGEP",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "HOUSING_TYPE"
+    ],
+    [
+        "AGEP",
+        "DREM"
+    ],
+    [
+        "AGEP",
+        "DPHY"
+    ],
+    [
+        "RAC1P",
+        "SEX"
+    ],
+    [
+        "DENSITY",
+        "RAC1P"
+    ],
+    [
+        "DENSITY",
+        "DPHY"
+    ],
+    [
+        "DVET",
+        "MSP"
+    ],
+    [
+        "DPHY",
+        "NOC"
+    ],
+    [
+        "AGEP",
+        "DEAR"
+    ],
+    [
+        "DENSITY",
+        "HISP"
+    ],
+    [
+        "DVET",
+        "SEX"
+    ],
+    [
+        "DENSITY",
+        "MSP"
+    ],
+    [
+        "HISP",
+        "HOUSING_TYPE"
+    ],
+    [
+        "HISP",
+        "PUMA"
+    ],
+    [
+        "DREM",
+        "EDU"
+    ],
+    [
+        "HISP",
+        "RAC1P"
+    ],
+    [
+        "DENSITY",
+        "SEX"
+    ],
+    [
+        "NPF",
+        "PINCP_DECILE"
+    ],
+    [
+        "DEYE",
+        "EDU"
+    ],
+    [
+        "HISP",
+        "MSP"
+    ],
+    [
+        "DEAR",
+        "HOUSING_TYPE"
+    ],
+    [
+        "HOUSING_TYPE",
+        "NOC"
+    ],
+    [
+        "MSP",
+        "PUMA"
+    ],
+    [
+        "DEAR",
+        "RAC1P"
+    ],
+    [
+        "DEAR",
+        "DPHY"
+    ],
+    [
+        "HISP",
+        "SEX"
+    ],
+    [
+        "DEAR",
+        "DENSITY"
+    ],
+    [
+        "DEAR",
+        "HISP"
+    ],
+    [
+        "DVET",
+        "PINCP_DECILE"
+    ],
+    [
+        "DPHY",
+        "PUMA"
+    ],
+    [
+        "DEAR",
+        "MSP"
+    ],
+    [
+        "AGEP",
+        "EDU"
+    ],
+    [
+        "EDU",
+        "INDP_CAT"
+    ],
+    [
+        "DEAR",
+        "SEX"
+    ],
+    [
+        "MSP",
+        "SEX"
+    ],
+    [
+        "DPHY",
+        "HISP"
+    ],
+    [
+        "DPHY",
+        "MSP"
+    ],
+    [
+        "DPHY",
+        "SEX"
+    ],
+    [
+        "POVPIP",
+        "PUMA"
+    ],
+    [
+        "DREM",
+        "HOUSING_TYPE"
+    ],
+    [
+        "NOC",
+        "PUMA"
+    ],
+    [
+        "HOUSING_TYPE",
+        "PUMA"
+    ],
+    [
+        "DREM",
+        "OWN_RENT"
+    ],
+    [
+        "DREM",
+        "RAC1P"
+    ],
+    [
+        "DEYE",
+        "HOUSING_TYPE"
+    ],
+    [
+        "AGEP",
+        "INDP"
+    ],
+    [
+        "DEYE",
+        "OWN_RENT"
+    ],
+    [
+        "PINCP_DECILE",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "RAC1P"
+    ],
+    [
+        "DVET",
         "NPF"
     ],
     [
@@ -324,120 +552,156 @@
         "POVPIP"
     ],
     [
-        "MSP",
+        "HOUSING_TYPE",
+        "MSP"
+    ],
+    [
+        "DREM",
+        "MSP"
+    ],
+    [
+        "EDU",
         "NOC"
     ],
     [
         "INDP_CAT",
-        "NPF"
+        "NOC"
+    ],
+    [
+        "HOUSING_TYPE",
+        "SEX"
+    ],
+    [
+        "DREM",
+        "SEX"
+    ],
+    [
+        "DEYE",
+        "MSP"
     ],
     [
         "EDU",
-        "OWN_RENT"
+        "NPF"
+    ],
+    [
+        "DPHY",
+        "EDU"
+    ],
+    [
+        "DEYE",
+        "SEX"
     ],
     [
         "AGEP",
         "HOUSING_TYPE"
     ],
     [
-        "NOC",
-        "OWN_RENT"
-    ],
-    [
-        "DEAR",
-        "DEYE"
-    ],
-    [
-        "DEAR",
-        "RAC1P"
-    ],
-    [
-        "DEYE",
-        "DREM"
-    ],
-    [
-        "MSP",
-        "SEX"
-    ],
-    [
-        "HISP",
-        "NPF"
-    ],
-    [
-        "HOUSING_TYPE",
+        "AGEP",
         "OWN_RENT"
     ],
     [
         "DREM",
-        "OWN_RENT"
+        "DVET"
+    ],
+    [
+        "AGEP",
+        "RAC1P"
     ],
     [
         "DENSITY",
         "OWN_RENT"
     ],
     [
-        "DPHY",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "AGEP",
+        "DENSITY"
+    ],
+    [
+        "AGEP",
+        "HISP"
+    ],
+    [
+        "AGEP",
+        "MSP"
+    ],
+    [
+        "OWN_RENT",
         "PINCP_DECILE"
+    ],
+    [
+        "HISP",
+        "OWN_RENT"
+    ],
+    [
+        "AGEP",
+        "SEX"
+    ],
+    [
+        "DREM",
+        "PINCP_DECILE"
+    ],
+    [
+        "EDU",
+        "PUMA"
+    ],
+    [
+        "INDP_CAT",
+        "PUMA"
+    ],
+    [
+        "INDP",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "PINCP_DECILE"
+    ],
+    [
+        "DENSITY",
+        "DVET"
+    ],
+    [
+        "DEAR",
+        "OWN_RENT"
+    ],
+    [
+        "MSP",
+        "OWN_RENT"
+    ],
+    [
+        "MSP",
+        "RAC1P"
     ],
     [
         "DVET",
         "INDP_CAT"
     ],
     [
-        "AGEP",
-        "DEAR"
-    ],
-    [
-        "DEAR",
-        "PINCP_DECILE"
-    ],
-    [
         "DPHY",
-        "NPF"
-    ],
-    [
-        "NPF",
-        "OWN_RENT"
-    ],
-    [
-        "INDP_CAT",
-        "NOC"
-    ],
-    [
-        "PINCP_DECILE",
-        "RAC1P"
-    ],
-    [
-        "AGEP",
-        "DREM"
-    ],
-    [
-        "DPHY",
-        "HISP"
-    ],
-    [
-        "AGEP",
-        "PINCP"
-    ],
-    [
-        "HOUSING_TYPE",
-        "PUMA"
-    ],
-    [
-        "DVET",
         "HOUSING_TYPE"
     ],
     [
-        "INDP_CAT",
-        "SEX"
+        "AGEP",
+        "DEYE"
     ],
     [
-        "DEAR",
-        "HISP"
+        "DPHY",
+        "OWN_RENT"
     ],
     [
-        "PUMA",
-        "SEX"
+        "DPHY",
+        "RAC1P"
+    ],
+    [
+        "DENSITY",
+        "DEYE"
+    ],
+    [
+        "AGEP",
+        "PINCP_DECILE"
     ],
     [
         "INDP",
@@ -445,600 +709,101 @@
     ],
     [
         "DENSITY",
-        "PUMA"
-    ],
-    [
-        "EDU",
-        "INDP_CAT"
-    ],
-    [
-        "HISP",
-        "SEX"
-    ],
-    [
-        "DEYE",
-        "RAC1P"
-    ],
-    [
-        "NPF",
-        "PUMA"
-    ],
-    [
-        "AGEP",
-        "PUMA"
-    ],
-    [
-        "HOUSING_TYPE",
-        "INDP_CAT"
-    ],
-    [
-        "DPHY",
-        "NOC"
-    ],
-    [
-        "INDP_CAT",
-        "RAC1P"
-    ],
-    [
-        "DENSITY",
-        "DPHY"
-    ],
-    [
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "EDU",
-        "HOUSING_TYPE"
-    ],
-    [
-        "DREM",
-        "INDP_CAT"
-    ],
-    [
-        "DENSITY",
-        "INDP_CAT"
-    ],
-    [
-        "DEAR",
-        "NOC"
-    ],
-    [
-        "DPHY",
-        "SEX"
-    ],
-    [
-        "HISP",
-        "RAC1P"
-    ],
-    [
-        "DEAR",
-        "DENSITY"
-    ],
-    [
-        "AGEP",
-        "DPHY"
-    ],
-    [
-        "DEYE",
         "PINCP_DECILE"
     ],
     [
-        "DPHY",
-        "DVET"
+        "DREM",
+        "NPF"
+    ],
+    [
+        "DEYE",
+        "NPF"
     ],
     [
         "DEAR",
-        "SEX"
+        "DVET"
     ],
     [
-        "DREM",
-        "HOUSING_TYPE"
-    ],
-    [
-        "MSP",
-        "OWN_RENT"
-    ],
-    [
-        "DENSITY",
-        "HOUSING_TYPE"
+        "HISP",
+        "PINCP_DECILE"
     ],
     [
         "NOC",
-        "NPF"
-    ],
-    [
-        "DEAR",
-        "DVET"
-    ],
-    [
-        "INDP_CAT",
-        "MSP"
-    ],
-    [
-        "DPHY",
-        "RAC1P"
-    ],
-    [
-        "DEYE",
-        "HISP"
+        "OWN_RENT"
     ],
     [
         "HOUSING_TYPE",
-        "NPF"
-    ],
-    [
-        "DPHY",
-        "EDU"
-    ],
-    [
-        "HISP",
-        "PINCP_DECILE"
-    ],
-    [
-        "DVET",
-        "PUMA"
-    ],
-    [
-        "DREM",
-        "NPF"
-    ],
-    [
-        "HISP",
-        "MSP"
-    ],
-    [
-        "DENSITY",
-        "NPF"
-    ],
-    [
-        "DEAR",
-        "EDU"
-    ],
-    [
-        "AGEP",
-        "PINCP_DECILE"
-    ],
-    [
-        "PINCP_DECILE",
-        "SEX"
-    ],
-    [
-        "MSP",
-        "PUMA"
-    ],
-    [
-        "PINCP",
-        "PINCP_DECILE"
-    ],
-    [
-        "DENSITY",
-        "DREM"
-    ],
-    [
-        "AGEP",
-        "NPF"
-    ],
-    [
-        "INDP_CAT",
         "OWN_RENT"
-    ],
-    [
-        "DEYE",
-        "NOC"
-    ],
-    [
-        "EDU",
-        "PUMA"
-    ],
-    [
-        "DPHY",
-        "MSP"
     ],
     [
         "NOC",
-        "PUMA"
+        "RAC1P"
     ],
     [
-        "DEAR",
-        "MSP"
-    ],
-    [
-        "DEYE",
-        "SEX"
-    ],
-    [
-        "HISP",
-        "NOC"
-    ],
-    [
-        "DREM",
-        "PUMA"
-    ],
-    [
-        "DEYE",
-        "DVET"
+        "HOUSING_TYPE",
+        "RAC1P"
     ],
     [
         "DVET",
-        "PINCP_DECILE"
-    ],
-    [
-        "OWN_RENT",
-        "PUMA"
-    ],
-    [
-        "AGEP",
         "NOC"
     ],
     [
         "DPHY",
-        "OWN_RENT"
-    ],
-    [
-        "DVET",
-        "NPF"
-    ],
-    [
-        "DEYE",
-        "EDU"
-    ],
-    [
-        "NPF",
-        "SEX"
+        "DVET"
     ],
     [
         "DEAR",
-        "OWN_RENT"
-    ],
-    [
-        "DVET",
-        "HISP"
-    ],
-    [
-        "AGEP",
-        "SEX"
-    ],
-    [
-        "DENSITY",
         "DEYE"
     ],
     [
+        "OWN_RENT",
+        "PUMA"
+    ],
+    [
         "DENSITY",
-        "RAC1P"
-    ],
-    [
-        "AGEP",
-        "DVET"
-    ],
-    [
-        "MSP",
-        "NPF"
-    ],
-    [
-        "NOC",
-        "PINCP_DECILE"
-    ],
-    [
-        "NPF",
-        "RAC1P"
-    ],
-    [
-        "EDU",
-        "NPF"
-    ],
-    [
-        "AGEP",
-        "DEYE"
-    ],
-    [
-        "HOUSING_TYPE",
-        "PINCP_DECILE"
-    ],
-    [
-        "AGEP",
-        "RAC1P"
-    ],
-    [
-        "DEYE",
-        "MSP"
-    ],
-    [
-        "HISP",
-        "INDP_CAT"
-    ],
-    [
-        "AGEP",
-        "EDU"
-    ],
-    [
-        "DVET",
         "NOC"
     ],
     [
-        "DREM",
+        "DEAR",
         "PINCP_DECILE"
     ],
     [
-        "DEAR",
-        "PUMA"
+        "AGEP",
+        "PINCP"
     ],
     [
-        "DENSITY",
+        "MSP",
         "PINCP_DECILE"
     ],
     [
-        "OWN_RENT",
-        "PINCP_DECILE"
-    ],
-    [
-        "DENSITY",
-        "MSP"
-    ],
-    [
-        "DPHY",
-        "DVET",
-        "PUMA"
-    ],
-    [
-        "INDP_CAT",
-        "NOC",
-        "PUMA"
-    ],
-    [
-        "NOC",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "MSP",
-        "PINCP",
-        "PINCP_DECILE"
-    ],
-    [
-        "DEYE",
-        "DVET",
-        "PUMA"
-    ],
-    [
-        "DREM",
-        "HISP",
-        "PUMA"
-    ],
-    [
-        "DEYE",
-        "EDU",
-        "PUMA"
-    ],
-    [
-        "DVET",
-        "OWN_RENT",
-        "PUMA"
-    ],
-    [
-        "NOC",
-        "PINCP",
-        "PUMA"
-    ],
-    [
         "AGEP",
-        "MSP",
-        "PUMA"
+        "NPF"
     ],
     [
-        "OWN_RENT",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "PINCP",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "DEAR",
-        "PINCP_DECILE",
-        "PUMA"
-    ],
-    [
-        "DPHY",
-        "EDU",
-        "PUMA"
-    ],
-    [
-        "MSP",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "HISP",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "INDP_CAT",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "AGEP",
-        "INDP_CAT",
-        "PUMA"
-    ],
-    [
-        "DPHY",
-        "NOC",
-        "PUMA"
-    ],
-    [
-        "DREM",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "DVET",
-        "POVPIP",
-        "PUMA"
-    ],
-    [
-        "EDU",
-        "HOUSING_TYPE",
-        "PUMA"
-    ],
-    [
-        "NOC",
-        "PINCP_DECILE",
-        "PUMA"
-    ],
-    [
-        "OWN_RENT",
-        "PINCP",
-        "PUMA"
-    ],
-    [
-        "MSP",
-        "NOC",
-        "PUMA"
-    ],
-    [
-        "HOUSING_TYPE",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "INDP_CAT",
-        "POVPIP",
-        "PUMA"
-    ],
-    [
-        "EDU",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "DEYE",
-        "NOC",
-        "PUMA"
-    ],
-    [
-        "AGEP",
-        "HISP",
-        "PUMA"
-    ],
-    [
-        "DEYE",
-        "MSP",
-        "PUMA"
-    ],
-    [
-        "DREM",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "INDP_CAT",
         "NPF",
         "PUMA"
     ],
     [
-        "HISP",
-        "PINCP",
-        "PUMA"
-    ],
-    [
-        "AGEP",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "PINCP",
-        "POVPIP",
-        "PUMA"
-    ],
-    [
-        "DEYE",
-        "DREM",
-        "PUMA"
+        "NOC",
+        "SEX"
     ],
     [
         "DENSITY",
-        "PINCP_DECILE",
-        "PUMA"
+        "NPF"
     ],
     [
-        "INDP_CAT",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "DPHY",
-        "OWN_RENT",
-        "PUMA"
-    ],
-    [
-        "DPHY",
-        "HOUSING_TYPE",
-        "PUMA"
-    ],
-    [
-        "EDU",
-        "NPF",
-        "PUMA"
-    ],
-    [
-        "MSP",
-        "OWN_RENT",
-        "PUMA"
-    ],
-    [
-        "DREM",
         "PUMA",
         "PWGTP"
     ],
     [
-        "DREM",
-        "DVET",
-        "PUMA"
-    ],
-    [
-        "DPHY",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "DPHY",
-        "DREM",
-        "PUMA"
-    ],
-    [
-        "DEYE",
         "OWN_RENT",
+        "PINCP_DECILE",
         "PUMA"
     ],
     [
-        "AGEP",
-        "PINCP",
-        "PUMA"
-    ],
-    [
-        "AGEP",
-        "DPHY",
-        "PUMA"
-    ],
-    [
-        "MSP",
-        "NPF",
-        "PUMA"
-    ],
-    [
-        "INDP_CAT",
         "PUMA",
-        "PWGTP"
-    ],
-    [
-        "DEAR",
-        "HISP",
-        "PUMA"
+        "PWGTP",
+        "RAC1P"
     ],
     [
         "DPHY",
@@ -1047,37 +812,127 @@
     ],
     [
         "DENSITY",
-        "HISP",
-        "PUMA"
-    ],
-    [
-        "DVET",
-        "NOC",
-        "PUMA"
+        "PUMA",
+        "RAC1P"
     ],
     [
         "EDU",
-        "POVPIP",
-        "PUMA"
-    ],
-    [
-        "DEAR",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "NPF",
-        "OWN_RENT",
-        "PUMA"
-    ],
-    [
-        "DEAR",
-        "DEYE",
+        "PINCP",
         "PUMA"
     ],
     [
         "DPHY",
-        "NPF",
+        "NOC",
+        "PUMA"
+    ],
+    [
+        "DPHY",
+        "HOUSING_TYPE",
+        "PUMA"
+    ],
+    [
+        "NOC",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "DVET",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "DREM",
+        "POVPIP",
+        "PUMA"
+    ],
+    [
+        "HISP",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "DREM",
+        "NOC",
+        "PUMA"
+    ],
+    [
+        "DREM",
+        "HOUSING_TYPE",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "HOUSING_TYPE",
+        "NOC",
+        "PUMA"
+    ],
+    [
+        "INDP_CAT",
+        "NOC",
+        "PUMA"
+    ],
+    [
+        "PUMA",
+        "PWGTP",
+        "SEX"
+    ],
+    [
+        "DPHY",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "NOC",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "PINCP",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "HOUSING_TYPE",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "HISP",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "AGEP",
+        "DVET",
+        "PUMA"
+    ],
+    [
+        "INDP_CAT",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "DEAR",
+        "DPHY",
+        "PUMA"
+    ],
+    [
+        "PUMA",
+        "PWGTP",
+        "WGTP"
+    ],
+    [
+        "DEAR",
+        "POVPIP",
         "PUMA"
     ],
     [
@@ -1086,23 +941,168 @@
         "WGTP"
     ],
     [
+        "DEAR",
+        "NOC",
+        "PUMA"
+    ],
+    [
+        "DEAR",
+        "HOUSING_TYPE",
+        "PUMA"
+    ],
+    [
+        "NOC",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "HISP",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "AGEP",
+        "EDU",
+        "PUMA"
+    ],
+    [
+        "AGEP",
+        "INDP_CAT",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "DEAR",
+        "NPF",
+        "PUMA"
+    ],
+    [
+        "DVET",
+        "EDU",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "HISP",
+        "PUMA"
+    ],
+    [
+        "DVET",
+        "INDP_CAT",
+        "PUMA"
+    ],
+    [
+        "OWN_RENT",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "DPHY",
+        "EDU",
+        "PUMA"
+    ],
+    [
+        "DPHY",
+        "INDP_CAT",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "DREM",
+        "PUMA"
+    ],
+    [
+        "POVPIP",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "NPF",
+        "OWN_RENT",
+        "PUMA"
+    ],
+    [
+        "DREM",
+        "EDU",
+        "PUMA"
+    ],
+    [
         "DENSITY",
         "DEYE",
         "PUMA"
     ],
     [
-        "EDU",
-        "PUMA",
-        "PWGTP"
+        "DREM",
+        "INDP_CAT",
+        "PUMA"
     ],
     [
-        "MSP",
+        "OWN_RENT",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "NPF",
         "POVPIP",
         "PUMA"
     ],
     [
+        "NPF",
+        "PINCP_DECILE",
+        "PUMA"
+    ],
+    [
         "DEYE",
+        "DPHY",
+        "PUMA"
+    ],
+    [
+        "PINCP",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "NOC",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "OWN_RENT",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "AGEP",
+        "OWN_RENT",
+        "PUMA"
+    ],
+    [
+        "HISP",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "DVET",
+        "OWN_RENT",
+        "PUMA"
+    ],
+    [
+        "EDU",
         "POVPIP",
+        "PUMA"
+    ],
+    [
+        "AGEP",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "DEAR",
+        "EDU",
         "PUMA"
     ],
     [
@@ -1111,184 +1111,299 @@
         "PUMA"
     ],
     [
+        "EDU",
+        "NOC",
+        "PUMA"
+    ],
+    [
+        "EDU",
+        "HOUSING_TYPE",
+        "PUMA"
+    ],
+    [
+        "DVET",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "DVET",
+        "PINCP_DECILE",
+        "PUMA"
+    ],
+    [
+        "PINCP",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "DEYE",
+        "POVPIP",
+        "PUMA"
+    ],
+    [
+        "MSP",
+        "NOC",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "NOC",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "HOUSING_TYPE",
+        "PUMA"
+    ],
+    [
+        "DREM",
+        "OWN_RENT",
+        "PUMA"
+    ],
+    [
+        "AGEP",
+        "DREM",
+        "PUMA"
+    ],
+    [
         "PINCP_DECILE",
         "POVPIP",
         "PUMA"
     ],
     [
-        "DREM",
-        "EDU",
+        "DPHY",
+        "PINCP_DECILE",
         "PUMA"
     ],
     [
-        "DEAR",
-        "PINCP",
+        "EDU",
+        "NPF",
         "PUMA"
     ],
     [
         "DENSITY",
+        "HISP",
+        "PUMA"
+    ],
+    [
+        "DEAR",
+        "INDP_CAT",
+        "PUMA"
+    ],
+    [
+        "HOUSING_TYPE",
+        "POVPIP",
+        "PUMA"
+    ],
+    [
+        "MSP",
         "PINCP",
         "PUMA"
     ],
     [
+        "INDP_CAT",
         "NPF",
-        "POVPIP",
-        "PUMA"
-    ],
-    [
-        "NOC",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "AGEP",
-        "DEAR",
         "PUMA"
     ],
     [
         "DREM",
-        "MSP",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "INDP_CAT",
+        "POVPIP",
+        "PUMA"
+    ],
+    [
+        "PINCP",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "DREM",
+        "PINCP_DECILE",
+        "PUMA"
+    ],
+    [
+        "HOUSING_TYPE",
+        "PINCP_DECILE",
         "PUMA"
     ],
     [
         "DVET",
-        "MSP",
+        "NPF",
+        "PUMA"
+    ],
+    [
+        "INDP_CAT",
+        "PINCP_DECILE",
         "PUMA"
     ],
     [
         "DPHY",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "INDP_CAT",
-        "MSP",
-        "PUMA"
-    ],
-    [
-        "DVET",
-        "INDP_CAT",
-        "PUMA"
-    ],
-    [
         "OWN_RENT",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "NOC",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "HISP",
-        "HOUSING_TYPE",
-        "PUMA"
-    ],
-    [
-        "DREM",
-        "HOUSING_TYPE",
-        "PUMA"
-    ],
-    [
-        "DREM",
-        "NOC",
         "PUMA"
     ],
     [
         "POVPIP",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "HOUSING_TYPE",
-        "NOC",
-        "PUMA"
-    ],
-    [
-        "DREM",
-        "NPF",
-        "PUMA"
-    ],
-    [
-        "DEAR",
-        "DVET",
-        "PUMA"
-    ],
-    [
-        "PUMA",
-        "RAC1P",
-        "WGTP"
-    ],
-    [
-        "INDP_CAT",
-        "OWN_RENT",
-        "PUMA"
-    ],
-    [
-        "HISP",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "DREM",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "NOC",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "HOUSING_TYPE",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "HISP",
-        "NOC",
-        "PUMA"
-    ],
-    [
-        "DREM",
-        "POVPIP",
-        "PUMA"
-    ],
-    [
-        "OWN_RENT",
         "PUMA",
         "RAC1P"
     ],
     [
         "DPHY",
-        "MSP",
-        "PUMA"
-    ],
-    [
-        "EDU",
-        "NOC",
-        "PUMA"
-    ],
-    [
-        "HISP",
         "NPF",
         "PUMA"
     ],
     [
-        "EDU",
+        "DPHY",
+        "DVET",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
         "MSP",
         "PUMA"
     ],
     [
+        "NPF",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
         "DREM",
-        "OWN_RENT",
+        "NPF",
+        "PUMA"
+    ],
+    [
+        "DREM",
+        "DVET",
         "PUMA"
     ],
     [
         "HOUSING_TYPE",
+        "NPF",
+        "PUMA"
+    ],
+    [
+        "DEAR",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "AGEP",
+        "DENSITY",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "DPHY",
+        "PUMA"
+    ],
+    [
+        "POVPIP",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "OWN_RENT",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "HISP",
+        "MSP",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "POVPIP",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "DVET",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "NOC",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "HOUSING_TYPE",
+        "PUMA"
+    ],
+    [
+        "DEAR",
         "OWN_RENT",
         "PUMA"
+    ],
+    [
+        "AGEP",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "NPF",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "EDU",
+        "INDP_CAT",
+        "PUMA"
+    ],
+    [
+        "DEAR",
+        "DREM",
+        "PUMA"
+    ],
+    [
+        "AGEP",
+        "DEAR",
+        "PUMA"
+    ],
+    [
+        "DVET",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "AGEP",
+        "HISP",
+        "PUMA"
+    ],
+    [
+        "POVPIP",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "DEAR",
+        "PINCP_DECILE",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "EDU",
+        "PUMA"
+    ],
+    [
+        "HISP",
+        "HOUSING_TYPE",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "INDP_CAT",
+        "PUMA"
+    ],
+    [
+        "NPF",
+        "PUMA",
+        "WGTP"
     ],
     [
         "AGEP",
@@ -1296,104 +1411,84 @@
         "SEX"
     ],
     [
-        "DVET",
-        "PINCP",
-        "PUMA"
-    ],
-    [
-        "HISP",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "HOUSING_TYPE",
+        "NOC",
         "NPF",
         "PUMA"
     ],
     [
-        "OWN_RENT",
+        "NOC",
         "POVPIP",
+        "PUMA"
+    ],
+    [
+        "DVET",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "DREM",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "AGEP",
+        "MSP",
+        "PUMA"
+    ],
+    [
+        "HISP",
+        "POVPIP",
+        "PUMA"
+    ],
+    [
+        "HOUSING_TYPE",
+        "INDP_CAT",
+        "PUMA"
+    ],
+    [
+        "NOC",
+        "PINCP_DECILE",
         "PUMA"
     ],
     [
         "DEAR",
-        "EDU",
-        "PUMA"
-    ],
-    [
-        "AGEP",
-        "DEYE",
-        "PUMA"
-    ],
-    [
-        "INDP_CAT",
-        "PINCP",
-        "PUMA"
-    ],
-    [
-        "OWN_RENT",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "EDU",
-        "INDP_CAT",
-        "PUMA"
-    ],
-    [
-        "HOUSING_TYPE",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "DEYE",
-        "HISP",
+        "DVET",
         "PUMA"
     ],
     [
         "HISP",
-        "OWN_RENT",
+        "NOC",
         "PUMA"
     ],
     [
-        "AGEP",
+        "DVET",
+        "MSP",
+        "PUMA"
+    ],
+    [
         "NPF",
-        "PUMA"
-    ],
-    [
-        "EDU",
-        "OWN_RENT",
-        "PUMA"
-    ],
-    [
-        "DEYE",
-        "INDP_CAT",
-        "PUMA"
-    ],
-    [
-        "HOUSING_TYPE",
-        "POVPIP",
-        "PUMA"
-    ],
-    [
-        "HISP",
         "PUMA",
         "PWGTP"
     ],
     [
-        "PINCP_DECILE",
+        "AGEP",
         "PUMA",
         "WGTP"
     ],
     [
-        "DVET",
-        "PINCP_DECILE",
+        "DEAR",
+        "DENSITY",
         "PUMA"
     ],
     [
-        "AGEP",
+        "DPHY",
         "PUMA",
         "RAC1P"
+    ],
+    [
+        "DVET",
+        "PUMA",
+        "WGTP"
     ],
     [
         "PUMA",
@@ -1401,168 +1496,228 @@
         "WGTP"
     ],
     [
-        "DEAR",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "DEAR",
-        "DENSITY",
-        "PUMA"
-    ],
-    [
-        "HOUSING_TYPE",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "DENSITY",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "MSP",
-        "PINCP",
-        "PUMA"
-    ],
-    [
-        "DPHY",
-        "INDP_CAT",
-        "PUMA"
-    ],
-    [
-        "HISP",
-        "POVPIP",
-        "PUMA"
-    ],
-    [
-        "DEYE",
-        "PINCP",
-        "PUMA"
-    ],
-    [
-        "DEYE",
-        "DPHY",
-        "PUMA"
-    ],
-    [
-        "DEAR",
-        "HOUSING_TYPE",
-        "PUMA"
-    ],
-    [
-        "AGEP",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "DEAR",
-        "NPF",
-        "PUMA"
-    ],
-    [
-        "PUMA",
-        "PWGTP",
-        "WGTP"
-    ],
-    [
-        "DEAR",
-        "DREM",
-        "PUMA"
-    ],
-    [
-        "NPF",
-        "PINCP",
-        "PUMA"
-    ],
-    [
-        "DEAR",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "DENSITY",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "INDP_CAT",
-        "PINCP_DECILE",
-        "PUMA"
-    ],
-    [
-        "PUMA",
-        "PWGTP",
-        "RAC1P"
-    ],
-    [
-        "PINCP",
-        "PINCP_DECILE",
-        "PUMA"
-    ],
-    [
-        "AGEP",
-        "DVET",
-        "PUMA"
-    ],
-    [
-        "DENSITY",
-        "HOUSING_TYPE",
-        "PUMA"
-    ],
-    [
-        "DEAR",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "AGEP",
         "EDU",
-        "PUMA"
-    ],
-    [
-        "DENSITY",
-        "NPF",
-        "PUMA"
-    ],
-    [
-        "DENSITY",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "DVET",
-        "HISP",
-        "PUMA"
-    ],
-    [
-        "MSP",
-        "PINCP_DECILE",
-        "PUMA"
-    ],
-    [
-        "NOC",
         "OWN_RENT",
         "PUMA"
     ],
     [
+        "DREM",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "HOUSING_TYPE",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "DREM",
+        "MSP",
+        "PUMA"
+    ],
+    [
+        "DEAR",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "EDU",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "EDU",
+        "PINCP_DECILE",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "OWN_RENT",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "MSP",
+        "POVPIP",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "EDU",
+        "PUMA"
+    ],
+    [
+        "DEAR",
+        "HISP",
+        "PUMA"
+    ],
+    [
+        "MSP",
+        "PINCP_DECILE",
+        "PUMA"
+    ],
+    [
+        "DPHY",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "DREM",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "HOUSING_TYPE",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "DPHY",
+        "DREM",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
         "DEYE",
         "PINCP_DECILE",
         "PUMA"
     ],
     [
-        "DENSITY",
-        "DREM",
+        "HOUSING_TYPE",
+        "OWN_RENT",
         "PUMA"
     ],
     [
-        "POVPIP",
+        "INDP_CAT",
+        "OWN_RENT",
+        "PUMA"
+    ],
+    [
+        "PINCP_DECILE",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "DEAR",
         "PUMA",
         "SEX"
     ],
     [
-        "NOC",
+        "HOUSING_TYPE",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "DEAR",
+        "MSP",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "INDP_CAT",
+        "PUMA"
+    ],
+    [
+        "DPHY",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "DEYE",
+        "DREM",
+        "PUMA"
+    ],
+    [
+        "INDP_CAT",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "AGEP",
+        "DEYE",
+        "PUMA"
+    ],
+    [
+        "MSP",
         "NPF",
+        "PUMA"
+    ],
+    [
+        "AGEP",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "NPF",
+        "PUMA"
+    ],
+    [
+        "DEAR",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "DPHY",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "HISP",
+        "INDP_CAT",
+        "PUMA"
+    ],
+    [
+        "OWN_RENT",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "PINCP",
+        "POVPIP",
+        "PUMA"
+    ],
+    [
+        "DREM",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "PINCP",
+        "PINCP_DECILE",
+        "PUMA"
+    ],
+    [
+        "EDU",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "EDU",
+        "HISP",
+        "PUMA"
+    ],
+    [
+        "MSP",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "DEYE",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "NOC",
+        "OWN_RENT",
         "PUMA"
     ],
     [
@@ -1571,392 +1726,238 @@
         "SEX"
     ],
     [
-        "DEAR",
-        "POVPIP",
-        "PUMA"
-    ],
-    [
-        "EDU",
-        "PINCP_DECILE",
-        "PUMA"
-    ],
-    [
-        "HISP",
-        "MSP",
-        "PUMA"
-    ],
-    [
-        "DENSITY",
-        "POVPIP",
-        "PUMA"
-    ],
-    [
         "DVET",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "NPF",
-        "PINCP_DECILE",
-        "PUMA"
-    ],
-    [
-        "DPHY",
-        "PINCP_DECILE",
-        "PUMA"
-    ],
-    [
-        "HOUSING_TYPE",
-        "MSP",
-        "PUMA"
-    ],
-    [
-        "NOC",
-        "POVPIP",
-        "PUMA"
-    ],
-    [
-        "DVET",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "POVPIP",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "HISP",
-        "INDP_CAT",
-        "PUMA"
-    ],
-    [
-        "DREM",
-        "INDP_CAT",
-        "PUMA"
-    ],
-    [
-        "DVET",
-        "NPF",
-        "PUMA"
-    ],
-    [
-        "AGEP",
-        "HOUSING_TYPE",
-        "PUMA"
-    ],
-    [
-        "AGEP",
-        "NOC",
-        "PUMA"
-    ],
-    [
-        "HOUSING_TYPE",
-        "INDP_CAT",
-        "PUMA"
-    ],
-    [
-        "DVET",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "AGEP",
-        "DREM",
-        "PUMA"
-    ],
-    [
-        "AGEP",
-        "DENSITY",
-        "PUMA"
-    ],
-    [
-        "DPHY",
         "HISP",
         "PUMA"
     ],
     [
-        "POVPIP",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "DENSITY",
-        "DVET",
-        "PUMA"
-    ],
-    [
-        "PINCP",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "DEYE",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "HOUSING_TYPE",
-        "PINCP",
-        "PUMA"
-    ],
-    [
-        "DENSITY",
-        "EDU",
-        "PUMA"
-    ],
-    [
-        "PINCP_DECILE",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "AGEP",
-        "OWN_RENT",
-        "PUMA"
-    ],
-    [
-        "MSP",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "DVET",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "INDP_CAT",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "DEYE",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "DEYE",
-        "HOUSING_TYPE",
-        "PUMA"
-    ],
-    [
-        "PINCP",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "NPF",
-        "PUMA",
-        "SEX"
-    ],
-    [
-        "DEYE",
-        "NPF",
-        "PUMA"
-    ],
-    [
-        "EDU",
-        "HISP",
-        "PUMA"
-    ],
-    [
-        "DENSITY",
-        "MSP",
-        "PUMA"
-    ],
-    [
-        "DREM",
-        "PINCP",
-        "PUMA"
-    ],
-    [
-        "MSP",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "EDU",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "NPF",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "DEYE",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "PINCP_DECILE",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "OWN_RENT",
-        "PINCP_DECILE",
-        "PUMA"
-    ],
-    [
-        "PUMA",
-        "PWGTP",
-        "SEX"
-    ],
-    [
-        "AGEP",
-        "POVPIP",
-        "PUMA"
-    ],
-    [
-        "PINCP",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "DEAR",
-        "NOC",
-        "PUMA"
-    ],
-    [
-        "DEAR",
-        "MSP",
-        "PUMA"
-    ],
-    [
-        "DENSITY",
-        "NOC",
-        "PUMA"
-    ],
-    [
-        "EDU",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "NPF",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "MSP",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "EDU",
-        "PINCP",
-        "PUMA"
-    ],
-    [
-        "DVET",
-        "EDU",
-        "PUMA"
-    ],
-    [
-        "DREM",
-        "PINCP_DECILE",
-        "PUMA"
-    ],
-    [
-        "DEYE",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "PINCP_DECILE",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "DPHY",
-        "PUMA",
-        "WGTP"
-    ],
-    [
-        "DEAR",
-        "INDP_CAT",
-        "PUMA"
-    ],
-    [
-        "DENSITY",
-        "INDP_CAT",
-        "PUMA"
-    ],
-    [
-        "DEAR",
-        "OWN_RENT",
-        "PUMA"
-    ],
-    [
-        "NPF",
-        "PUMA",
-        "PWGTP"
-    ],
-    [
-        "HISP",
-        "PINCP_DECILE",
-        "PUMA"
-    ],
-    [
-        "DPHY",
-        "PUMA",
-        "RAC1P"
-    ],
-    [
-        "DENSITY",
-        "OWN_RENT",
-        "PUMA"
-    ],
-    [
-        "DPHY",
-        "PINCP",
-        "PUMA"
-    ],
-    [
-        "DEAR",
-        "DPHY",
-        "PUMA"
-    ],
-    [
-        "HOUSING_TYPE",
-        "PINCP_DECILE",
-        "PUMA"
-    ],
-    [
-        "DENSITY",
-        "DPHY",
-        "PUMA"
-    ],
-    [
-        "DVET",
-        "HOUSING_TYPE",
-        "PUMA"
-    ],
-    [
-        "EDU",
-        "PINCP_DECILE",
-        "RAC1P",
-        "SEX"
-    ],
-    [
-        "AGEP",
-        "DPHY",
-        "DREM",
-        "EDU",
         "MSP",
         "PINCP",
         "PINCP_DECILE"
     ],
     [
+        "PINCP_DECILE",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
         "EDU",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "NOC",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "HOUSING_TYPE",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "EDU",
+        "MSP",
+        "PUMA"
+    ],
+    [
+        "MSP",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "DPHY",
         "HISP",
+        "PUMA"
+    ],
+    [
+        "INDP_CAT",
+        "PUMA",
+        "RAC1P"
+    ],
+    [
+        "HISP",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "HISP",
+        "PINCP_DECILE",
+        "PUMA"
+    ],
+    [
+        "DENSITY",
+        "OWN_RENT",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "HOUSING_TYPE",
+        "MSP",
+        "PUMA"
+    ],
+    [
+        "PUMA",
+        "RAC1P",
+        "WGTP"
+    ],
+    [
+        "DENSITY",
+        "NPF",
+        "PUMA"
+    ],
+    [
+        "DEAR",
+        "DEYE",
+        "PUMA"
+    ],
+    [
+        "DEYE",
+        "MSP",
+        "PUMA"
+    ],
+    [
+        "DREM",
+        "HISP",
+        "PUMA"
+    ],
+    [
+        "EDU",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "PINCP_DECILE",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "DENSITY",
+        "PINCP_DECILE",
+        "PUMA"
+    ],
+    [
+        "DEAR",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "AGEP",
+        "DPHY",
+        "PUMA"
+    ],
+    [
+        "MSP",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "HISP",
+        "OWN_RENT",
+        "PUMA"
+    ],
+    [
+        "DPHY",
+        "MSP",
+        "PUMA"
+    ],
+    [
+        "INDP_CAT",
+        "PUMA",
+        "SEX"
+    ],
+    [
+        "DEYE",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "HISP",
+        "NPF",
+        "PUMA"
+    ],
+    [
         "INDP_CAT",
         "MSP",
-        "OWN_RENT",
+        "PUMA"
+    ],
+    [
+        "PINCP_DECILE",
         "PUMA",
+        "WGTP"
+    ],
+    [
+        "OWN_RENT",
+        "POVPIP",
+        "PUMA"
+    ],
+    [
+        "MSP",
+        "PUMA",
+        "PWGTP"
+    ],
+    [
+        "DENSITY",
+        "DVET",
+        "PUMA"
+    ],
+    [
+        "INDP_CAT",
+        "PUMA",
+        "WGTP"
+    ],
+    [
+        "AGEP",
+        "NPF",
+        "PUMA"
+    ],
+    [
+        "AGEP",
+        "POVPIP",
+        "PUMA"
+    ],
+    [
+        "NPF",
+        "PINCP",
+        "PUMA"
+    ],
+    [
+        "AGEP",
+        "NOC",
+        "PUMA"
+    ],
+    [
+        "AGEP",
+        "HOUSING_TYPE",
+        "PUMA"
+    ],
+    [
+        "DVET",
+        "POVPIP",
+        "PUMA"
+    ],
+    [
+        "MSP",
+        "OWN_RENT",
+        "PUMA"
+    ],
+    [
+        "DVET",
+        "NOC",
+        "PUMA"
+    ],
+    [
+        "DVET",
+        "HOUSING_TYPE",
+        "PUMA"
+    ],
+    [
+        "EDU",
+        "PINCP_DECILE",
         "RAC1P",
         "SEX"
     ]
