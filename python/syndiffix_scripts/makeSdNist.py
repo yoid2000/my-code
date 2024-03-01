@@ -3,6 +3,7 @@ import json
 import os
 from syndiffix import Synthesizer
 from syndiffix.clustering.strategy import DefaultClustering
+import sd_utils
 import itertools
 
 import pandas as pd
@@ -72,15 +73,16 @@ def doOneSyn(df, cols):
     print(outPath)
     if os.path.exists(outPath):
         print(f"Already synthesized {outPath}")
-        return
+        return None
     print("type before synthesis:")
     print(df[cols].dtypes)
-    df_syn = Synthesizer(df[cols],
+    synth = Synthesizer(df[cols],
                          clustering=DefaultClustering(
                              max_weight=cluster_params['max_weight'],
                              sample_size=cluster_params['sample_size'],
                              merge_threshold=cluster_params['merge_threshold'],
-                         )).sample()
+                         ))
+    df_syn = synth.sample()
     # Need to convert these back to strings so that the 'N' conversion works
     print("Syn types before conversion:")
     print(df_syn.dtypes)
@@ -98,6 +100,7 @@ def doOneSyn(df, cols):
     nSubStr = count_substrings(df_syn, '\*')
     print(f"Got {nSubStr} substrings")
     df_syn.to_csv(outPath, index=False)
+    return(synth)
 
 rootPath = os.path.join('c:\\', 'paul', 'sdnist')
 inPath = os.path.join(rootPath, 'diverse_communities_data_excerpts', stateConfig[state]['state'], stateConfig[state]['file'])
@@ -120,9 +123,18 @@ print(df.dtypes)
 
 with open('columns.json', 'r') as f:
     columnSets = json.load(f)
-print(columnSets)
+# get column sets stats
+numColsHist = [0 for i in range(25)]
+for colset in columnSets:
+    numColsHist[len(colset)] += 1
+for i in range(len(numColsHist)):
+    if numColsHist[i] > 0:
+        print(i, numColsHist[i])
+quit()
 for columnSet in columnSets:
-    doOneSyn(df, columnSet)
+    synth = doOneSyn(df, columnSet)
+    if False and synth is not None:
+        sd_utils.dump_trees(synth)
 doOneSyn(df, columns)
 quit()
 for n_dims in [1,2,3]:
