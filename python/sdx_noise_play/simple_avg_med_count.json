@@ -1,0 +1,542 @@
+[
+    {
+        "N": 80,
+        "C": 80,
+        "V": 2,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 800,
+        "success_rate": 96
+    },
+    {
+        "N": 80,
+        "C": 80,
+        "V": 2,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 800,
+        "success_rate": 89
+    },
+    {
+        "N": 80,
+        "C": 40,
+        "V": 2,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 400,
+        "success_rate": 84
+    },
+    {
+        "N": 500,
+        "C": 80,
+        "V": 5,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 2000,
+        "success_rate": 83
+    },
+    {
+        "N": 80,
+        "C": 20,
+        "V": 2,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 200,
+        "success_rate": 74
+    },
+    {
+        "N": 80,
+        "C": 40,
+        "V": 2,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 400,
+        "success_rate": 71
+    },
+    {
+        "N": 500,
+        "C": 40,
+        "V": 5,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 1000,
+        "success_rate": 70
+    },
+    {
+        "N": 500,
+        "C": 80,
+        "V": 5,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 2000,
+        "success_rate": 69
+    },
+    {
+        "N": 2000,
+        "C": 80,
+        "V": 10,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 4000,
+        "success_rate": 67
+    },
+    {
+        "N": 80,
+        "C": 10,
+        "V": 2,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 100,
+        "success_rate": 59
+    },
+    {
+        "N": 500,
+        "C": 20,
+        "V": 5,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 500,
+        "success_rate": 55
+    },
+    {
+        "N": 2000,
+        "C": 80,
+        "V": 10,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 4000,
+        "success_rate": 51
+    },
+    {
+        "N": 500,
+        "C": 40,
+        "V": 5,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 1000,
+        "success_rate": 50
+    },
+    {
+        "N": 80,
+        "C": 20,
+        "V": 2,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 200,
+        "success_rate": 49
+    },
+    {
+        "N": 2000,
+        "C": 40,
+        "V": 10,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 2000,
+        "success_rate": 49
+    },
+    {
+        "N": 2000,
+        "C": 20,
+        "V": 10,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 1000,
+        "success_rate": 42
+    },
+    {
+        "N": 8000,
+        "C": 40,
+        "V": 20,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 4000,
+        "success_rate": 38
+    },
+    {
+        "N": 500,
+        "C": 20,
+        "V": 5,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 500,
+        "success_rate": 37
+    },
+    {
+        "N": 500,
+        "C": 10,
+        "V": 5,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 250,
+        "success_rate": 35
+    },
+    {
+        "N": 2000,
+        "C": 40,
+        "V": 10,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 2000,
+        "success_rate": 34
+    },
+    {
+        "N": 500,
+        "C": 10,
+        "V": 5,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 250,
+        "success_rate": 33
+    },
+    {
+        "N": 500,
+        "C": 10,
+        "V": 5,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 250,
+        "success_rate": 33
+    },
+    {
+        "N": 80,
+        "C": 10,
+        "V": 2,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 100,
+        "success_rate": 31
+    },
+    {
+        "N": 2000,
+        "C": 10,
+        "V": 10,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 500,
+        "success_rate": 31
+    },
+    {
+        "N": 80,
+        "C": 20,
+        "V": 2,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 200,
+        "success_rate": 29
+    },
+    {
+        "N": 80,
+        "C": 20,
+        "V": 2,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 200,
+        "success_rate": 29
+    },
+    {
+        "N": 8000,
+        "C": 20,
+        "V": 20,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 2000,
+        "success_rate": 28
+    },
+    {
+        "N": 8000,
+        "C": 20,
+        "V": 20,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 2000,
+        "success_rate": 28
+    },
+    {
+        "N": 8000,
+        "C": 20,
+        "V": 20,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 2000,
+        "success_rate": 28
+    },
+    {
+        "N": 8000,
+        "C": 40,
+        "V": 20,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 4000,
+        "success_rate": 28
+    },
+    {
+        "N": 8000,
+        "C": 40,
+        "V": 20,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 4000,
+        "success_rate": 28
+    },
+    {
+        "N": 500,
+        "C": 80,
+        "V": 5,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 2000,
+        "success_rate": 28
+    },
+    {
+        "N": 500,
+        "C": 80,
+        "V": 5,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 2000,
+        "success_rate": 28
+    },
+    {
+        "N": 2000,
+        "C": 80,
+        "V": 10,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 4000,
+        "success_rate": 28
+    },
+    {
+        "N": 2000,
+        "C": 80,
+        "V": 10,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 4000,
+        "success_rate": 28
+    },
+    {
+        "N": 2000,
+        "C": 10,
+        "V": 10,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 500,
+        "success_rate": 27
+    },
+    {
+        "N": 2000,
+        "C": 10,
+        "V": 10,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 500,
+        "success_rate": 27
+    },
+    {
+        "N": 8000,
+        "C": 10,
+        "V": 20,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 1000,
+        "success_rate": 27
+    },
+    {
+        "N": 8000,
+        "C": 10,
+        "V": 20,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 1000,
+        "success_rate": 27
+    },
+    {
+        "N": 80,
+        "C": 40,
+        "V": 2,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 400,
+        "success_rate": 27
+    },
+    {
+        "N": 80,
+        "C": 40,
+        "V": 2,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 400,
+        "success_rate": 27
+    },
+    {
+        "N": 500,
+        "C": 40,
+        "V": 5,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 1000,
+        "success_rate": 27
+    },
+    {
+        "N": 500,
+        "C": 40,
+        "V": 5,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 1000,
+        "success_rate": 27
+    },
+    {
+        "N": 2000,
+        "C": 20,
+        "V": 10,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 1000,
+        "success_rate": 26
+    },
+    {
+        "N": 2000,
+        "C": 20,
+        "V": 10,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 1000,
+        "success_rate": 26
+    },
+    {
+        "N": 80,
+        "C": 80,
+        "V": 2,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 800,
+        "success_rate": 26
+    },
+    {
+        "N": 80,
+        "C": 80,
+        "V": 2,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 800,
+        "success_rate": 26
+    },
+    {
+        "N": 80,
+        "C": 10,
+        "V": 2,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 100,
+        "success_rate": 25
+    },
+    {
+        "N": 80,
+        "C": 10,
+        "V": 2,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 100,
+        "success_rate": 25
+    },
+    {
+        "N": 500,
+        "C": 20,
+        "V": 5,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 500,
+        "success_rate": 25
+    },
+    {
+        "N": 500,
+        "C": 20,
+        "V": 5,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 500,
+        "success_rate": 25
+    },
+    {
+        "N": 2000,
+        "C": 40,
+        "V": 10,
+        "type": "1dim",
+        "alg": "simple avg",
+        "samples": 2000,
+        "success_rate": 25
+    },
+    {
+        "N": 2000,
+        "C": 40,
+        "V": 10,
+        "type": "1dim",
+        "alg": "simple med",
+        "samples": 2000,
+        "success_rate": 25
+    },
+    {
+        "N": 2000,
+        "C": 20,
+        "V": 10,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 1000,
+        "success_rate": 23
+    },
+    {
+        "N": 8000,
+        "C": 40,
+        "V": 20,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 4000,
+        "success_rate": 23
+    },
+    {
+        "N": 8000,
+        "C": 10,
+        "V": 20,
+        "type": "2dim",
+        "alg": "simple avg",
+        "samples": 1000,
+        "success_rate": 21
+    },
+    {
+        "N": 500,
+        "C": 10,
+        "V": 5,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 250,
+        "success_rate": 19
+    },
+    {
+        "N": 2000,
+        "C": 10,
+        "V": 10,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 500,
+        "success_rate": 16
+    },
+    {
+        "N": 8000,
+        "C": 20,
+        "V": 20,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 2000,
+        "success_rate": 12
+    },
+    {
+        "N": 8000,
+        "C": 10,
+        "V": 20,
+        "type": "2dim",
+        "alg": "simple med",
+        "samples": 1000,
+        "success_rate": 11
+    }
+]
