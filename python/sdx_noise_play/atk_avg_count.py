@@ -44,6 +44,7 @@ if os.path.exists(outFile):
 else:
     allResults = []
 
+max_samples = 100
 for C in [10,20,40,80]:
     for V in [2, 5, 10, 20]:
         # Every value needs a reasonable number of appearances with every other value
@@ -57,10 +58,11 @@ for C in [10,20,40,80]:
             outcomes_med = []
             tests = []
             print(f"Try simple averaging attack with {btype} ({N} rows, {C} columns, {V} values)")
-            for _ in range(5):
+            while True:
                 tm = TableMaker()
                 df = tm.simple_uniform(N=N, C=C, V=V)  # Example dataframe
-
+                if len(outcomes_avg) > max_samples:
+                    break
                 for column in list(df.columns):
                     for value in df[column].unique():
                         col_vals = {column:value}
@@ -72,6 +74,8 @@ for C in [10,20,40,80]:
                         outcomes_avg.append(1 if res['with_noise_avg'] == res['true'] else 0)
                         outcomes_med.append(1 if res['with_noise_med'] == res['true'] else 0)
                         tests.append(col_vals)
+                    if len(outcomes_avg) > max_samples:
+                        break
             num_success_avg = sum(outcomes_avg)
             success_rate_avg = int((num_success_avg*100)/len(outcomes_avg))
             print(f"{num_success_avg} successes out of {len(outcomes_avg)} for {success_rate_avg}%")
