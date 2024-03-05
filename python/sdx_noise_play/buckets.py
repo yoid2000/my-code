@@ -70,7 +70,10 @@ class Bucketizer:
         grouped = self.df.groupby(columns)
         for group_key, group_df in grouped:
             true_count = len(group_df)
-            col_vals = {col: group_key[i] for i, col in enumerate(columns)}
+            if len(columns) == 1:
+                col_vals = {columns[0]: group_key}
+            else:
+                col_vals = {col: group_key[i] for i, col in enumerate(columns)}
             
             # Create a new Bucket instance
             bucket = Bucket(true_count=true_count, col_vals=col_vals)
