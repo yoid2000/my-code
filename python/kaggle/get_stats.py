@@ -38,6 +38,17 @@ def get_stats(parquet_path, blob_path):
     plt.tight_layout()
     plt.savefig(os.path.join(blob_path, 'rows_cols.png'))
     plt.close()
+    
+    # Plot the stats as a scatterplot, log scale
+    plt.scatter(stats_df['Rows'], stats_df['Columns'])
+    plt.xlabel('Rows')
+    plt.ylabel('Columns')
+    plt.title('Scatterplot of Rows vs Columns in Parquet Files')
+    plt.xscale('log')
+    plt.yscale('log')
+    plt.tight_layout()
+    plt.savefig(os.path.join(blob_path, 'rows_cols_log.png'))
+    plt.close()
 
 blob_code_path = '.'
 # check if there is an environment variable called BLOB_TEST_DIR
