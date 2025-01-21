@@ -3,8 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 def get_stats(parquet_path, blob_path):
-    stats = []
 
+    max_rows = 250000
+    max_columns = 50
+    stats = []
     # Iterate over each file in the directory
     for filename in os.listdir(parquet_path):
         if filename.endswith('.parquet'):
@@ -16,6 +18,10 @@ def get_stats(parquet_path, blob_path):
             # Get the number of rows and columns
             num_rows = len(df)
             num_columns = len(df.columns)
+            # if the number of rows or columns exceeds the maximum, remove this file
+            if num_rows > max_rows or num_columns > max_columns:
+                os.remove(file_path)
+                continue
             
             # Add the stats to the array
             stats.append((num_rows, num_columns))

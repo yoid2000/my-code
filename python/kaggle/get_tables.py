@@ -11,7 +11,9 @@ max_bytes_per_cell = 2.0
 min_file_size = 200000
 max_file_size = 500000
 min_rows = 10000
+max_rows = 250000
 min_columns = 5
+max_columns = 50
 
 num_tables_to_gather = 1000
 
@@ -96,7 +98,7 @@ while num_gathered_tables < num_tables_to_gather:
             print(f"An error occurred while reading the CSV file: {e}")
             continue
         # make sure df has at least min_rows rows and min_columns columns
-        if df.shape[0] < min_rows or df.shape[1] < min_columns:
+        if df.shape[0] < min_rows or df.shape[0] > max_rows or df.shape[1] < min_columns or df.shape[1] > max_columns:
             print(f"Skipping {file_name} because it has {df.shape[0]} rows and {df.shape[1]} columns")
             continue
         path_df = os.path.join(kaggle_parquet_path, file_name + '.parquet')
