@@ -42,14 +42,11 @@ if 'BLOB_TEST_DIR' in os.environ:
 else:
     blob_path = os.path.join(os.getcwd(), 'blob_tests')
 
-os.makedirs(blob_path, exist_ok=True)
 print(f"Blob path: {blob_path}")
 
 # make directory 'datasets' if it doesn't exist
 datasets_path = os.path.join(blob_path, 'datasets')
-os.makedirs(datasets_path, exist_ok=True)
 kaggle_parquet_path_in = os.path.join(datasets_path, 'kaggle_parquet')
-os.makedirs(kaggle_parquet_path_in, exist_ok=True)
 kaggle_parquet_path_out = os.path.join(datasets_path, 'kaggle_parquet_out')
 os.makedirs(kaggle_parquet_path_out, exist_ok=True)
 
