@@ -102,7 +102,11 @@ while num_gathered_tables < num_tables_to_gather:
         path_df = os.path.join(kaggle_parquet_path, file_name + '.parquet')
         print(f"Saving {file_name} to {path_df}")
         # save df as a parquet file at path_df
-        df.to_parquet(path_df)
+        try:
+            df.to_parquet(path_df)
+        except Exception as e:
+            print(f"An error occurred while writing to parquet: {e}")
+            continue
         num_gathered_tables += 1
     # Update status
     last_page += 1
