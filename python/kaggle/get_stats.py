@@ -27,6 +27,9 @@ def get_stats(parquet_path, blob_path):
     plt.scatter(stats_df['Rows'], stats_df['Columns'])
     plt.xlabel('Rows')
     plt.ylabel('Columns')
+    # set x axis limits
+    plt.xlim(0, 100000)
+    plt.ylim(0,50)
     plt.title('Scatterplot of Rows vs Columns in Parquet Files')
     plt.savefig(os.path.join(blob_path, 'rows_cols.png'))
     plt.close()
