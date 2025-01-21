@@ -8,7 +8,7 @@ pp = pprint.PrettyPrinter(indent=4)
 
 min_bytes_per_cell = 1.0
 max_bytes_per_cell = 2.0
-min_file_size = 100000
+min_file_size = 200000
 max_file_size = 500000
 min_rows = 10000
 min_columns = 5
@@ -48,7 +48,7 @@ num_gathered_tables = 0
 for file in os.listdir(kaggle_parquet_path):
     if file.endswith('.parquet'):
         num_gathered_tables += 1
-last_page = status['last_page'] + 1
+last_page = status['last_page']
 
 # Authenticate using kaggle.json
 def authenticate_kaggle():
@@ -105,6 +105,7 @@ while num_gathered_tables < num_tables_to_gather:
         df.to_parquet(path_df)
         num_gathered_tables += 1
     # Update status
+    last_page += 1
     status['last_page'] = last_page
     with open(status_path, 'w') as f:
         json.dump(status, f, indent=4)
