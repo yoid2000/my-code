@@ -1,3 +1,25 @@
 {
-    "terminal.integrated.env.osx": {"PYTHONPATH": "C:\\paul\\GitHub\\my_sdx|clone"}
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "C:\\paul\\GitHub\\my_sdx|clone"
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#eaf8f1",
+        "activityBar.background": "#eaf8f1",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#bf9fdf",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#eaf8f1",
+        "statusBar.background": "#c4ebd8",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#9edebf",
+        "statusBarItem.remoteBackground": "#c4ebd8",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#c4ebd8",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#c4ebd899",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#c4ebd8"
 }

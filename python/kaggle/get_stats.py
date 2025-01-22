@@ -1,4 +1,5 @@
 import os
+import json
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -7,6 +8,7 @@ def get_stats(parquet_path, blob_path):
     max_rows = 250000
     max_columns = 50
     stats = []
+    info = {'datasets': [], 'stats': {}}
     # Iterate over each file in the directory
     for filename in os.listdir(parquet_path):
         if filename.endswith('.parquet'):
@@ -22,31 +24,62 @@ def get_stats(parquet_path, blob_path):
             if num_rows > max_rows or num_columns > max_columns:
                 os.remove(file_path)
                 continue
-            
+
+            # determine if any columns are datetime
+            has_datetime = False
+            for column in df.columns:
+                if pd.api.types.is_datetime64_any_dtype(df[column]):
+                    has_datetime = True
             # Add the stats to the array
-            stats.append((num_rows, num_columns))
+            stats.append((num_rows, num_columns, has_datetime))
+
+            # strip off the .parquet extension
+            kaggle_dataset = filename[:-8]
+            # change '_slash_' to '/'
+            kaggle_dataset = kaggle_dataset.replace('_slash_', '/')
+            info['datasets'].append({'dataset': kaggle_dataset, 'rows': num_rows, 'columns': num_columns, 'datetime': has_datetime})
     
     # Convert the stats to a DataFrame for easier plotting
-    stats_df = pd.DataFrame(stats, columns=['Rows', 'Columns'])
-    
+    df_stats = pd.DataFrame(stats, columns=['Rows', 'Columns', 'HasDatetime'])
+
+    info['stats'] = {
+        'num_datasets': int(len(df_stats)),
+        'num_with_datetime': int(len(df_stats[df_stats['HasDatetime'] == True])),
+        'max_rows': int(df_stats['Rows'].max()),
+        'min_rows': int(df_stats['Rows'].min()),
+        'max_columns': int(df_stats['Columns'].max()),
+        'min_columns': int(df_stats['Columns'].min()),
+        'avg_rows': float(df_stats['Rows'].mean()),
+        'avg_columns': float(df_stats['Columns'].mean()),
+        'stdev_rows': float(df_stats['Rows'].std()),
+        'stdev_columns': float(df_stats['Columns'].std()),
+    }
+
+    # Save the info to a JSON file
+    with open(os.path.join(blob_path, 'datasets_info.json'), 'w') as f:
+        json.dump(info, f, indent=4)
+
     # Plot the stats as a scatterplot
-    plt.scatter(stats_df['Rows'], stats_df['Columns'])
+    plt.scatter(df_stats['Rows'], df_stats['Columns'], c=df_stats['HasDatetime'].map({True: 'blue', False: 'red'}))
     plt.xlabel('Rows')
     plt.ylabel('Columns')
-    # set x axis limits
     plt.title('Scatterplot of Rows vs Columns in Parquet Files')
     plt.tight_layout()
+    plt.legend(handles=[plt.Line2D([0], [0], marker='o', color='w', markerfacecolor='blue', markersize=10, label='HasDatetime=True'),
+                        plt.Line2D([0], [0], marker='o', color='w', markerfacecolor='red', markersize=10, label='HasDatetime=False')])
     plt.savefig(os.path.join(blob_path, 'rows_cols.png'))
     plt.close()
-    
+
     # Plot the stats as a scatterplot, log scale
-    plt.scatter(stats_df['Rows'], stats_df['Columns'])
+    plt.scatter(df_stats['Rows'], df_stats['Columns'], c=df_stats['HasDatetime'].map({True: 'blue', False: 'red'}))
     plt.xlabel('Rows')
     plt.ylabel('Columns')
     plt.title('Scatterplot of Rows vs Columns in Parquet Files')
     plt.xscale('log')
     plt.yscale('log')
     plt.tight_layout()
+    plt.legend(handles=[plt.Line2D([0], [0], marker='o', color='w', markerfacecolor='blue', markersize=10, label='HasDatetime=True'),
+                        plt.Line2D([0], [0], marker='o', color='w', markerfacecolor='red', markersize=10, label='HasDatetime=False')])
     plt.savefig(os.path.join(blob_path, 'rows_cols_log.png'))
     plt.close()
 
