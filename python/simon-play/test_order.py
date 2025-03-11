@@ -9,45 +9,14 @@ import pprint
 pp = pprint.PrettyPrinter(indent=4)
 
 from syndiffix import Synthesizer
-from dataclasses import dataclass
+from syndiffix.common import AnonymizationParams, SuppressionParams
 
 test_data = pd.read_csv("original_5dim.csv")
 
 os.makedirs("plots", exist_ok=True)
 
-####################PARAMETERS###################
-@dataclass(frozen=False)
-class FlatteningInterval:
-    lower: int = 2
-    upper: int = 5
-    
-@dataclass(frozen=False)
-class SuppressionParams:
-    low_threshold: int = 0
-    layer_sd: float = 0.1
-    low_mean_gap: float = 2.0
-
-@dataclass(frozen=False)
-class BucketizationParams:
-    singularity_low_threshold: int = 5
-    range_low_threshold: int = 15
-    precision_limit_row_fraction: int = 10000
-    precision_limit_depth_threshold: int = 15
-    
-@dataclass(frozen=False)
-class AnonymizationParams:
-  # Each noise layer seed is salted before being hashed with a cryptographically-strong algorithm.
-  # The salt value needs to have at least 64 bits of entropy (equal or higher than that of the seed).
-  # If the provided salt is empty, a per-system salt will be generated and used.
-  salt: bytes = b""
-  low_count_params: SuppressionParams = SuppressionParams()
-  outlier_count: FlatteningInterval = FlatteningInterval()
-  top_count: FlatteningInterval = FlatteningInterval()
-  layer_noise_sd: float = 0
-
-
 def run_synth(target = None, anon = "With_Anon"):
-    print(f"Do synthesis for target {target}")
+    print(f"Do synthesis for target {target}, anonymization {anon}")
     ####################SEQUENCE 1 ###########################################
 
     var = ['num1', 'num2', 'cat1', 'cat2','geo' ]
@@ -55,13 +24,13 @@ def run_synth(target = None, anon = "With_Anon"):
 
     #syntheizer
     if anon == "No_Anon":
-        synthesizer_ = Synthesizer(raw_data = subset_target,
-                               target_column = target,
-                               bucketization_params = BucketizationParams(),
-                               anonymization_params = AnonymizationParams())
+        synthesizer_ = Synthesizer(subset_target, target_column = target,
+                  anonymization_params=AnonymizationParams(layer_noise_sd=0,
+                  low_count_params=SuppressionParams(low_threshold=0,
+                                                     layer_sd=0,
+                                                     low_mean_gap=2.0)))
     else:
-        synthesizer_ = Synthesizer(raw_data = subset_target,
-                               target_column = target)
+        synthesizer_ = Synthesizer(subset_target, target_column = target)
     sd_i_ = synthesizer_.sample()
     print(var)
     print(sd_i_.columns)
@@ -75,13 +44,13 @@ def run_synth(target = None, anon = "With_Anon"):
 
     #syntheizer
     if anon == "No_Anon":
-        synthesizer_ = Synthesizer(raw_data = subset_target,
-                               target_column = target,
-                               bucketization_params = BucketizationParams(),
-                               anonymization_params = AnonymizationParams())
+         synthesizer_ = Synthesizer(subset_target, target_column = target,
+                  anonymization_params=AnonymizationParams(layer_noise_sd=0,
+                  low_count_params=SuppressionParams(low_threshold=0,
+                                                     layer_sd=0,
+                                                     low_mean_gap=2.0)))
     else:
-        synthesizer_ = Synthesizer(raw_data = subset_target,
-                               target_column = target)
+        synthesizer_ = Synthesizer(subset_target_, target_column = target)
     sd_i_r = synthesizer_.sample()
     print(var)
     print(sd_i_r.columns)
