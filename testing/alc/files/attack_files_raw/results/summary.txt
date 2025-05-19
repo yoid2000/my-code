@@ -1,27 +1,75 @@
 Anonymity Loss Coefficient Summary
     attack_files_raw
 Anonymity Level: VERY POOR
-    100 attacks (96.2%) have poor or no anonymity. Strengthen anonymity.
+    489 attacks (97.2%) have poor or no anonymity. Strengthen anonymity.
 
-0 columns used as secret columns:
+24 columns used as secret columns:
+  AGEP__discretized
+  DEAR
+  DENSITY__discretized
+  DEYE
+  DPHY
+  DREM
+  DVET
+  EDU
+  HISP
+  HOUSING_TYPE
+  INDP
+  INDP_CAT
+  MSP
+  NOC
+  NPF
+  OWN_RENT
+  PINCP
+  PINCP_DECILE
+  POVPIP
+  PUMA
+  PWGTP__discretized
+  RAC1P
+  SEX
+  WGTP__discretized
 
-0 columns used as known columns:
+24 columns used as known columns:
+  AGEP
+  DEAR
+  DENSITY
+  DEYE
+  DPHY
+  DREM
+  DVET
+  EDU
+  HISP
+  HOUSING_TYPE
+  INDP
+  INDP_CAT
+  MSP
+  NOC
+  NPF
+  OWN_RENT
+  PINCP
+  PINCP_DECILE
+  POVPIP
+  PUMA
+  PWGTP
+  RAC1P
+  SEX
+  WGTP
 
-Analyzed known column / secret column combinations: 104
-Perfect anonymity:     1 (1.0%)
- Strong anonymity:     2 (1.9%)
-          At risk:     1 (1.0%)
-   Poor anonymity:   100 (96.2%)
-     No anonymity:     5 (4.8%)
+Analyzed known column / secret column combinations: 503
+Perfect anonymity:     4 (0.8%)
+ Strong anonymity:     3 (0.6%)
+          At risk:     7 (1.4%)
+   Poor anonymity:   489 (97.2%)
+     No anonymity:    16 (3.2%)
 
 Examples of complete anonymity loss:
-ALC: 0.99, base (prec: 0.35, recall: 0.99), attack (prec: 0.99, recall: 0.99)
+ALC: 0.99, base (prec: 0.36, recall: 1.0), attack (prec: 0.99, recall: 1.0)
     Secret: AGEP__discretized, Known: ["DEAR", "DENSITY", "DEYE", "DPHY", "DREM", "DVET", "EDU", "HISP", "HOUSING_TYPE", "INDP", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]
-ALC: 0.99, base (prec: 0.3, recall: 0.93), attack (prec: 0.99, recall: 0.93)
-    Secret: DENSITY__discretized, Known: ["AGEP", "OWN_RENT", "PINCP_DECILE", "PWGTP"]
-ALC: 0.99, base (prec: 0.39, recall: 1.0), attack (prec: 0.99, recall: 1.0)
-    Secret: EDU, Known: ["AGEP", "DEAR", "DENSITY", "DEYE", "DPHY", "DREM", "DVET", "HISP", "HOUSING_TYPE", "INDP", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]
-ALC: 0.99, base (prec: 0.49, recall: 1.0), attack (prec: 1.0, recall: 1.0)
-    Secret: INDP, Known: ["AGEP", "DEAR", "DENSITY", "DEYE", "DPHY", "DREM", "DVET", "EDU", "HISP", "HOUSING_TYPE", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]
-ALC: 0.99, base (prec: 0.28, recall: 1.0), attack (prec: 0.99, recall: 1.0)
-    Secret: PINCP, Known: ["AGEP", "DEAR", "DENSITY", "DEYE", "DPHY", "DREM", "DVET", "EDU", "HISP", "HOUSING_TYPE", "INDP", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]
+ALC: 0.99, base (prec: 0.35, recall: 0.94), attack (prec: 0.99, recall: 0.94)
+    Secret: DENSITY__discretized, Known: ["AGEP", "EDU", "NOC", "PWGTP"]
+ALC: 0.99, base (prec: 0.31, recall: 0.99), attack (prec: 0.99, recall: 0.95)
+    Secret: DENSITY__discretized, Known: ["AGEP", "HISP", "PINCP", "PWGTP"]
+ALC: 0.99, base (prec: 0.32, recall: 1.0), attack (prec: 0.99, recall: 0.87)
+    Secret: DENSITY__discretized, Known: ["AGEP", "INDP_CAT", "OWN_RENT", "WGTP"]
+ALC: 0.99, base (prec: 0.51, recall: 1.0), attack (prec: 1.0, recall: 1.0)
+    Secret: DEYE, Known: ["AGEP", "HISP", "PINCP", "PWGTP"]

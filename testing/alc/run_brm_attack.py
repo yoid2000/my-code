@@ -1,9 +1,9 @@
 import os
 import sys
 import argparse
-import pandas as pd
 from typing import List
 from anonymity_loss_coefficient.attacks import BrmAttack
+from anonymity_loss_coefficient.utils.io_utils import read_table
 
 def launch_attack(data: str,
                   name: str,
@@ -30,25 +30,13 @@ def launch_attack(data: str,
     if len(parquet_files) == 1:
         # preferentially use the parquet file
         original_data_path = os.path.join(inputs_path, parquet_files[0])
-        # read the parquet file as a pandas dataframe
-        try:
-            df_original = pd.read_parquet(original_data_path)
-        except Exception as e:
-            print(f"Error reading {original_data_path}")
-            print(f"Error: {e}")
-            sys.exit(1)
     elif len(csv_files) == 1:
         # use the csv file if there is no parquet file
         original_data_path = os.path.join(inputs_path, csv_files[0])
-        try:
-            df_original = pd.read_csv(original_data_path)
-        except Exception as e:
-            print(f"Error reading {original_data_path}")
-            print(f"Error: {e}")
-            sys.exit(1)
     else:
         print(f"Error: There must be either exactly one original data file in {inputs_path} with a .parquet or .csv extension")
         sys.exit(1)
+    df_original = read_table(original_data_path)
 
     synthetic_path = os.path.join(inputs_path, 'synthetic_files')
     if not os.path.exists(synthetic_path) or not os.path.isdir(synthetic_path):
@@ -56,13 +44,16 @@ def launch_attack(data: str,
         sys.exit(1)
     syn_dfs = []
     for file in os.listdir(synthetic_path):
-        if file.endswith('.csv'):
-            syn_dfs.append(pd.read_csv(os.path.join(synthetic_path, file)))
-        elif file.endswith('.parquet'):
-            syn_dfs.append(pd.read_parquet(os.path.join(synthetic_path, file)))
+        if file.endswith('.csv') or file.endswith('.parquet'):
+            file_path = os.path.join(synthetic_path, file)
+            syn_dfs.append(read_table(file_path))
     results_path = os.path.join(data, 'results')
+    if len(syn_dfs) == 0:
+        print(f"Error: No csv or parquet files found in {synthetic_path}")
+        sys.exit(1)
+    os.makedirs(results_path, exist_ok=True)
     brm = BrmAttack(df_original=df_original,
-                    df_synthetic=syn_dfs,
+                    anon=syn_dfs,
                     results_path=results_path,
                     attack_name = name,
                     verbose = verbose,
@@ -70,11 +61,11 @@ def launch_attack(data: str,
                     flush = flush,
                     )
     if run_once:
-        brm.run_one_attack(secret_col=secret[0], known_columns=known)
+        brm.run_one_attack(secret_column=secret[0], known_columns=known)
         return
     if known is None:
-        brm.run_all_columns_attack(secret_cols=secret)
-    brm.run_auto_attack(secret_cols=secret, known_columns=known)
+        brm.run_all_columns_attack(secret_columns=secret)
+    brm.run_auto_attack(secret_columns=secret, known_columns=known)
 
 def main():
     # Create the argument parser
