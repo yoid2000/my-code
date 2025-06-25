@@ -1,0 +1,47 @@
+Anonymity Loss Coefficient Summary
+    attack_files_raw_part
+Anonymity Level: VERY POOR
+    17 attacks (39.5%) have poor or no anonymity. Strengthen anonymity.
+
+7 columns used as secret columns:
+  AGEP__discretized
+  HISP
+  MSP
+  NOC
+  PUMA
+  RAC1P
+  SEX
+
+13 columns used as known columns:
+  AGEP
+  DENSITY
+  DVET
+  EDU
+  INDP
+  INDP_CAT
+  MSP
+  NOC
+  PINCP
+  PINCP_DECILE
+  POVPIP
+  PWGTP
+  WGTP
+
+Analyzed known column / secret column combinations: 43
+Perfect anonymity:    20 (46.5%)
+ Strong anonymity:     5 (11.6%)
+          At risk:     1 (2.3%)
+   Poor anonymity:    17 (39.5%)
+     No anonymity:     0 (0.0%)
+
+Examples of poor anonymity loss:
+ALC: 0.98, base (prec: 0.33, recall: 1.0), attack (prec: 0.99, recall: 0.39)
+    Secret: AGEP__discretized, Known: ["DEAR", "DENSITY", "DEYE", "DPHY", "DREM", "DVET", "EDU", "HISP", "HOUSING_TYPE", "INDP", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]
+ALC: 0.98, base (prec: 0.7, recall: 0.95), attack (prec: 0.99, recall: 0.95)
+    Secret: DEAR, Known: ["AGEP", "DENSITY", "DEYE", "DPHY", "DREM", "DVET", "EDU", "HISP", "HOUSING_TYPE", "INDP", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]
+ALC: 0.99, base (prec: 0.58, recall: 1.0), attack (prec: 0.99, recall: 0.89)
+    Secret: DEYE, Known: ["AGEP", "DEAR", "DENSITY", "DPHY", "DREM", "DVET", "EDU", "HISP", "HOUSING_TYPE", "INDP", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]
+ALC: 0.92, base (prec: 0.88, recall: 0.74), attack (prec: 0.99, recall: 0.74)
+    Secret: DREM, Known: ["AGEP", "DEAR", "DENSITY", "DEYE", "DPHY", "DVET", "EDU", "HISP", "HOUSING_TYPE", "INDP", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]
+ALC: 0.96, base (prec: 0.54, recall: 0.92), attack (prec: 0.98, recall: 0.92)
+    Secret: DVET, Known: ["AGEP", "DEAR", "DENSITY", "DEYE", "DPHY", "DREM", "EDU", "HISP", "HOUSING_TYPE", "INDP", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]

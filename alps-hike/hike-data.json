@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Kesch Trek",
+    "country": "Switzerland",
+    "days": 4,
+    "total_distance_km": 47.7,
+    "total_elevation_m": 5109,
+    "avg_distance_per_day_km": 11.93,
+    "avg_elevation_per_day_m": 1277.25,
+    "daily_elevation_m": [500, 1500, 1200, 1909],
+    "daily_distance_km": [6.5, 14.0, 13.0, 14.2]
+  },
+  {
+    "name": "Greina Plateau Traverse",
+    "country": "Switzerland",
+    "days": 3,
+    "total_distance_km": 27.9,
+    "total_elevation_m": 2950,
+    "avg_distance_per_day_km": 9.3,
+    "avg_elevation_per_day_m": 983.33,
+    "daily_elevation_m": [1230, 610, 1110],
+    "daily_distance_km": [10.7, 8.0, 9.2]
+  },
+  {
+    "name": "Sentiero Alpino Calanca",
+    "country": "Switzerland",
+    "days": 3,
+    "total_distance_km": 45.0,
+    "total_elevation_m": 8100,
+    "avg_distance_per_day_km": 15.0,
+    "avg_elevation_per_day_m": 2700.0,
+    "daily_elevation_m": [2000, 2500, 3600],
+    "daily_distance_km": [15.0, 15.0, 15.0]
+  },
+  {
+    "name": "Four Source Trail",
+    "country": "Switzerland",
+    "days": 5,
+    "total_distance_km": 85.0,
+    "total_elevation_m": 12320,
+    "avg_distance_per_day_km": 17.0,
+    "avg_elevation_per_day_m": 2464.0,
+    "daily_elevation_m": [1400, 2100, 2500, 2100, 3220],
+    "daily_distance_km": [14.0, 17.0, 18.0, 18.0, 18.0]
+  },
+  {
+    "name": "Via Alpina: Mürren to Oeschinensee",
+    "country": "Switzerland",
+    "days": 4,
+    "total_distance_km": 63.0,
+    "total_elevation_m": 10200,
+    "avg_distance_per_day_km": 15.75,
+    "avg_elevation_per_day_m": 2550.0,
+    "daily_elevation_m": [3400, 3200, 3600],
+    "daily_distance_km": [22.0, 20.0, 21.0]
+  },
+  {
+    "name": "Alta Via 1 (Shortened)",
+    "country": "Italy",
+    "days": 5,
+    "total_distance_km": 60.0,
+    "total_elevation_m": 7000,
+    "avg_distance_per_day_km": 12.0,
+    "avg_elevation_per_day_m": 1400.0,
+    "daily_elevation_m": [1200, 1700, 1300, 1100, 700],
+    "daily_distance_km": [12.0, 14.0, 12.0, 11.0, 11.0]
+  },
+  {
+    "name": "Palaronda Trek",
+    "country": "Italy",
+    "days": 4,
+    "total_distance_km": 25.5,
+    "total_elevation_m": 3966,
+    "avg_distance_per_day_km": 6.38,
+    "avg_elevation_per_day_m": 991.5,
+    "daily_elevation_m": [700, 1100, 1100, 1066],
+    "daily_distance_km": [6.0, 7.0, 6.0, 6.5]
+  },
+  {
+    "name": "Vallée de la Clarée",
+    "country": "France",
+    "days": 4,
+    "total_distance_km": 47.5,
+    "total_elevation_m": 5500,
+    "avg_distance_per_day_km": 11.88,
+    "avg_elevation_per_day_m": 1375.0,
+    "daily_elevation_m": [700, 1300, 1500, 2000],
+    "daily_distance_km": [10.0, 12.0, 13.0, 12.5]
+  },
+  {
+    "name": "Tour du Mont Blanc (Partial)",
+    "country": "France/Italy/Switzerland",
+    "days": 5,
+    "total_distance_km": 65.0,
+    "total_elevation_m": 9000,
+    "avg_distance_per_day_km": 13.0,
+    "avg_elevation_per_day_m": 1800.0,
+    "daily_elevation_m": [1300, 2100, 1900, 1250, 1450],
+    "daily_distance_km": [18.0, 20.0, 15.0, 12.0, 15.0]
+  },
+  {
+    "name": "Stubaier Höhenweg (Shortened)",
+    "country": "Austria",
+    "days": 5,
+    "total_distance_km": 52.5,
+    "total_elevation_m": 8200,
+    "avg_distance_per_day_km": 10.5,
+    "avg_elevation_per_day_m": 1640.0,
+    "daily_elevation_m": [1800, 1300, 2100, 2000],
+    "daily_distance_km": [15.0, 9.0, 13.0, 15.5]
+  }
+]

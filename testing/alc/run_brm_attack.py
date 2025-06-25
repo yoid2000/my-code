@@ -3,6 +3,12 @@ import sys
 import argparse
 from typing import List
 from anonymity_loss_coefficient.attacks import BrmAttack
+print(BrmAttack.__module__)
+import importlib
+
+# Get the module object
+mod = importlib.import_module(BrmAttack.__module__)
+print(mod.__file__)
 from anonymity_loss_coefficient.utils.io_utils import read_table
 
 def launch_attack(data: str,
@@ -55,6 +61,7 @@ def launch_attack(data: str,
     brm = BrmAttack(df_original=df_original,
                     anon=syn_dfs,
                     results_path=results_path,
+                    additional_tags = {'name': name},
                     attack_name = name,
                     verbose = verbose,
                     no_counter = no_counter,
