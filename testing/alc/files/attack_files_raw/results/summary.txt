@@ -1,0 +1,72 @@
+Anonymity Loss Coefficient Summary
+    attack_files_raw
+Anonymity Level: VERY POOR
+    24 attacks (70.6%) have poor or no anonymity. Strengthen anonymity.
+
+21 columns used as secret columns:
+  AGEP__discretized
+  DEAR
+  DENSITY__discretized
+  DEYE
+  DPHY
+  DREM
+  DVET
+  EDU
+  HISP
+  HOUSING_TYPE
+  INDP_CAT
+  MSP
+  NOC
+  NPF
+  OWN_RENT
+  PINCP_DECILE
+  PUMA
+  PWGTP__discretized
+  RAC1P
+  SEX
+  WGTP__discretized
+
+24 columns used as known columns:
+  AGEP
+  DEAR
+  DENSITY
+  DEYE
+  DPHY
+  DREM
+  DVET
+  EDU
+  HISP
+  HOUSING_TYPE
+  INDP
+  INDP_CAT
+  MSP
+  NOC
+  NPF
+  OWN_RENT
+  PINCP
+  PINCP_DECILE
+  POVPIP
+  PUMA
+  PWGTP
+  RAC1P
+  SEX
+  WGTP
+
+Analyzed known column / secret column combinations: 34
+Perfect anonymity:     6 (17.6%)
+ Strong anonymity:     2 (5.9%)
+          At risk:     2 (5.9%)
+   Poor anonymity:    24 (70.6%)
+     No anonymity:     0 (0.0%)
+
+Examples of poor anonymity loss:
+ALC: 0.87, base (prec: 0.96, recall: 0.14), attack (prec: 0.99, recall: 1.0)
+    Secret: AGEP__discretized, Known: ["DEAR", "DENSITY", "DEYE", "DPHY", "DREM", "DVET", "EDU", "HISP", "HOUSING_TYPE", "INDP", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]
+ALC: 0.98, base (prec: 0.21, recall: 0.95), attack (prec: 0.99, recall: 0.57)
+    Secret: AGEP__discretized, Known: ["EDU", "OWN_RENT", "PUMA", "PWGTP"]
+ALC: 0.96, base (prec: 0.0, recall: 0.0), attack (prec: 0.96, recall: 1.0)
+    Secret: DEAR, Known: ["AGEP", "DENSITY", "DEYE", "DPHY", "DREM", "DVET", "EDU", "HISP", "HOUSING_TYPE", "INDP", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]
+ALC: 0.96, base (prec: 0.0, recall: 0.0), attack (prec: 0.96, recall: 1.0)
+    Secret: DEYE, Known: ["AGEP", "DEAR", "DENSITY", "DPHY", "DREM", "DVET", "EDU", "HISP", "HOUSING_TYPE", "INDP", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]
+ALC: 0.81, base (prec: 0.94, recall: 0.58), attack (prec: 0.99, recall: 1.0)
+    Secret: DREM, Known: ["AGEP", "DEAR", "DENSITY", "DEYE", "DPHY", "DVET", "EDU", "HISP", "HOUSING_TYPE", "INDP", "INDP_CAT", "MSP", "NOC", "NPF", "OWN_RENT", "PINCP", "PINCP_DECILE", "POVPIP", "PUMA", "PWGTP", "RAC1P", "SEX", "WGTP"]
