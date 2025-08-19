@@ -1,16 +1,30 @@
 Anonymity Loss Coefficient Summary
     attack_files_anon
-Anonymity Level: VERY STRONG
-    Consider reducing the strength of the anonymization so as to improve data quality.
+Anonymity Level: STRONG
+    May consider reducing the strength of the anonymization so as to improve data quality.
 
-7 columns used as secret columns:
+21 columns used as secret columns:
+  AGEP__discretized
+  DEAR
   DENSITY__discretized
+  DEYE
+  DPHY
+  DREM
+  DVET
+  EDU
   HISP
   HOUSING_TYPE
+  INDP_CAT
+  MSP
   NOC
   NPF
   OWN_RENT
+  PINCP_DECILE
+  PUMA
+  PWGTP__discretized
   RAC1P
+  SEX
+  WGTP__discretized
 
 24 columns used as known columns:
   AGEP
@@ -38,9 +52,9 @@ Anonymity Level: VERY STRONG
   SEX
   WGTP
 
-Analyzed known column / secret column combinations: 11
-Perfect anonymity:    11 (100.0%)
- Strong anonymity:     0 (0.0%)
+Analyzed known column / secret column combinations: 40
+Perfect anonymity:    37 (92.5%)
+ Strong anonymity:     3 (7.5%)
           At risk:     0 (0.0%)
    Poor anonymity:     0 (0.0%)
      No anonymity:     0 (0.0%)
