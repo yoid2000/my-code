@@ -91,17 +91,13 @@ def create_income_pdf_plot(data_df, sal_df, cell_sal_stitched_df, dataset_name, 
     plt.plot(len(stitched_sal)-1, stitched_sal.iloc[-1], 'o', color='green', markersize=6)  # End dot
     
     # Set symlog scale for y-axis (handles negative, zero, and positive values)
-    plt.yscale('symlog', linthresh=1000)  # Linear threshold of 1000 for smooth transition
-    
-    # Remove the 10^2 and -10^2 tick labels to prevent overlap
+    plt.yscale('symlog', linthresh=10)  # Linear threshold of 10000 for smooth transition
+
     ax = plt.gca()
     yticks = ax.get_yticks()
     yticklabels = []
     for tick in yticks:
-        if abs(tick) == 100:  # Remove 10^2 and -10^2 labels
-            yticklabels.append('')
-        else:
-            yticklabels.append(ax.get_yticklabels()[list(yticks).index(tick)].get_text())
+        yticklabels.append(ax.get_yticklabels()[list(yticks).index(tick)].get_text())
     ax.set_yticklabels(yticklabels)
 
     # Customize the plot
@@ -218,17 +214,14 @@ def create_grouped_income_pdf_plot(data_df, sal_df, cell_sal_stitched_df, datase
     plt.plot(len(stitched_sal_grouped)-1, stitched_sal_grouped.iloc[-1], 'o', color='green', markersize=6)  # End dot
     
     # Set symlog scale for y-axis (handles negative, zero, and positive values)
-    plt.yscale('symlog', linthresh=1000)  # Linear threshold of 1000 for smooth transition
-    
+    plt.yscale('symlog', linthresh=10)  # Linear threshold of 10000 for smooth transition
+
     # Remove the 10^2 and -10^2 tick labels to prevent overlap
     ax = plt.gca()
     yticks = ax.get_yticks()
     yticklabels = []
     for tick in yticks:
-        if abs(tick) == 100:  # Remove 10^2 and -10^2 labels
-            yticklabels.append('')
-        else:
-            yticklabels.append(ax.get_yticklabels()[list(yticks).index(tick)].get_text())
+        yticklabels.append(ax.get_yticklabels()[list(yticks).index(tick)].get_text())
     ax.set_yticklabels(yticklabels)
 
     # Customize the plot
