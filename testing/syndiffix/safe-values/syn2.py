@@ -42,6 +42,10 @@ def process_dataset(input_csv_path, output_dir, dataset_name):
     df_cell_sal_stitched_path = os.path.join(output_dir, f'cell_sal_stitched_{dataset_name}.parquet')
     df_cell_cnt_path = os.path.join(output_dir, f'cell_cnt_{dataset_name}.parquet')
     
+    # Additional paths for zip-based datasets (if zip column exists)
+    df_zip_path = os.path.join(output_dir, f'zip_{dataset_name}.parquet')
+    df_zip_sal_path = os.path.join(output_dir, f'zip_sal_{dataset_name}.parquet')
+    
     print(f"\n--- SYNTHESIZING {dataset_name.upper()} DATAFRAMES ---")
     
     # 1. df_cell - synthesizes column Gitterzelle only with safe-values option
@@ -104,6 +108,34 @@ def process_dataset(input_csv_path, output_dir, dataset_name):
             df_cell_cnt_syn = Synthesizer(df[['cell_count']]).sample()
             print(f"   df_cell_cnt_syn_{dataset_name} created with {len(df_cell_cnt_syn)} rows")
     
+    # 6. df_zip - zip column only (if zip column exists)
+    df_zip = None
+    print(f"\n6. Processing df_zip_{dataset_name} (zip only, no safe-values)...")
+    if 'zip' not in df.columns:
+        print(f"    zip column not found in {dataset_name} dataset, skipping zip-based syntheses")
+    elif os.path.exists(df_zip_path):
+        print(f"   Loading existing df_zip_{dataset_name} from: {df_zip_path}")
+        df_zip = pd.read_parquet(df_zip_path)
+        print(f"   df_zip_{dataset_name} loaded with {len(df_zip)} rows")
+    else:
+        print(f"   Creating new df_zip_{dataset_name}...")
+        df_zip = Synthesizer(df[['zip']]).sample()
+        print(f"   df_zip_{dataset_name} created with {len(df_zip)} rows")
+    
+    # 7. df_zip_sal - zip and Gesamtbetrag_Einkuenfte columns (if zip column exists)
+    df_zip_sal = None
+    print(f"\n7. Processing df_zip_sal_{dataset_name} (zip + Gesamtbetrag_Einkuenfte, no safe-values)...")
+    if 'zip' not in df.columns:
+        print(f"    zip column not found in {dataset_name} dataset, skipping")
+    elif os.path.exists(df_zip_sal_path):
+        print(f"   Loading existing df_zip_sal_{dataset_name} from: {df_zip_sal_path}")
+        df_zip_sal = pd.read_parquet(df_zip_sal_path)
+        print(f"   df_zip_sal_{dataset_name} loaded with {len(df_zip_sal)} rows")
+    else:
+        print(f"   Creating new df_zip_sal_{dataset_name}...")
+        df_zip_sal = Synthesizer(df[['zip', 'Gesamtbetrag_Einkuenfte']]).sample()
+        print(f"   df_zip_sal_{dataset_name} created with {len(df_zip_sal)} rows")
+    
     print(f"\n--- SAVING {dataset_name.upper()} DATAFRAMES ---")
     print(f"\nSaving synthesized dataframes to parquet files in {output_dir}...")
     
@@ -145,20 +177,44 @@ def process_dataset(input_csv_path, output_dir, dataset_name):
     else:
         print(f"df_cell_sal_stitched_{dataset_name} already exists at: {df_cell_sal_stitched_path} (skipping save)")
     
+    # Save df_zip (only if it was newly created and zip column exists)
+    if 'zip' in df.columns:
+        if not os.path.exists(df_zip_path):
+            if df_zip is not None:
+                df_zip.to_parquet(df_zip_path, index=False)
+                print(f"Saved df_zip_{dataset_name} to: {df_zip_path}")
+        else:
+            print(f"df_zip_{dataset_name} already exists at: {df_zip_path} (skipping save)")
+    
+    # Save df_zip_sal (only if it was newly created and zip column exists)
+    if 'zip' in df.columns:
+        if not os.path.exists(df_zip_sal_path):
+            if df_zip_sal is not None:
+                df_zip_sal.to_parquet(df_zip_sal_path, index=False)
+                print(f"Saved df_zip_sal_{dataset_name} to: {df_zip_sal_path}")
+        else:
+            print(f"df_zip_sal_{dataset_name} already exists at: {df_zip_sal_path} (skipping save)")
+    
     print(f"\n{dataset_name.upper()} dataset processing completed successfully!")
     
     # Return summary statistics
     summary = {
         'dataset_name': dataset_name,
         'original_shape': df.shape,
+        'has_zip_column': 'zip' in df.columns,
         'df_cell_shape': df_cell.shape if 'df_cell' in locals() else None,
         'df_cell_sal_shape': df_cell_sal.shape if 'df_cell_sal' in locals() else None,
         'df_sal_shape': df_sal.shape if 'df_sal' in locals() else None,
         'df_cell_sal_stitched_shape': df_cell_sal_stitched.shape if 'df_cell_sal_stitched' in locals() else None,
+        'df_zip_shape': df_zip.shape if df_zip is not None else None,
+        'df_zip_sal_shape': df_zip_sal.shape if df_zip_sal is not None else None,
         'original_unique_gitterzelle': df['Gitterzelle'].nunique(),
         'df_cell_unique_gitterzelle': df_cell['Gitterzelle'].nunique() if 'df_cell' in locals() else None,
         'df_cell_sal_unique_gitterzelle': df_cell_sal['Gitterzelle'].nunique() if 'df_cell_sal' in locals() else None,
-        'df_cell_sal_stitched_unique_gitterzelle': df_cell_sal_stitched['Gitterzelle'].nunique() if 'df_cell_sal_stitched' in locals() else None
+        'df_cell_sal_stitched_unique_gitterzelle': df_cell_sal_stitched['Gitterzelle'].nunique() if 'df_cell_sal_stitched' in locals() else None,
+        'original_unique_zip': df['zip'].nunique() if 'zip' in df.columns else None,
+        'df_zip_unique_zip': df_zip['zip'].nunique() if df_zip is not None else None,
+        'df_zip_sal_unique_zip': df_zip_sal['zip'].nunique() if df_zip_sal is not None else None
     }
     
     return summary
@@ -206,8 +262,12 @@ def main():
     
     for summary in summaries:
         dataset_name = summary['dataset_name']
+        has_zip = summary['has_zip_column']
+        
         print(f"\n{dataset_name.upper()} DATASET:")
         print(f"  Original data:           {summary['original_shape'][0]:,} rows × {summary['original_shape'][1]} columns")
+        print(f"  Has zip column:          {'Yes' if has_zip else 'No'}")
+        
         if summary['df_cell_shape']:
             print(f"  df_cell_{dataset_name}:             {summary['df_cell_shape'][0]:,} rows × {summary['df_cell_shape'][1]} columns")
         if summary['df_cell_sal_shape']:
@@ -217,6 +277,13 @@ def main():
         if summary['df_cell_sal_stitched_shape']:
             print(f"  df_cell_sal_stitched_{dataset_name}: {summary['df_cell_sal_stitched_shape'][0]:,} rows × {summary['df_cell_sal_stitched_shape'][1]} columns")
         
+        # Add zip-based datasets to summary if they exist
+        if has_zip:
+            if summary['df_zip_shape']:
+                print(f"  df_zip_{dataset_name}:              {summary['df_zip_shape'][0]:,} rows × {summary['df_zip_shape'][1]} columns")
+            if summary['df_zip_sal_shape']:
+                print(f"  df_zip_sal_{dataset_name}:          {summary['df_zip_sal_shape'][0]:,} rows × {summary['df_zip_sal_shape'][1]} columns")
+        
         print(f"  Unique Gitterzelle values:")
         print(f"    Original:                {summary['original_unique_gitterzelle']:,}")
         if summary['df_cell_unique_gitterzelle']:
@@ -225,6 +292,15 @@ def main():
             print(f"    df_cell_sal_{dataset_name}:         {summary['df_cell_sal_unique_gitterzelle']:,}")
         if summary['df_cell_sal_stitched_unique_gitterzelle']:
             print(f"    df_cell_sal_stitched_{dataset_name}: {summary['df_cell_sal_stitched_unique_gitterzelle']:,}")
+        
+        # Add zip unique values if applicable
+        if has_zip:
+            print(f"  Unique zip values:")
+            print(f"    Original:                {summary['original_unique_zip']:,}")
+            if summary['df_zip_unique_zip']:
+                print(f"    df_zip_{dataset_name}:              {summary['df_zip_unique_zip']:,}")
+            if summary['df_zip_sal_unique_zip']:
+                print(f"    df_zip_sal_{dataset_name}:          {summary['df_zip_sal_unique_zip']:,}")
     
     # List generated files
     print(f"\n{'='*80}")
@@ -242,13 +318,43 @@ def main():
         for i, f in enumerate(dense_files, 1):
             file_path = os.path.join(output_dir, f)
             file_size = os.path.getsize(file_path) / 1024  # KB
-            print(f"  {i}. {f} ({file_size:.1f} KB)")
+            file_type = ""
+            if 'zip_sal_' in f:
+                file_type = " [ZIP+SALARY]"
+            elif 'zip_' in f:
+                file_type = " [ZIP ONLY]"
+            elif 'cell_sal_stitched_' in f:
+                file_type = " [CELL+SALARY STITCHED]"
+            elif 'cell_sal_' in f:
+                file_type = " [CELL+SALARY]"
+            elif 'cell_cnt_' in f:
+                file_type = " [CELL COUNT]"
+            elif 'cell_' in f:
+                file_type = " [CELL ONLY]"
+            elif 'sal_' in f:
+                file_type = " [SALARY ONLY]"
+            print(f"  {i}. {f} ({file_size:.1f} KB){file_type}")
         
         print(f"\nSPARSE dataset files ({len(sparse_files)}):")
         for i, f in enumerate(sparse_files, 1):
             file_path = os.path.join(output_dir, f)
             file_size = os.path.getsize(file_path) / 1024  # KB
-            print(f"  {i}. {f} ({file_size:.1f} KB)")
+            file_type = ""
+            if 'zip_sal_' in f:
+                file_type = " [ZIP+SALARY]"
+            elif 'zip_' in f:
+                file_type = " [ZIP ONLY]"
+            elif 'cell_sal_stitched_' in f:
+                file_type = " [CELL+SALARY STITCHED]"
+            elif 'cell_sal_' in f:
+                file_type = " [CELL+SALARY]"
+            elif 'cell_cnt_' in f:
+                file_type = " [CELL COUNT]"
+            elif 'cell_' in f:
+                file_type = " [CELL ONLY]"
+            elif 'sal_' in f:
+                file_type = " [SALARY ONLY]"
+            print(f"  {i}. {f} ({file_size:.1f} KB){file_type}")
         
         print(f"\nTotal parquet files generated: {len(parquet_files)}")
     
