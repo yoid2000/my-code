@@ -243,7 +243,7 @@ def create_grouped_income_pdf_plot(data_df, sal_df, cell_sal_stitched_df, datase
     ax.set_xticks(x_ticks)
     ax.set_xticklabels(x_labels)
     
-    plt.legend(fontsize=11)
+    plt.legend(fontsize=11, loc='upper left')
     plt.grid(True, alpha=0.3)
     
     # Add text box with statistics for dense dataset
@@ -256,9 +256,9 @@ def create_grouped_income_pdf_plot(data_df, sal_df, cell_sal_stitched_df, datase
         stats_text += f'Income: {ks_statistic_sal:.4f}\n'
         stats_text += f'Inc+Cell: {ks_statistic_sal_stitched:.4f}'
         
-        # Position text box in upper left
-        plt.text(0.02, 0.98, stats_text, transform=plt.gca().transAxes, 
-                fontsize=9, verticalalignment='top', horizontalalignment='left',
+        # Position text box in lower right
+        plt.text(0.98, 0.02, stats_text, transform=plt.gca().transAxes, 
+                fontsize=9, verticalalignment='bottom', horizontalalignment='right',
                 bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
     
     # Save the plot
@@ -378,7 +378,7 @@ def create_cell_count_pdf_plot(data_df, cell_cnt_df, cell_sal_stitched_df, datas
     ax.set_xticks(x_ticks)
     ax.set_xticklabels(x_labels)
     
-    plt.legend(fontsize=11)
+    plt.legend(fontsize=11, loc='upper left')
     plt.grid(True, alpha=0.3)
     
     # Add text box with statistics for dense dataset
@@ -391,9 +391,9 @@ def create_cell_count_pdf_plot(data_df, cell_cnt_df, cell_sal_stitched_df, datas
         stats_text += f'Pre: {ks_statistic_cell:.4f}\n'
         stats_text += f'Post: {ks_statistic_cell_stitched:.4f}'
         
-        # Position text box in upper left
-        plt.text(0.02, 0.98, stats_text, transform=plt.gca().transAxes, 
-                fontsize=9, verticalalignment='top', horizontalalignment='left',
+        # Position text box in lower right
+        plt.text(0.98, 0.02, stats_text, transform=plt.gca().transAxes, 
+                fontsize=9, verticalalignment='bottom', horizontalalignment='right',
                 bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
     
     # Save the plot
