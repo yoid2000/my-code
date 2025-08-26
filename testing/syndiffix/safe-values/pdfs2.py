@@ -246,6 +246,21 @@ def create_grouped_income_pdf_plot(data_df, sal_df, cell_sal_stitched_df, datase
     plt.legend(fontsize=11)
     plt.grid(True, alpha=0.3)
     
+    # Add text box with statistics for dense dataset
+    if dataset_name == 'dense':
+        stats_text = f'Statistics:\n'
+        stats_text += f'Original: μ={original_sal_grouped.mean():.0f}, σ={original_sal_grouped.std():.0f}\n'
+        stats_text += f'Syn (income): μ={synthetic_sal_grouped.mean():.0f}, σ={synthetic_sal_grouped.std():.0f}\n'
+        stats_text += f'Syn (inc+cell): μ={stitched_sal_grouped.mean():.0f}, σ={stitched_sal_grouped.std():.0f}\n'
+        stats_text += f'KS Scores:\n'
+        stats_text += f'Income: {ks_statistic_sal:.4f}\n'
+        stats_text += f'Inc+Cell: {ks_statistic_sal_stitched:.4f}'
+        
+        # Position text box in upper left
+        plt.text(0.02, 0.98, stats_text, transform=plt.gca().transAxes, 
+                fontsize=9, verticalalignment='top', horizontalalignment='left',
+                bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+    
     # Save the plot
     plt.tight_layout()
     sal_plot_path = os.path.join(output_dir, f'pdf_sal_grouped_{dataset_name}.png')
@@ -365,6 +380,21 @@ def create_cell_count_pdf_plot(data_df, cell_cnt_df, cell_sal_stitched_df, datas
     
     plt.legend(fontsize=11)
     plt.grid(True, alpha=0.3)
+    
+    # Add text box with statistics for dense dataset
+    if dataset_name == 'dense':
+        stats_text = f'Statistics:\n'
+        stats_text += f'Original: μ={original_cell_cnt.mean():.1f}, σ={original_cell_cnt.std():.1f}\n'
+        stats_text += f'Syn (pre): μ={synthetic_cell_cnt.mean():.1f}, σ={synthetic_cell_cnt.std():.1f}\n'
+        stats_text += f'Syn (post): μ={stitched_cell_cnt.mean():.1f}, σ={stitched_cell_cnt.std():.1f}\n'
+        stats_text += f'KS Scores:\n'
+        stats_text += f'Pre: {ks_statistic_cell:.4f}\n'
+        stats_text += f'Post: {ks_statistic_cell_stitched:.4f}'
+        
+        # Position text box in upper left
+        plt.text(0.02, 0.98, stats_text, transform=plt.gca().transAxes, 
+                fontsize=9, verticalalignment='top', horizontalalignment='left',
+                bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
     
     # Save the plot
     plt.tight_layout()
@@ -558,7 +588,7 @@ def create_zip_analysis_plot(output_dir):
         return None
     
     # Create the plot
-    plt.figure(figsize=(12, 8))
+    plt.figure(figsize=(6, 4))
     
     # Create horizontal boxplots
     bp = plt.boxplot(boxplot_data, labels=labels, patch_artist=True, vert=False)
@@ -572,9 +602,9 @@ def create_zip_analysis_plot(output_dir):
         patch.set_alpha(0.7)
     
     # Customize the plot
-    plt.title('Relative Error Analysis by Zip Code', fontsize=14, fontweight='bold')
+    plt.title('Relative Error Analysis by Zip Code', fontsize=14)
     plt.xlabel('Relative Error ((Original - Synthetic) / Original)', fontsize=12)
-    plt.ylabel('Measures', fontsize=12)
+    #plt.ylabel('Measures', fontsize=12)
     
     # Add vertical line at x=0
     plt.axvline(x=0, color='black', linestyle='-', alpha=0.3)
@@ -587,6 +617,8 @@ def create_zip_analysis_plot(output_dir):
     
     # Save the plot
     plot_path = os.path.join(output_dir, 'zip.png')
+    plt.savefig(plot_path, dpi=300, bbox_inches='tight')
+    plot_path = os.path.join(output_dir, 'zip.pdf')
     plt.savefig(plot_path, dpi=300, bbox_inches='tight')
     plt.close()
     
