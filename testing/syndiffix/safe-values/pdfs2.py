@@ -246,8 +246,8 @@ def create_grouped_income_pdf_plot(data_df, sal_df, cell_sal_stitched_df, datase
     plt.legend(fontsize=11, loc='upper left')
     plt.grid(True, alpha=0.3)
     
-    # Add text box with statistics for dense dataset
-    if dataset_name == 'dense':
+    # Add text box with statistics for dense and sparse datasets
+    if dataset_name in ['dense', 'sparse']:
         stats_text = f'Statistics:\n'
         stats_text += f'Original: μ={original_sal_grouped.mean():.0f}, σ={original_sal_grouped.std():.0f}\n'
         stats_text += f'Syn (income): μ={synthetic_sal_grouped.mean():.0f}, σ={synthetic_sal_grouped.std():.0f}\n'
