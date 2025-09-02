@@ -3,22 +3,34 @@ Anonymity Loss Coefficient Summary
 Anonymity Level: STRONG
     May consider reducing the strength of the anonymization so as to improve data quality.
 
-3 columns used as secret columns:
+6 columns used as secret columns:
   AGEP__discretized
+  HISP
+  MSP
   PUMA
+  RAC1P
   SEX
 
-6 columns used as known columns:
+15 columns used as known columns:
   AGEP
+  DEAR
+  DENSITY
   DEYE
   DVET
+  HISP
   HOUSING_TYPE
-  PWGTP
+  INDP
+  MSP
+  PINCP
+  PINCP_DECILE
+  POVPIP
+  PUMA
+  SEX
   WGTP
 
-Analyzed known column / secret column combinations: 43
-Perfect anonymity:    39 (90.7%)
- Strong anonymity:     4 (9.3%)
+Analyzed known column / secret column combinations: 49
+Perfect anonymity:    44 (89.8%)
+ Strong anonymity:     5 (10.2%)
           At risk:     0 (0.0%)
    Poor anonymity:     0 (0.0%)
      No anonymity:     0 (0.0%)

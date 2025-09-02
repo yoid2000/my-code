@@ -1,0 +1,22 @@
+Anonymity Loss Coefficient Summary
+    yannik
+Anonymity Level: VERY STRONG
+    Consider reducing the strength of the anonymization so as to improve data quality.
+
+1 columns used as secret columns:
+  EF742__discretized
+
+5 columns used as known columns:
+  EF114UG1
+  EF162
+  EF2007
+  EF47
+  EF742
+
+Analyzed known column / secret column combinations: 1
+Perfect anonymity:     1 (100.0%)
+ Strong anonymity:     0 (0.0%)
+          At risk:     0 (0.0%)
+   Poor anonymity:     0 (0.0%)
+     No anonymity:     0 (0.0%)
+
