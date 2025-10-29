@@ -334,7 +334,7 @@ def name_from_params(params_dict: dict) -> str:
                 nuniq = col_info.get('nuniq', 10)
                 nuniq_str += f"{nuniq}"
             else:
-                nuniq_str += "-"
+                nuniq_str += ""
                 
             # Point fraction for hybrid columns
             if col_type == 'hybrid':

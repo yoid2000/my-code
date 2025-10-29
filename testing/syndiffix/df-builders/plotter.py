@@ -99,12 +99,14 @@ def plot_pdf(df, file_name=None, point_thresh=10):
     
     return plt
 
-def plot_scatter(df, file_name=None):
+def plot_scatter(df, df2=None, labels=['Original', 'Synthetic'], file_name=None):
     """
-    Create a scatter plot from a 2-column DataFrame.
+    Create a scatter plot from a 2-column DataFrame. Optionally overlay a second DataFrame.
     
     Args:
         df: DataFrame with exactly two columns
+        df2: Optional second DataFrame with exactly two columns
+        labels: List of two strings for legend labels (default: ['Original', 'Synthetic'])
         file_name: Optional string to display in the title
         
     Returns:
@@ -113,12 +115,26 @@ def plot_scatter(df, file_name=None):
     if df.shape[1] != 2:
         raise ValueError("DataFrame must have exactly two columns")
     
+    if df2 is not None and df2.shape[1] != 2:
+        raise ValueError("Second DataFrame must have exactly two columns")
+    
     col_x = df.columns[0]
     col_y = df.columns[1]
     
     # Create the scatter plot
     plt.figure(figsize=(10, 8))
-    plt.scatter(df[col_x], df[col_y], alpha=0.6)
+    
+    # Plot first dataframe
+    plt.scatter(df[col_x], df[col_y], alpha=0.6, label=labels[0])
+    
+    # Plot second dataframe if provided
+    if df2 is not None:
+        col_x2 = df2.columns[0]
+        col_y2 = df2.columns[1]
+        plt.scatter(df2[col_x2], df2[col_y2], alpha=0.6, label=labels[1])
+        
+        # Add legend when two datasets are present
+        plt.legend()
     
     # Set labels
     plt.xlabel(col_x)

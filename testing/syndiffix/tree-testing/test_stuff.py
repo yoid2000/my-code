@@ -10,11 +10,19 @@ from syndiffix.tools import tree_to_df, df_to_tree, dump_placeholder_tree, row_t
 from leaf_stuff import *
 import pprint
 
-def run_test(nrows, cors, cols, range_extend_fraction=0.25, dump_nodes=False, leafs_mode='none'):
+def run_test(nrows, cors, cols, range_extend_fraction=0.25, dump_nodes=False, leafs_mode='none', display_counts=False):
     print(f"Running test with nrows={nrows}, cors={cors}, cols={cols}, range_extend_fraction={range_extend_fraction}, dump_nodes={dump_nodes}, leafs_mode={leafs_mode}")
-    display_counts = False
     os.makedirs('plots', exist_ok=True)
     os.makedirs('results', exist_ok=True)
+    subdir = '1dim'
+    if len(cols) == 1:
+        subdir = '1dim'
+    elif len(cols) == 2:
+        subdir = '2dim'
+    else:
+        raise ValueError("Only 1D and 2D tests are supported.")
+    os.makedirs(f'plots/{subdir}', exist_ok=True)
+    os.makedirs(f'results/{subdir}', exist_ok=True)
     pp = pprint.PrettyPrinter(indent=4, sort_dicts=False)
     results = {}
     results['run_params'] = {'range_extend_fraction': range_extend_fraction,
@@ -24,7 +32,7 @@ def run_test(nrows, cors, cols, range_extend_fraction=0.25, dump_nodes=False, le
     name = name_from_params(params)
     lmc = {'none': 'no', 'simple': 'sim', 'leaf_only': 'lfo'}
     name += f"_ref{int(range_extend_fraction*100)}_lm{lmc[leafs_mode]}"
-    results_path = f"results/{name}.json"
+    results_path = f"results/{subdir}/{name}.json"
     # Check to see if results file already exists, and return if it does
     if os.path.exists(results_path):
         print(f"Results file {results_path} already exists. Skipping test.")
@@ -35,21 +43,18 @@ def run_test(nrows, cors, cols, range_extend_fraction=0.25, dump_nodes=False, le
     print(describe_str)
     results['dataset_describe'] = describe_dict
 
-    plot_dir = f'plots/{name}'
+    plot_dir = f'plots/{subdir}/{name}'
     os.makedirs(plot_dir, exist_ok=True)
     # for each column in df that is a float, run plot_pdf
     for col in df.columns:
         plt = plot_pdf(df[[col]], file_name=name)
         plt.savefig(f"{plot_dir}/pdf_col{col}.png")
         plt.close()
-    # for each pair of columns in df, run plot_scatter and plot_heat
+    # for each pair of columns in df, run plot_heat
     if len(df.columns) >= 2:
         for col1 in range(len(df.columns)):
             for col2 in range(col1+1, len(df.columns)):
                 df_pair = df[[df.columns[col1], df.columns[col2]]]
-                plt = plot_scatter(df_pair, file_name=name)
-                plt.savefig(f"{plot_dir}/scat_cols{col1}_{col2}.png")
-                plt.close()
                 plt = plot_heat(df_pair, file_name=name)
                 plt.savefig(f"{plot_dir}/heat_cols{col1}_{col2}.png")
                 plt.close()
@@ -63,6 +68,8 @@ def run_test(nrows, cors, cols, range_extend_fraction=0.25, dump_nodes=False, le
         for comb in itertools.combinations(range(len(df.columns)), r):
             print("==========================================================")
             print(f"Combination: {comb}:")
+            df_orig = df.iloc[:, list(comb)]
+            df_sdx_comb = df_sdx.iloc[:, list(comb)]
             nodes = tnf.test_nodes[comb]
             #print("Original tree:")
             #nodes.dump_tree_from_root()
@@ -94,6 +101,10 @@ def run_test(nrows, cors, cols, range_extend_fraction=0.25, dump_nodes=False, le
             pp.pprint(nodes.leafs_in_stats)
             if dump_nodes:
                 pp.pprint(nodes.leafs_in)
+            print(f"All subleafs: {len(nodes.sub_leafs_in)}")
+            pp.pprint(nodes.sub_leafs_in_stats)
+            if dump_nodes:
+                pp.pprint(nodes.sub_leafs_in)
             problems_found, integrity_results = nodes.integrity_checks()
             results['integrity_check'] = {'problems_found': problems_found, 'results': integrity_results}
             if problems_found:
@@ -108,8 +119,20 @@ def run_test(nrows, cors, cols, range_extend_fraction=0.25, dump_nodes=False, le
                 print("Integrity problems found:")
                 pp.pprint(integrity_results)
             if len(comb) == 2:
+                file_name = f"scat_cols_test_{'_'.join(map(str, comb))}"
+                plt = plot_scatter(df_orig, df2=df_test, file_name=file_name, labels=['Original', 'TestNodes'])
+                plt.savefig(f"{plot_dir}/{file_name}.png")
+                plt.close()
+                file_name = f"scat_cols_sdx_{'_'.join(map(str, comb))}"
+                plt = plot_scatter(df_orig, df2=df_sdx_comb, file_name=file_name, labels=['Original', 'SynDiffix'])
+                plt.savefig(f"{plot_dir}/{file_name}.png")
+                plt.close()
                 file_name = f"2d_nodes_{'_'.join(map(str, comb))}"
                 plt = plot_2d_nodes_boxes(nodes.nodes_in, [0,1], file_name=name, display_counts=display_counts)
+                plt.savefig(f"{plot_dir}/{file_name}.png")
+                plt.close()
+                file_name = f"2d_nodes_supp_temp{'_'.join(map(str, comb))}"
+                plt = plot_2d_nodes_boxes(nodes.nodes_supp_in_temp, [0,1], file_name=name, display_counts=display_counts)
                 plt.savefig(f"{plot_dir}/{file_name}.png")
                 plt.close()
                 file_name = f"2d_nodes_supp_{'_'.join(map(str, comb))}"
@@ -120,19 +143,14 @@ def run_test(nrows, cors, cols, range_extend_fraction=0.25, dump_nodes=False, le
                 plt = plot_2d_nodes_boxes(nodes.leafs_in, [0,1], file_name=name, display_counts=display_counts)
                 plt.savefig(f"{plot_dir}/{file_name}.png")
                 plt.close()
-                for i, col_index in enumerate(comb):
-                    file_name = f"1d_2_nodes_col{col_index}_{'_'.join(map(str, comb))}"
-                    plt = plot_1d_nodes_bars(nodes.nodes_in, i, file_name=name)
-                    plt.savefig(f"{plot_dir}/{file_name}.png")
-                    plt.close()
-                    file_name = f"1d_2_nodes_col{col_index}_supp_{'_'.join(map(str, comb))}"
-                    plt = plot_1d_nodes_bars(nodes.nodes_supp_in, i, file_name=name)
-                    plt.savefig(f"{plot_dir}/{file_name}.png")
-                    plt.close()
-                    file_name = f"1d_2_leafs_col{col_index}_{'_'.join(map(str, comb))}"
-                    plt = plot_1d_nodes_bars(nodes.leafs_in, i, file_name=name)
-                    plt.savefig(f"{plot_dir}/{file_name}.png")
-                    plt.close()
+                file_name = f"2d_sub_leafs_in_{'_'.join(map(str, comb))}"
+                plt = plot_2d_nodes_boxes(nodes.sub_leafs_in, [0,1], file_name=name, display_counts=display_counts)
+                plt.savefig(f"{plot_dir}/{file_name}.png")
+                plt.close()
+                file_name = f"2d_sub_leafs_ex_{'_'.join(map(str, comb))}"
+                plt = plot_2d_nodes_boxes(nodes.sub_leafs_ex, [0,1], file_name=name, display_counts=display_counts, df=df)
+                plt.savefig(f"{plot_dir}/{file_name}.png")
+                plt.close()
             if len(comb) == 1:
                 col_name = df.columns[comb[0]]
                 col_index = comb[0]
@@ -166,7 +184,7 @@ def run_test(nrows, cors, cols, range_extend_fraction=0.25, dump_nodes=False, le
                 plt.close()
 
     # Save results as json file
-    with open(f"results/{name}.json", "w") as f:
+    with open(results_path, "w") as f:
         import json
         json.dump(results, f, indent=4)
     return results, some_problem_found
