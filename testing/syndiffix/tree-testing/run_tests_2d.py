@@ -20,12 +20,12 @@ nuniqs = [5, 10, 20]
 nrows = 1024
 cols = [
     #{'type': 'con', 'skew': 'strong', 'bumps': 2},
-    {'type': 'hybrid', 'nuniq': 3, 'point_fraction': 0.2, 'skew': 'strong', 'bumps': 1},
-    {'type': 'hybrid', 'nuniq': 3, 'point_fraction': 0.2, 'skew': 'strong', 'bumps': 1},
-    #{'type': 'cat', 'skew': 'none', 'nuniq': 2},
+    #{'type': 'hybrid', 'nuniq': 3, 'point_fraction': 0.2, 'skew': 'strong', 'bumps': 3},
+    {'type': 'cat', 'skew': 'none', 'nuniq': 5},
+    {'type': 'cat', 'skew': 'none', 'nuniq': 5},
 ]
 cors = [
-    [[0, 1], 'weak'],    # ['none', 'weak', 'strong', 'perfect']
+    [[0, 1], 'perfect'],    # ['none', 'weak', 'strong', 'perfect']
 ]
 leaf_mode = "leaf_only"
 

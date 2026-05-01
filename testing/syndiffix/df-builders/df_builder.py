@@ -33,7 +33,7 @@ def df_build(nrows: int=5000, cors: list[list[list[str]]] | None=None, cols: lis
         'weak', 'strong', 'perfect'
     cols : list, optional
         List of column descriptors. Each is a dict with keys:
-        - 'type': 'cat', 'con', or 'hybrid
+        - 'type': 'cat', 'cat-int', 'con', or 'hybrid
         - 'nuniq': number of unique values (for categorical), or the number of point values (for hybrid)
         - 'skew': 'none', 'weak', 'mid', 'strong'
         - 'bumps': 0 (skewed), 1 (single bump), 2 (two bumps), 3 (three bumps)
@@ -162,7 +162,10 @@ def df_build(nrows: int=5000, cors: list[list[list[str]]] | None=None, cols: lis
     
     # Handle correlations
     correlated_columns = set()
-    
+
+    print("first 10 rows before correlations:")
+    print(df.head(10))
+
     for cor_entry in cors:
         # Handle different possible structures of cor_entry
         col_indices = cor_entry[0]
@@ -179,18 +182,25 @@ def df_build(nrows: int=5000, cors: list[list[list[str]]] | None=None, cols: lis
         elif strength == 'weak':
             swap_pct = 0.8
         else:
-            swap_pct = 0.0
+            swap_pct = 1.0
         
         # For each column in the group, randomly swap positions
         for col_idx in col_indices:
             col_name = f'c{col_idx}'
             if swap_pct > 0:
+                print(f"first 10 rows before swapping for column {col_name}:")
+                print(df[col_name].head(10))
                 n_swaps = int(nrows * swap_pct)
                 swap_indices = np.random.choice(nrows, n_swaps, replace=False)
                 # Randomly shuffle just these positions
                 swap_values = df[col_name].iloc[swap_indices].values
                 np.random.shuffle(swap_values)
                 df.loc[swap_indices, col_name] = swap_values
+                print(f"first 10 rows after swapping for column {col_name}:")
+                print(df[col_name].head(10))
+
+        print("first 10 rows after swapping:")
+        print(df.head(10))
         
         # Shuffle rows for the entire group together
         group_cols = [f'c{i}' for i in col_indices]
@@ -224,6 +234,22 @@ def df_build(nrows: int=5000, cors: list[list[list[str]]] | None=None, cols: lis
             
             df[col_name] = [bin_labels[idx] for idx in bin_indices]
             df[col_name] = df[col_name].astype(str)
+        
+        elif col_type == 'cat-int':
+            nuniq = int(col_spec.get('nuniq', 10))
+            bin_width = 1.0 / nuniq
+            # Assign unique random integers in [100, 200] for each bin
+            # Ensure no duplicates
+            possible_ints = np.arange(100, 201)
+            if nuniq > len(possible_ints):
+                raise ValueError("nuniq for cat-int columns cannot exceed 101 (number of unique ints in [100,200])")
+            bin_labels = np.random.choice(possible_ints, size=nuniq, replace=False)
+            # Assign bin labels based on value ranges
+            values = df[col_name].values
+            bin_indices = np.floor(values / bin_width).astype(int)
+            bin_indices = np.clip(bin_indices, 0, nuniq - 1)
+            df[col_name] = [int(bin_labels[idx]) for idx in bin_indices]
+            df[col_name] = df[col_name].astype(int)
             
         elif col_type == 'hybrid':
             nuniq = int(col_spec.get('nuniq', 5))
@@ -272,7 +298,7 @@ def df_build(nrows: int=5000, cors: list[list[list[str]]] | None=None, cols: lis
             'skew': col_spec.get('skew', 'none'),
             'bumps': col_spec.get('bumps', 0),
         }
-        if col_spec.get('type') == 'cat':
+        if col_spec.get('type') in ['cat', 'cat-int']:
             params_dict['column_details'][col_name]['nuniq'] = col_spec.get('nuniq', 10)
         elif col_spec.get('type') == 'hybrid':
             params_dict['column_details'][col_name]['nuniq'] = col_spec.get('nuniq', 5)
@@ -317,6 +343,8 @@ def name_from_params(params_dict: dict) -> str:
             # Type abbreviation
             if col_type == 'cat':
                 type_str += 'C'
+            elif col_type == 'cat-int':
+                type_str += 'I'
             elif col_type == 'hybrid':
                 type_str += 'H'
             else:
@@ -330,7 +358,7 @@ def name_from_params(params_dict: dict) -> str:
             bumps_str += str(col_bumps)
             
             # Nuniq for categorical and hybrid columns
-            if col_type in ['cat', 'hybrid']:
+            if col_type in ['cat', 'cat-int', 'hybrid']:
                 nuniq = col_info.get('nuniq', 10)
                 nuniq_str += f"{nuniq}"
             else:

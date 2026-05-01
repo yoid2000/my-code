@@ -125,13 +125,13 @@ def plot_scatter(df, df2=None, labels=['Original', 'Synthetic'], file_name=None)
     plt.figure(figsize=(10, 8))
     
     # Plot first dataframe
-    plt.scatter(df[col_x], df[col_y], alpha=0.6, label=labels[0])
+    plt.scatter(df[col_x], df[col_y], alpha=0.6, label=labels[0], s=3)
     
     # Plot second dataframe if provided
     if df2 is not None:
         col_x2 = df2.columns[0]
         col_y2 = df2.columns[1]
-        plt.scatter(df2[col_x2], df2[col_y2], alpha=0.6, label=labels[1])
+        plt.scatter(df2[col_x2], df2[col_y2], alpha=0.6, label=labels[1], s=3)
         
         # Add legend when two datasets are present
         plt.legend()

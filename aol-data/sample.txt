@@ -1,0 +1,1000 @@
+AnonID	Query	QueryTime	ItemRank	ClickURL
+142	rentdirect.com	2006-03-01 07:17:12		
+142	www.prescriptionfortime.com	2006-03-12 12:31:06		
+142	staple.com	2006-03-17 21:19:29		
+142	staple.com	2006-03-17 21:19:45		
+142	www.newyorklawyersite.com	2006-03-18 08:02:58		
+142	www.newyorklawyersite.com	2006-03-18 08:03:09		
+142	westchester.gov	2006-03-20 03:55:57	1	http://www.westchestergov.com
+142	space.comhttp	2006-03-24 20:51:24		
+142	dfdf	2006-03-24 22:23:07		
+142	dfdf	2006-03-24 22:23:14		
+142	vaniqa.comh	2006-03-25 23:27:12		
+142	www.collegeucla.edu	2006-04-03 21:12:14		
+142	www.elaorg	2006-04-03 21:25:20		
+142	207 ad2d 530	2006-04-08 01:31:04		
+142	207 ad2d 530	2006-04-08 01:31:14	1	http://www.courts.state.ny.us
+142	broadway.vera.org	2006-04-08 08:38:23		
+142	broadway.vera.org	2006-04-08 08:38:31		
+142	vera.org	2006-04-08 08:38:42	1	http://www.vera.org
+142	broadway.vera.org	2006-04-08 08:39:30		
+142	frankmellace.com	2006-04-09 02:19:24		
+142	ucs.ljx.com	2006-04-09 02:20:44		
+142	attornyleslie.com	2006-04-13 00:25:27		
+142	merit release appearance	2006-04-22 23:51:18		
+142	www.bonsai.wbff.org	2006-05-06 08:49:34		
+142	loislaw.com	2006-05-12 22:43:36		
+142	rapny.com	2006-05-18 09:21:57		
+142	whitepages.com	2006-05-19 19:36:31		
+217	lottery	2006-03-01 11:58:51	1	http://www.calottery.com
+217	lottery	2006-03-01 11:58:51	1	http://www.calottery.com
+217	ameriprise.com	2006-03-01 14:06:23	1	http://www.ameriprise.com
+217	susheme	2006-03-02 12:31:08		
+217	united.com	2006-03-03 14:54:13		
+217	mizuno.com	2006-03-07 22:41:17	1	http://www.mizuno.com
+217	p; .; p;' p; ' ;' ;';	2006-03-09 12:09:27		
+217	p; .; p;' p; ' ;' ;';	2006-03-09 12:09:35		
+217	asiansexygoddess.com	2006-03-16 14:31:36	1	http://www.asiansexygoddess.com
+217	buddylis	2006-03-16 15:23:33		
+217	bestasiancompany.com	2006-03-20 15:15:43	1	http://www.bestasiancompany.com
+217	lottery	2006-03-27 14:10:38	1	http://www.calottery.com
+217	lottery	2006-03-27 16:34:59	1	http://www.calottery.com
+217	ask.com	2006-03-31 14:31:10	1	http://www.ask.com
+217	weather.com	2006-03-31 18:00:56		
+217	wellsfargo.com	2006-04-03 16:57:54		
+217	www.tabiecummings.com	2006-05-04 17:45:57		
+217	wanttickets.com	2006-05-16 15:44:38		
+217	yahoo.com	2006-05-16 16:35:31		
+217	-	2006-05-18 18:20:10	1	http://www.theonering.net
+217	www.ngo-quen.org	2006-05-22 15:49:47		
+217	-	2006-05-22 16:48:42		
+217	vietnam	2006-05-22 17:43:42		
+217	vietnam	2006-05-22 17:43:42		
+217	vietnam	2006-05-22 17:43:44		
+217	vietnam	2006-05-22 18:03:24		
+217	vietnam	2006-05-22 18:03:24		
+217	vietnam	2006-05-22 18:03:27		
+217	-	2006-05-23 15:41:48		
+993	myspace.co	2006-03-01 12:13:36		
+993	myspace.com	2006-03-01 12:13:41		
+993	googl	2006-03-01 15:03:25		
+993	chasebadkids.net	2006-03-03 16:55:48	1	http://www.chasebadkids.net
+1268	ozark horse blankets	2006-03-01 17:39:28	8	http://www.blanketsnmore.com
+1268	www.ghostrockranch.com	2006-03-04 13:58:23		
+1268	openrangeht.zachsairforce.com	2006-03-09 22:38:45		
+1268	sstack.com	2006-03-11 00:17:09		
+1268	www.mecab.org	2006-03-12 18:59:26		
+1268	www.raindanceexpress.com	2006-03-18 20:13:01		
+1268	www.victoriacostumiere.com	2006-03-19 00:26:51		
+1268	osteen-schaztberg.com	2006-03-21 17:55:25		
+1268	osteen-schatzberg.com	2006-03-21 17:55:42	1	http://www.osteen-schatzberg.com
+1268	osteen-schatzberg.com	2006-03-21 17:55:42	2	http://www.osteen-schatzberg.com
+1268	www.buckmountianestates.com	2006-03-24 18:53:10		
+1268	idx.techsolsc.com	2006-05-07 00:58:21		
+1268	www.bridleandbit.com	2006-05-09 21:34:23		
+1268	gall stones	2006-05-11 02:12:51		
+1268	gallstones	2006-05-11 02:13:02	1	http://www.niddk.nih.gov
+1268	http www.flickr.com photos 88145967 n00 24368586 in pool-32148876 n00	2006-05-12 00:09:54		
+1268	http www.flickr.com photos 88145967 n00 24368586 in pool-32148876 n00	2006-05-12 00:10:26		
+1268	href a href alt a http www.flickr.com photos 88145967 n00 24368586 in pool-32148876 n00	2006-05-12 01:28:30		
+1268	http www.flickr.com photos 88145967 n00 24368586 in pool-32148876 n00	2006-05-12 10:41:27		
+1268	www.acevedoarabians.com	2006-05-21 21:28:21		
+1268	adbuyer3.lycos.com	2006-05-31 14:10:52		
+1268	www.pinerplantation.com	2006-05-31 21:24:08		
+1268	www.pinerplantation.com	2006-05-31 21:24:30		
+1268	www.pinerplantation.com	2006-05-31 21:24:56		
+1326	files	2006-03-01 17:36:08		
+1326	www.kmcwheel.com	2006-03-06 17:31:55		
+1326	dellcomputers	2006-03-06 20:09:58		
+1326	www.ameicaneaglewheel.com	2006-03-09 19:09:52		
+1326	cascadefamilymedical	2006-03-14 11:36:57		
+1326	cascadefamilymedical.com	2006-03-14 11:39:49		
+1326	milaniwheel.com	2006-03-14 12:37:30		
+1326	www.ameicaneaglewheel.com	2006-03-14 18:53:20		
+1326	www.ameicaneaglewheel.com	2006-03-15 12:27:48		
+1326	pop up adds	2006-03-15 20:07:38		
+1326	pop up adds	2006-03-15 20:08:29		
+1326	the childs wonderland company	2006-03-21 11:50:10		
+1326	the child's wonderland company	2006-03-21 11:59:03	6	http://www.wonderlandtheatre.com
+1326	the child's wonderland company	2006-03-21 12:00:55		
+1326	the child's wonderland company grand rapids michigan	2006-03-21 12:01:24		
+1326	the child's wonderland company grand rapids michigan	2006-03-21 12:01:59		
+1326	the childs wonderland co.	2006-03-21 21:20:42		
+1326	the child's wonderland co.	2006-03-21 21:22:16		
+1326	www.ameicaneaglewheel.com	2006-03-22 12:23:07		
+1326	www.budget rentals.com	2006-03-24 18:26:10		
+1326	budget truck rental	2006-03-24 18:27:07		
+1326	adr wheels	2006-03-28 12:53:39		
+1326	adr wheels	2006-03-28 12:57:04		
+1326	holiday mansion houseboat	2006-03-29 17:14:01	5	http://www.everyboat.com
+1326	back to the future	2006-04-01 17:59:28	1	http://www.imdb.com
+1326	holiday mansion houseboat	2006-04-06 20:20:43	1	http://www.iboats.com
+1326	www.ameicaneaglewheel.com	2006-04-10 14:04:49		
+1326	www.ameicaneaglewheel.com	2006-04-10 14:05:15		
+1326	the childs wonderland company	2006-04-11 17:25:27		
+1326	konig wheels	2006-04-18 13:29:52	2	http://www.konigwheels.com
+1326	konig wheels	2006-04-18 13:29:52	1	http://www.konigwheels.com
+1326	jet blue airlines	2006-04-27 15:29:05		
+1326	coats tire equipment	2006-04-28 15:53:18		
+1326	coats tire equipment	2006-05-03 19:15:01		
+1326	verizon wireless	2006-05-09 00:09:22		
+1326	www.crazyradiodeals.com	2006-05-23 18:00:30		
+1337	uslandrecords.com	2006-03-01 11:50:34	1	http://www.seda-cog.org
+1337	titlesourcein.com	2006-03-14 15:45:07		
+1337	titlesourceinc	2006-03-14 15:45:55	1	http://www.titlesourceinc.com
+1337	select business services	2006-03-14 15:51:41		
+1337	select business services title	2006-03-14 15:52:10		
+1337	cbc companies	2006-03-14 15:52:44	2	http://www.cbc-companies.com
+1337	cbc companies	2006-03-14 15:52:44	3	http://www.cbc-companies.com
+1337	cbc companies	2006-03-14 15:52:44	4	http://www.mktgservices.com
+1337	national real estate settlement services	2006-03-14 15:59:13	1	http://www.realtms.com
+1337	national real estate settlement services	2006-03-14 15:59:13	7	http://dmoz.org
+1337	pennsylvania real estate settlement services	2006-03-14 16:04:40		
+1337	pennsylvania real estate settlement services	2006-03-14 16:05:11		
+1337	sunbury pennsylvania real estate settlement services	2006-03-14 16:05:47		
+1337	sunbury pennsylvania real estate settlement services	2006-03-14 16:06:28	14	http://pa.optimuslaw.com
+1337	atm corporation	2006-03-15 13:46:55	1	http://www.atmprof.com
+1337	cheasapeake appraisal and settlement services	2006-03-15 13:50:56	1	http://www.johnkvaluation.com
+1337	chesapeake appraisal and settlement services	2006-03-15 13:51:52	10	http://www.citigroup.com
+1337	pauslandrecords.com	2006-03-20 09:40:50		
+1337	pa.uslandrecords.com	2006-03-20 09:41:08	2	http://www.seda-cog.org
+1337	first american lenders advantage	2006-03-22 16:05:56	1	http://www.firstam.com
+1337	first american chesapeake	2006-03-22 16:11:31		
+1337	first american chesapeake title services	2006-03-22 16:11:50	2	http://www.tavma.com
+1337	www.national-reis.com	2006-03-22 16:16:56		
+1337	www.americantitleinc.com	2006-03-22 16:19:23		
+1337	www.aculinkms.com	2006-03-22 16:19:31		
+1337	united one resources	2006-03-22 17:47:11	1	http://www.unitedoneresources.com
+1337	credit plus solutions group	2006-03-22 17:52:53		
+1337	credit plus solutions group	2006-03-22 17:54:09	1	http://www.cpsg.com
+1337	security search and abstract	2006-03-22 17:56:19	1	http://www.securitysearchabstract.com
+1337	searchtec	2006-03-22 17:58:46	1	http://www.searchtec.com
+1337	searchtec	2006-03-22 17:58:46	1	http://www.searchtec.com
+1337	fiserv	2006-03-24 14:05:01	1	http://www.fiserv.com
+1337	fiserv	2006-03-24 14:05:01	3	http://www.fiservlendingsolutions.com
+1337	fiserv	2006-03-24 14:05:01	2	http://www.fiservinsurance.com
+1337	fiserv	2006-03-24 14:05:01	3	http://www.fiservlendingsolutions.com
+1337	integrated real estate	2006-03-27 14:52:29	1	http://www.integratedreal.com
+1337	integrated real estate	2006-03-27 14:52:29	2	http://www.irisnet.net
+1337	integrated loan services	2006-03-29 17:12:27	1	http://www.ils.com
+1337	michael keaton date of birth	2006-04-03 22:05:48	1	http://www.imdb.com
+1337	auto locator	2006-04-11 21:46:35		
+1337	auto locator pennsylvania	2006-04-11 21:46:56		
+1337	auto locator pennsylvania	2006-04-11 21:46:57	1	http://theautofinder.com
+1337	auto locator	2006-04-11 21:47:57	1	http://www.auto-locator.com
+1337	www.mygeisinger.com	2006-04-25 12:04:11		
+1337	www.mygeisinger.com	2006-04-25 12:06:30		
+1337	kentucky fried chicken	2006-04-25 16:07:14	1	http://www.kfc.com
+1337	shamokin dam kentucky fried chicken menu	2006-04-25 16:12:54		
+1337	ford	2006-04-26 09:22:34		
+1410	www.steparoundstep.com	2006-03-01 21:57:38		
+1410	419-644-9191	2006-03-23 17:36:45		
+1410	target bowling green state university rug black orange rectangle	2006-04-13 17:41:26		
+1410	www.bugerking.com	2006-04-30 09:16:50		
+1410	google	2006-05-01 21:40:54	1	http://www.google.com
+1410	mycl.cravelyrics.com	2006-05-03 21:34:59		
+1410	www.toledo11.com	2006-05-14 19:53:35		
+1410	www.toledo11.com	2006-05-14 19:55:41		
+1410	www.mapquest	2006-05-19 20:57:38		
+1410	www.vanessascorner.com	2006-05-21 13:31:02		
+2005	wnmu homepage	2006-03-01 00:46:55	2	http://www.wnmu.edu
+2005	wnmu homepage	2006-03-01 00:48:28	1	http://www.wnmu.edu
+2005	wnmu homepage	2006-03-01 00:48:28	1	http://www.wnmu.edu
+2005	wnmu homepage	2006-03-01 21:03:03	1	http://www.wnmu.edu
+2005	wnmu homepage	2006-03-01 21:04:35	1	http://www.wnmu.edu
+2005	wnmu home page	2006-03-01 21:57:00	1	http://www.wnmu.edu
+2005	wnmu home page	2006-03-01 22:21:57	1	http://www.wnmu.edu
+2005	wnmu home page	2006-03-05 19:54:12	1	http://www.wnmu.edu
+2005	wnmu homepage	2006-03-07 23:34:21	2	http://www.wnmu.edu
+2005	wnmu homepage	2006-03-07 23:36:11	1	http://www.wnmu.edu
+2005	wnmu webct	2006-03-07 23:47:49	1	https://western.checs.net:4443/wadmin/webct_logon.htm
+2005	myspace.ocm	2006-03-09 23:12:40	1	http://www.morcey.net
+2005	glitter graphics.com	2006-03-10 01:00:41	1	http://www.glitter-graphics.com
+2005	wnmu.edu	2006-03-23 19:02:42		
+2005	google	2006-03-24 21:25:10	1	http://www.google.com
+2005	ww.vibe.com	2006-03-26 21:21:51	7	http://www.vibe985.com
+2005	google	2006-03-26 21:58:12		
+2005	google.co	2006-03-26 21:58:41		
+2005	wnmu.edu	2006-03-27 21:24:09	1	http://www.wnmu.edu
+2005	wnmu	2006-03-27 21:37:14	1	http://www.wnmu.edu
+2005	myspace.co	2006-03-30 23:33:48		
+2005	wnmu homepage	2006-04-01 01:06:40	1	http://www.wnmu.edu
+2005	http www.s.c.t.gob. mx.	2006-05-04 23:10:04		
+2005	http www.s.c.t.gob. mx.roads	2006-05-04 23:10:51		
+2005	www.juan grabrielcd.com	2006-05-04 23:16:00		
+2005	www.juangabrielcd.com	2006-05-04 23:16:57		
+2005	www.accuweather	2006-05-08 01:05:18		
+2005	www.accuweather.com	2006-05-08 01:05:33	2	http://wwwa.accuweather.com
+2005	www .weather.com	2006-05-08 01:07:49	1	http://www.weather.com
+2005	www.loat com	2006-05-08 01:19:27		
+2005	www.loat.com weather	2006-05-08 01:20:14		
+2005	weather	2006-05-08 01:27:49	8	http://asp.usatoday.com
+2005	profileedit.myspace.com	2006-05-28 23:59:01		
+2178	wetherchannel	2006-03-01 20:37:39		
+2178	weatherchannel	2006-03-01 20:38:46		
+2178	weatherchannel	2006-03-01 20:39:05	1	http://www.weatherchannel.com.au
+2178	weatherchannel	2006-03-01 21:56:25	5	http://www.weatherchannel.com.ru
+2178	zip codes	2006-03-02 04:49:45		
+2178	dana reeves dies	2006-03-07 22:15:42		
+2178	harry	2006-03-09 08:38:45		
+2178	harry and david	2006-03-09 08:39:33	1	http://www.harryanddavid.com
+2178	army.mil	2006-03-09 22:28:04		
+2178	college savings plan	2006-03-16 09:40:04	1	http://www.collegesavings.org
+2178	pennsylvania college savings plan	2006-03-16 10:04:14	6	http://www.patreasury.org
+2178	pennsylvania college savings plan	2006-03-16 10:04:14	3	http://swz.salary.com
+2178	amc painter's crossing	2006-03-17 18:01:26	2	http://www.mrmovietimes.com
+2178	kbb	2006-03-19 16:33:54	1	http://www.kbb.com
+2178	remax	2006-03-21 10:32:18	1	http://www.remax.com
+2178	fidelity.com	2006-03-22 21:38:25	1	http://www.fidelity.com
+2178	fidelity.com	2006-03-23 21:51:02	1	http://www.fidelity.com
+2178	fidelity.com	2006-03-23 21:51:02	1	http://www.fidelity.com
+2178	torn cornea treatment	2006-03-27 20:34:56	1	http://www.visionrx.com
+2178	dog torn cornea treatment	2006-03-27 20:37:21	1	http://www.2ndchance.info
+2178	google	2006-03-27 20:58:44	1	http://www.google.com
+2178	army.mil	2006-03-27 21:09:49	1	http://www.army.mil
+2178	fidelity.com	2006-03-31 10:33:56	1	http://www.fidelity.com
+2178	1999 honda accord check engine light reset	2006-03-31 11:27:48	3	http://www.faqfarm.com
+2178	1999 honda accord check engine light reset	2006-03-31 11:27:48	8	http://www.alldata.com
+2178	1999 honda accord check engine light reset	2006-03-31 11:27:48	10	http://www.carsurvey.org
+2178	1999 honda accord check engine light reset	2006-03-31 11:27:48	9	http://www.cartrackers.com
+2178	honda accord check engine light pa emissions	2006-03-31 11:58:45	1	http://www.automedia.com
+2178	honda accord check engine light pa emissions	2006-03-31 11:58:45	3	http://www.ctcarsandtrucks.com
+2178	honda accord check engine light pa emissions	2006-03-31 11:58:45	6	http://www.pgmfi.org
+2178	fuel additives to turn off check engine light	2006-03-31 12:06:33		
+2178	honda accord fuel additives check engine light	2006-03-31 12:07:07	1	http://www.longbeachmuffler.com
+2178	honda accord fuel additives check engine light	2006-03-31 12:07:07	3	http://www.myhonestmechanic.com
+2178	honda accord fuel additives check engine light	2006-03-31 12:07:07	4	http://ask.metafilter.com
+2178	honda accord fuel additives check engine light	2006-03-31 12:07:07	5	http://www.alldata.com
+2178	honda accord fuel additives check engine light	2006-03-31 12:07:07	7	http://experts.about.com
+2178	honda accord fuel additives check engine light	2006-03-31 12:07:07	8	http://www.washingtonpost.com
+2178	honda accord fuel additives check engine light	2006-03-31 12:19:54	11	http://www.edmunds.com
+2178	fuel additives check engine light	2006-03-31 12:22:51	1	http://www.smogtips.com
+2178	fuel additives check engine light	2006-03-31 12:22:51	3	http://experts.about.com
+2178	honda accord check engine light walmart	2006-03-31 12:25:39	2	http://townhall-talk.edmunds.com
+2178	honda accord check engine light walmart	2006-03-31 12:25:39	1	http://www.faqfarm.com
+2178	people search	2006-04-05 19:56:57	1	http://people.yahoo.com
+2178	sprint.com	2006-04-05 21:23:40	1	http://www.sprint.com
+2178	bare minerals make up	2006-04-07 15:36:02	1	http://www.bareminerals.com
+2178	bare minerals make up	2006-04-07 15:36:02	3	http://www.essentialdayspa.com
+2178	bare minerals make up	2006-04-07 15:36:02	6	http://bareescentuals.qvc.com
+2178	amc painters crossing	2006-04-07 18:14:43	1	http://www.mrmovietimes.com
+2178	amc painters crossing	2006-04-07 18:18:19		
+2178	pergola	2006-04-08 18:44:00	1	http://www.gardenstructure.com
+2178	pergola house entrance	2006-04-08 18:50:28	1	http://www.mooseyscountrygarden.com
+2178	pergola house entrance	2006-04-08 18:50:28	3	http://www.english-heritage.org.uk
+2178	pergola	2006-04-08 18:52:55		
+2178	pergola	2006-04-08 18:53:55	25	http://www.homeportfolio.com
+2178	pergola	2006-04-08 18:58:22	28	http://www.plansnow.com
+2178	pergola	2006-04-08 18:58:22	31	http://www.bhg.com
+2178	accountlinkk	2006-04-10 10:19:57		
+2178	accountlink	2006-04-10 10:20:14		
+2178	google	2006-04-11 11:06:20		
+2178	google	2006-04-11 11:06:41		
+2178	irs publication 505	2006-04-11 22:19:49	2	http://www.irs.gov
+2178	prestonandsteve	2006-04-12 09:11:37	1	http://www.prestonandsteve.com
+2178	msn.com	2006-04-12 16:02:05	1	http://www.msn.com
+2178	mnf-iraq.mil	2006-04-13 20:59:56		
+2178	mnf-iraq.mil	2006-04-13 20:59:59		
+2178	army.mil	2006-04-13 21:03:22		
+2178	us constitution center	2006-04-19 22:06:10	1	http://www.constitutioncenter.org
+2178	philadelphia rocky statue	2006-04-19 22:12:42	7	http://uk.holidaysguide.yahoo.com
+2178	philadelphia art museum	2006-04-19 22:15:23	1	http://www.philamuseum.org
+2178	us constitution center	2006-04-19 22:17:44		
+2178	philadelphia independence mall	2006-04-19 22:18:19	6	http://www.independencevisitorcenter.com
+2178	babiesrus	2006-04-20 19:35:25	1	http://www.babiesrus.com
+2178	-	2006-04-22 09:08:40		
+2178	securespeed.us	2006-04-22 09:10:00		
+2178	lily pads breast	2006-04-29 14:52:29		
+2178	army.mil	2006-05-03 09:17:05		
+2178	boppy covers	2006-05-08 13:14:00		
+2178	ebay.com	2006-05-08 13:22:50		
+2178	once upon a child	2006-05-09 09:55:46	2	http://eelement.inetium.com
+2178	scott honda	2006-05-09 13:56:50		
+2178	braxton hicks contractions	2006-05-09 17:08:21	1	http://www.babycenter.com
+2178	braxton hicks contractions	2006-05-09 17:08:21	7	http://www.pregnancy-info.net
+2178	foods to avoid when pregnant	2006-05-09 19:32:42	4	http://www.americanpregnancy.org
+2178	foods to avoid when breast feeding	2006-05-09 19:36:44	1	http://www.lalecheleague.org
+2178	foods to avoid when breast feeding	2006-05-09 19:36:44	4	http://www.babycenter.com
+2178	infant innoculation safety	2006-05-09 19:41:32		
+2178	hepatitis b vaccine safety infants	2006-05-09 19:43:37	2	http://www.vaccinesafety.edu
+2178	hepatitis b vaccine safety infants	2006-05-09 19:43:37	6	http://www.immunize.org
+2178	roth ira calculator	2006-05-09 19:53:35	5	http://www.statefarm.com
+2178	roth ira calculator	2006-05-09 19:53:35	8	http://www.tcalc.com
+2178	roth ira	2006-05-09 19:56:20		
+2178	roth ira	2006-05-09 19:58:07		
+2178	roth ira estimated value at retirement	2006-05-09 19:59:08	2	http://iraevaluator.fidelity.com
+2178	roth ira estimated value at retirement	2006-05-09 19:59:08	8	http://www.ifigure.com
+2178	roth ira estimated value at retirement	2006-05-09 19:59:08	5	http://www.fcbweb.net
+2178	roth.upi-net.com	2006-05-09 20:01:43		
+2178	walmart	2006-05-12 12:39:52	1	http://www.walmart.com
+2178	sears	2006-05-12 12:44:22	1	http://www.sears.com
+2178	target	2006-05-12 17:05:36	1	http://www.target.com
+2178	babycenter.com	2006-05-12 17:43:59	1	http://www.babycenter.com
+2178	ad.double script language	2006-05-12 18:30:07		
+2178	google	2006-05-16 10:54:39	1	http://www.google.com
+2178	fit pregnancy	2006-05-16 15:34:23		
+2178	baby center	2006-05-16 15:37:22		
+2178	yahoo.com	2006-05-18 17:11:05	1	http://www.yahoo.com
+2178	applebee's carside	2006-05-19 19:21:08	1	http://www.applebees.com
+2178	baby names	2006-05-20 15:02:38	1	http://www.babynames.com
+2178	baby names	2006-05-20 15:02:38	3	http://www.babynamesworld.com
+2178	baby names	2006-05-20 15:02:38	9	http://www.thinkbabynames.com
+2178	mortgage calculator	2006-05-24 14:39:05	3	http://www.bankrate.com
+2178	us zip codes	2006-05-25 21:26:47	1	http://www.usps.com
+2178	us zip codes	2006-05-25 21:26:47	2	http://www.usps.com
+2178	inducing dog vomiting	2006-05-26 08:42:31	2	http://dogs.about.com
+2178	inducing dog vomiting	2006-05-26 08:42:31	1	http://www.doctordog.com
+2178	inducing dog defication	2006-05-26 15:30:49		
+2178	dog eats uncooked pasta	2006-05-26 15:31:56		
+2178	inducing dog vomiting	2006-05-26 15:32:46	5	http://www.twodogpress.com
+2178	inducing dog vomiting	2006-05-26 15:32:46	6	http://www.canismajor.com
+2178	inducing dog vomiting	2006-05-26 15:32:46	8	http://kitchen.robbiehaf.com
+2178	inducing dog vomiting	2006-05-26 15:32:46	10	http://www.dog-first-aid-101.com
+2178	inducing dog vomiting	2006-05-26 15:38:36		
+2334	aaroncarter	2006-03-01 18:48:51	4	http://aaroncarter.ca
+2334	aaroncarter	2006-03-01 18:48:51	1	http://www.aaroncarter.com
+2334	www.aaroncarter.com	2006-03-01 18:50:10	7	http://musicmoz.org
+2334	www.aaroncarter.com	2006-03-01 18:50:10	1	http://www.aaroncarter.com
+2334	www.aaroncarter.com	2006-03-01 18:50:10	8	http://www.allpop.com
+2334	jesse mccartney	2006-03-01 18:53:50	3	http://jessemccartneyonline.v3.be
+2334	jesse mccartney	2006-03-01 18:53:50	4	http://www.hyfntrak.com
+2334	jesse mccartney	2006-03-01 18:55:33		
+2334	jesse mccartney	2006-03-01 19:22:36		
+2334	popstarmagizine	2006-03-05 18:38:50		
+2334	popstarmagazine	2006-03-05 18:39:02		
+2334	popstar mag	2006-03-05 18:39:15	4	http://groups.msn.com
+2334	popstar mag	2006-03-05 18:39:15	4	http://groups.msn.com
+2334	jessemccartney	2006-03-05 18:41:50		
+2334	jessemccartney	2006-03-05 18:41:56		
+2334	jessemccartney	2006-03-05 18:42:13	3	http://www.hyfntrak.com
+2334	aaroncarter	2006-03-05 18:43:14		
+2334	aaroncarter	2006-03-05 18:44:46		
+2334	jesse mccartney	2006-03-05 18:52:34	1	http://hollywoodrecords.go.com
+2334	jesse mccartney	2006-03-05 18:52:34	1	http://hollywoodrecords.go.com
+2334	jesse mccartney	2006-03-05 18:56:53	3	http://groups.msn.com
+2334	jesse mccartney	2006-03-05 18:56:53	4	http://jessemccartneyonline.v3.be
+2334	jesse mccartney	2006-03-05 18:56:53	8	http://www.jessemac.com.au
+2334	jessemccartney	2006-03-07 17:02:33	1	http://hollywoodrecords.go.com
+2334	jesse mccartney	2006-03-07 18:21:01	1	http://hollywoodrecords.go.com
+2334	jessemccartney	2006-03-08 17:36:34	2	http://jessemccartney.fanhost.com
+2334	jessemccartney	2006-03-08 17:36:34	6	http://www.xanga.com
+2334	jessemccartney	2006-03-08 17:36:34	3	http://www.hyfntrak.com
+2334	jessemccartney	2006-03-08 17:36:34	4	http://www.jesse-mccartney.org
+2334	jessemccartney	2006-03-08 17:36:34	10	http://www.grouper.com
+2334	jessemccartney	2006-03-08 17:36:34	8	http://www.jessemccartney.it
+2334	jesse mccartney hollywoodrecords	2006-03-08 18:48:28	1	http://hollywoodrecords.go.com
+2334	jesse mccartney	2006-03-08 18:53:53	1	http://hollywoodrecords.go.com
+2334	jessemccartney	2006-03-08 18:56:38	1	http://hollywoodrecords.go.com
+2334	jessemccartney	2006-03-08 18:56:38	5	http://groups.msn.com
+2334	jessemccartney	2006-03-08 18:56:38	1	http://hollywoodrecords.go.com
+2334	jessemccartney	2006-03-08 18:56:38	3	http://www.hyfntrak.com
+2334	jessemccartney	2006-03-11 10:07:03	1	http://hollywoodrecords.go.com
+2334	jessemccartney	2006-03-11 10:07:03	1	http://hollywoodrecords.go.com
+2334	jesse mccartney	2006-03-11 13:10:58	1	http://hollywoodrecords.go.com
+2334	jesse mccartney	2006-03-11 13:10:58	1	http://hollywoodrecords.go.com
+2334	jesse mccartney	2006-03-11 13:49:48	1	http://hollywoodrecords.go.com
+2334	jesse mccartney	2006-03-12 15:32:35	1	http://hollywoodrecords.go.com
+2334	c	2006-03-12 20:10:16		
+2334	.com	2006-03-14 19:21:27		
+2334	jesse mccartney	2006-03-14 19:23:49	1	http://hollywoodrecords.go.com
+2334	jesse mccartney	2006-03-14 19:25:31	1	http://hollywoodrecords.go.com
+2334	jesse mccartney	2006-03-16 17:16:20	1	http://hollywoodrecords.go.com
+2334	movie theaters peru il	2006-03-16 21:04:21		
+2334	peru illinois cenima	2006-03-16 21:11:31		
+2334	peru illinois cinema	2006-03-16 21:11:38		
+2334	peru illinois movie theater showings	2006-03-16 21:12:33	4	http://www.mrmovietimes.com
+2334	peru illinois movie theater showings	2006-03-16 21:12:33	4	http://www.mrmovietimes.com
+2334	peru illinois movie theater showings	2006-03-16 21:12:33	8	http://www.wqad.com
+2334	peru illinois movie theater showings	2006-03-16 21:12:33	9	http://www.wqad.com
+2334	disneychanne.com	2006-03-17 13:25:45		
+2334	disnchannel.com	2006-03-17 13:26:31		
+2334	disneychannel.com	2006-03-17 13:26:40	1	http://disney.go.com
+2334	popstar magazine.com	2006-03-19 14:58:46		
+2334	popstar magazine.com	2006-03-19 14:58:58		
+2334	jojo	2006-03-19 15:02:42	2	http://www.jojoonline.com
+2334	jojo	2006-03-19 15:02:42	2	http://www.jojoonline.com
+2334	jojo lyrics	2006-03-19 15:12:26	1	http://www.azlyrics.com
+2334	jojo lyrics	2006-03-19 15:12:26	1	http://www.azlyrics.com
+2334	jojo	2006-03-19 17:19:36	2	http://www.jojoonline.com
+2334	jojo	2006-03-19 17:19:36	9	http://www.imdb.com
+2334	jojo	2006-03-19 17:19:36	2	http://www.jojoonline.com
+2334	jojo	2006-03-19 17:19:36	2	http://www.jojoonline.com
+2334	jojo	2006-03-19 17:19:36	1	http://www.jojoonline.com
+2334	jesse mccartney	2006-03-20 16:53:53		
+2334	jojo	2006-03-20 16:54:01	2	http://www.jojoonline.com
+2334	recycleable items	2006-03-27 20:07:20		
+2334	shrecycleable items	2006-03-27 20:07:30		
+2334	recycleable items	2006-03-27 20:07:54		
+2334	spring valley girls softball	2006-03-30 18:53:57		
+2334	new mexico	2006-05-03 16:42:27	1	http://www.newmexico.gov
+2334	jessemccartney	2006-05-03 16:44:44	1	http://hollywoodrecords.go.com
+2334	jesse mccartney	2006-05-03 16:48:16		
+2334	jesse mccartney	2006-05-03 16:48:48	15	http://groups.msn.com
+2334	jesse mccartney	2006-05-03 16:50:18		
+2334	jesse mccartney	2006-05-03 16:50:34		
+2334	jesse mccartney	2006-05-03 16:50:56		
+2334	jesse mccartney	2006-05-03 16:51:12		
+2334	jesse mccartney	2006-05-03 16:52:13	73	http://www.concerttickets.org
+2334	jesse mccartney	2006-05-03 16:53:07		
+2334	jesse mccartney	2006-05-03 16:53:28	114	http://www.sortmusic.com
+2334	jesse mccartney	2006-05-03 16:56:47	118	http://7thheavenmania6792.tripod.com
+2334	jesse mccartney	2006-05-03 16:57:27	131	http://musicstore.connect.com
+2334	jesse mccartney	2006-05-03 16:57:31		
+2334	jesse mccartney	2006-05-03 16:58:52		
+2334	jesse mccartney	2006-05-06 19:52:21		
+2334	jesse mccartney	2006-05-06 19:56:20	1	http://hollywoodrecords.go.com
+2334	jesse mccartney	2006-05-09 17:15:44	143	http://www.sortmusic.com
+2334	jesse mccartney	2006-05-09 17:17:20		
+2334	jesse mccartney	2006-05-09 18:55:33		
+2334	jesse mccartney	2006-05-09 18:55:58		
+2334	jesse mccartney	2006-05-09 18:56:16		
+2334	jesse mccartney	2006-05-09 18:57:20		
+2334	jesse mccartney	2006-05-09 18:58:23		
+2334	jesse mccartney	2006-05-09 18:58:38		
+2334	jesse mccartney	2006-05-09 18:58:51		
+2334	jesse mccartney	2006-05-09 18:58:57		
+2334	jesse mccartney	2006-05-09 18:59:12		
+2334	jesse mccartney	2006-05-09 18:59:25		
+2334	jesse mccartney	2006-05-09 18:59:44		
+2334	jesse mccartney	2006-05-09 19:00:03		
+2334	jesse mccartney	2006-05-09 19:00:24		
+2334	jesse mccartney	2006-05-09 19:00:45		
+2334	jesse mccartney	2006-05-09 19:01:15		
+2334	jesse mccartney	2006-05-09 19:01:36		
+2334	jesse mccartney	2006-05-09 19:02:20		
+2334	jesse mccartney	2006-05-09 19:02:45		
+2334	jesse mccartney	2006-05-09 19:03:56		
+2334	jesse mccartney	2006-05-09 19:04:32		
+2334	jesse mccartney	2006-05-09 19:04:54		
+2334	jesse mccartney	2006-05-09 19:05:10		
+2334	jesse mccartney	2006-05-09 19:05:31		
+2334	jesse mccartney	2006-05-09 19:05:50		
+2334	jesse mccartney	2006-05-09 19:06:37		
+2334	' ll be funny in our groupjesse mccartney	2006-05-09 19:06:52		
+2334	jesse mccartney	2006-05-09 19:07:08		
+2334	jesse mccartney	2006-05-09 19:07:18		
+2334	jesse mccartney	2006-05-09 19:08:15		
+2334	jesse mccartney	2006-05-09 19:08:28		
+2334	jesse mccartney	2006-05-09 19:08:40		
+2334	jesse mccartney	2006-05-09 19:08:55		
+2334	jesse mccartney	2006-05-09 19:09:10		
+2334	jesse mccartney	2006-05-09 19:09:21		
+2334	jesse mccartney	2006-05-09 19:09:31		
+2334	jesse mccartney	2006-05-09 19:09:33		
+2334	jesse mccartney	2006-05-09 19:09:39		
+2334	jesse mccartney	2006-05-11 19:18:05		
+2334	jesse mccartney	2006-05-11 19:18:25	8	http://www.starpulse.com
+2334	jesse mccartney	2006-05-11 19:19:19	10	http://ahollywoodrecords.go.com
+2334	jesse mccartney	2006-05-11 19:19:19	1	http://hollywoodrecords.go.com
+2334	kol.com	2006-05-11 19:43:49	5	http://www.kol.com
+2334	kol.com	2006-05-11 19:44:31		
+2334	kol.com	2006-05-11 19:44:34		
+2334	kol.com	2006-05-11 19:46:12		
+2334	the tarantula hawk wasp	2006-05-12 16:32:30	4	http://www.nps.gov
+2334	the tarantula hawk wasp	2006-05-12 16:32:30	7	http://homeschooling.about.com
+2334	the tarantula hawk wasp	2006-05-12 16:32:30	7	http://homeschooling.about.com
+2334	jmacconnectino	2006-05-12 22:30:38		
+2334	jmacconnection	2006-05-12 22:30:52		
+2334	jesse mccartney	2006-05-12 22:31:03		
+2334	jesse mccartney	2006-05-14 16:06:20		
+2334	jesse mccartney	2006-05-14 16:06:29		
+2334	jesse mccartney	2006-05-14 16:06:50		
+2334	jesse mccartney	2006-05-14 16:07:06		
+2334	jesse mccartney	2006-05-14 16:07:22		
+2334	jesse mccartney	2006-05-14 16:07:33		
+2334	jesse mccartney	2006-05-14 16:09:06		
+2334	jesse mccartney	2006-05-14 16:14:10	2	http://www.hyfntrak.com
+2334	popstar magazine.com	2006-05-14 16:25:26		
+2334	popstar magazine.com	2006-05-14 16:26:02		
+2334	kidsonlilne	2006-05-14 16:31:03		
+2334	-	2006-05-25 19:25:09		
+2334	peru illinois cinema	2006-05-25 19:25:45	3	http://www.perumall.com
+2334	peru illinois cinema	2006-05-25 19:26:50		
+2334	peru illinois cinema	2006-05-25 19:27:08		
+2334	peru illinois cinema schedule	2006-05-25 19:27:24	1	http://www.wqad.com
+2421	mariobitali.com	2006-03-01 14:31:07		
+2421	philshockeyteam	2006-03-02 13:28:43	1	http://www.philshockeyteam.com
+2421	computeraudiomixer.com	2006-03-06 13:26:19	1	http://www.availabledomainnamesearch.com
+2421	cliffnotes	2006-03-06 16:25:51		
+2421	cliff notes	2006-03-06 16:25:56		
+2421	the war of the worlds cliff notes	2006-03-06 16:26:27	1	http://www.pinkmonkey.com
+2421	learntospeakblack.com	2006-03-07 22:07:01		
+2421	learntospeakblack	2006-03-07 22:07:12		
+2421	wowr	2006-03-09 22:11:37		
+2421	dmv	2006-03-10 13:17:30		
+2421	poker	2006-03-14 21:44:15	1	http://www.pokerroom.com
+2421	poker	2006-03-14 21:58:07	4	http://www.pokerstars.com
+2421	poker	2006-03-14 21:58:07	7	http://www.paradisepoker.com
+2421	poker	2006-03-14 21:58:07	8	http://www.pacificpoker.com
+2421	poker	2006-03-14 21:58:07	9	http://www.partypoker.com
+2421	poker	2006-03-14 21:58:07	10	http://www.homepoker.com
+2421	poker	2006-03-14 22:03:46	13	http://www.planetpoker.com
+2421	smosh	2006-03-15 17:27:00	1	http://www.smosh.com
+2421	smosh.com	2006-03-15 18:37:21	1	http://www.smosh.com
+2421	philshockyteam.com	2006-03-20 16:35:38		
+2421	philshockeyteam.com	2006-03-20 16:35:47	1	http://www.philshockeyteam.com
+2421	philshockyteam.com	2006-03-20 18:20:32		
+2421	www.smosh.com	2006-03-21 13:18:28		
+2421	www.smosh.com	2006-03-21 13:18:44		
+2421	wow lvl 30 guide	2006-03-22 15:03:10	2	http://wow.allakhazam.com
+2421	wow lvl 30 guide	2006-03-22 15:03:10	3	http://www.wow-pro.com
+2421	chuck norris	2006-03-27 14:49:56		
+2421	chuck norris	2006-03-27 14:50:34	14	http://supr.c.ilio.us
+2421	adserver.ign.com	2006-03-27 15:41:14		
+2421	adserver.ign.com	2006-03-27 15:41:15		
+2421	hyundai.com	2006-03-28 17:51:30		
+2421	.com	2006-03-30 21:14:29		
+2421	www.deadtoast.com	2006-03-30 21:50:51		
+2421	w	2006-04-01 07:37:55		
+2421	microsoftword.com	2006-05-04 14:59:07	3	http://www.microsoft.com
+2421	google	2006-05-04 15:39:25	1	http://www.google.com
+2421	counterstrike	2006-05-04 16:01:08		
+2421	counter strike	2006-05-04 16:01:12	2	http://www.counter-strike.net
+2421	adserver.ign.com	2006-05-04 16:01:51		
+2421	google	2006-05-04 21:14:33	1	http://www.google.com
+2421	google	2006-05-05 16:16:01		
+2421	adserver.ign.com	2006-05-05 16:17:45		
+2421	hernias	2006-05-05 16:52:33	9	http://hernia.tripod.com
+2421	hernias	2006-05-05 16:54:16		
+2421	silive	2006-05-05 16:55:21	1	http://www.silive.com
+2421	hernia doctors	2006-05-05 17:03:15	3	http://www.wrongdiagnosis.com
+2421	people search	2006-05-05 20:10:51		
+2421	newgrounds	2006-05-07 20:14:54	1	http://www.newgrounds.com
+2421	thedarkside switch	2006-05-07 20:41:30		
+2421	http www.chaiyya chaiyya	2006-05-07 20:43:14		
+2421	cstoons	2006-05-09 17:32:44	2	http://www.xtracrispy.com
+2421	cstoons	2006-05-09 17:32:44	1	http://www.xtracrispy.com
+2421	spit ball with straw	2006-05-16 21:42:52		
+2421	spitball with straw	2006-05-16 21:59:07		
+2421	spit ball with straw	2006-05-16 21:59:31		
+2421	-	2006-05-21 14:59:57		
+2421	-	2006-05-25 08:19:19		
+2421	-	2006-05-28 14:54:28		
+2465	www.crossword puzzles.com	2006-03-01 14:38:04		
+2465	www.babblebunch.com	2006-03-01 14:50:50		
+2465	www.the babble bunch.com	2006-03-01 14:51:02		
+2465	www.the bubble bunch.com	2006-03-01 14:51:11		
+2465	www.not so popular popstars.com	2006-03-17 20:03:44		
+2465	www.not so popular popstars.com	2006-03-17 20:04:27		
+2465	www.not so popular popstars.com	2006-03-17 20:05:20		
+2465	www.hot trends.com	2006-03-17 20:38:16		
+2465	www.l.l.bean.com	2006-03-18 17:04:34		
+2465	www.l.l.bean.com	2006-03-18 17:04:52		
+2465	www.best buy.com	2006-03-25 18:51:43		
+2465	www.wallmart.com	2006-03-25 18:56:36		
+2465	www.clairs.com	2006-03-27 21:05:24		
+2465	www.clairs.com	2006-03-27 21:05:41		
+2465	www.claire's.com	2006-03-27 21:06:18	1	http://www.shopstonypoint-regencysquare.com
+2465	www.clair's accessories store.com	2006-03-28 10:01:03		
+2465	www.claire's accessories store.com	2006-03-28 10:01:11		
+2465	www.j	2006-03-28 15:37:59		
+2465	www.uu	2006-03-31 09:23:02		
+2722	charles drew	2006-03-01 17:35:12	3	http://inventors.about.com
+2722	charles drew	2006-03-01 18:00:07	9	http://www.famu.edu
+2722	charles drew	2006-03-01 18:00:07	10	http://www.cdhcmedical.com
+2722	charles drew	2006-03-01 18:27:23		
+2722	national car rental	2006-03-09 11:24:29		
+2722	military	2006-03-10 09:32:03		
+2722	military rental benfits	2006-03-10 09:32:33		
+2722	military rental benefits	2006-03-10 09:32:38	4	http://www.valoans.com
+2722	military car rental benefits	2006-03-10 09:33:37	4	http://www.valoans.com
+2722	military car rental benefits	2006-03-10 09:33:37	1	http://benefits.military.com
+2722	military car rental benefits	2006-03-10 09:33:37	8	http://www.avis.com
+2722	deers id cards	2006-03-10 10:32:02		
+2722	deers id cards army	2006-03-10 10:32:58	1	http://www.stewart.army.mil
+2722	tricare	2006-03-16 19:07:38	2	http://www.tricareonline.com
+2722	www.publixdirect.com	2006-03-16 19:09:42	1	http://www.publixdirect.com
+2722	www.publixdirect.com	2006-03-16 19:09:42	9	http://www.bizjournals.com
+2722	publix	2006-03-16 19:10:06		
+2722	www.publixdirect.com	2006-03-16 19:10:32		
+2722	www.publixdirect.com	2006-03-16 19:10:37		
+2722	www.publixdirect.com	2006-03-16 19:11:28		
+2722	waldrop hills	2006-03-18 20:16:26	1	http://www.get2own.com
+2722	waldrop hills	2006-03-18 20:16:26	3	http://www.era.com
+2722	waldrop hills	2006-03-18 20:16:26	5	http://www.lease2purchase.com
+2722	waldrop hills	2006-03-18 20:16:26	5	http://www.lease2purchase.com
+2722	waldrop hills	2006-03-18 20:16:26	4	http://www.era.com
+2722	sprint phones	2006-03-19 21:13:20	2	http://www.cellularfactory.com
+2722	fafsa	2006-03-20 15:06:09	1	http://www.fafsa.ed.gov
+2722	georgia state	2006-03-20 15:20:30	1	http://www.gsu.edu
+2722	clayton state	2006-03-20 15:24:09	1	http://www.clayton.edu
+2722	georgia perimeter	2006-03-20 15:27:22	1	http://www.gpc.edu
+2722	pin.ed.gov	2006-03-20 21:21:03	1	http://pin.ed.gov
+2722	irs.gov	2006-03-20 21:25:02	1	http://www.irs.gov
+2722	saint philiphs college	2006-03-20 23:17:43		
+2722	saint philip's college	2006-03-20 23:17:52	1	http://www.accd.edu
+2722	routing number for bank of america military bank	2006-03-20 23:38:14	1	http://www.bankofamerica.com
+2722	routing number for bank of america military bank	2006-03-20 23:38:14	6	http://fleet.com
+2722	georgia state university	2006-03-20 23:43:22	1	http://www.gsu.edu
+2722	ssa.gov	2006-03-22 12:16:34	1	http://www.ssa.gov
+2722	texas marriage lisence	2006-03-22 12:22:46		
+2722	texas marriage licence	2006-03-22 12:22:53	1	http://marriage.about.com
+2722	georgia guardianship laws	2006-03-22 12:59:46	1	http://www.lawhelp.org
+2722	georgia guardianship laws	2006-03-22 12:59:46	3	http://www.lawingeorgia.com
+2722	georgia guardianship laws	2006-03-22 12:59:46	4	http://aia.berkeley.edu
+2722	georgia guardianship laws	2006-03-22 12:59:46	8	http://legal.respond.com
+2722	georgia guardianship laws	2006-03-22 12:59:46	6	http://www.elderabusecenter.org
+2722	georgia guardianship laws	2006-03-22 12:59:46	2	http://www.lawhelp.org
+2722	georgia guardianship laws	2006-03-22 13:07:44	5	http://www.legis.state.ga.us
+2722	georgia guardianship laws conservator	2006-03-22 13:12:25		
+2722	georgia guardianship laws conservator dekalb county	2006-03-22 13:13:01	5	http://law.gsu.edu
+2722	georgia guardianship laws conservator dekalb county probate	2006-03-22 13:14:08	3	http://www.state.ga.us
+2722	dekalb county probate	2006-03-22 13:15:07	1	https://dklbweb.dekalbga.org/courts/probate/pistol.htm
+2722	dekalb county probate	2006-03-22 13:15:07	2	https://dklbweb.dekalbga.org/courts/probate/estate.asp
+2722	dekalb county probate	2006-03-22 13:15:07	2	https://dklbweb.dekalbga.org/courts/probate/estate.asp
+2722	georgia veterans	2006-03-22 13:36:26	2	http://sdvs.georgia.gov
+2722	georgia veterans	2006-03-22 13:36:26	2	http://sdvs.georgia.gov
+2722	clayton state	2006-03-22 13:49:34	1	http://www.clayton.edu
+2722	georgia state	2006-03-22 13:52:17	1	http://www.gsu.edu
+2722	understanding fractions	2006-03-22 16:01:12	1	http://mathcentral.uregina.ca
+2722	understanding fractions	2006-03-22 16:01:12	6	http://www.helpwithfractions.com
+2722	understanding fractions	2006-03-22 16:01:12	2	http://mathcentral.uregina.ca
+2722	understanding fractions	2006-03-22 16:01:12	10	http://www.homeschoolmath.net
+2722	understanding fractions	2006-03-22 16:11:00	2	http://seeingmath.concord.org
+2722	understanding fractions	2006-03-22 16:11:00	4	http://www.teachervision.fen.com
+2722	fractions	2006-03-22 16:12:19	5	http://www.kidsolr.com
+2722	fractions	2006-03-22 16:12:19	5	http://www.kidsolr.com
+2722	fractions	2006-03-22 16:12:19	1	http://www.aaamath.com
+2722	fractions	2006-03-22 16:12:19	1	http://www.aaamath.com
+2722	fractions	2006-03-22 16:12:19	1	http://www.aaamath.com
+2722	fractions	2006-03-22 16:12:19	1	http://www.aaamath.com
+2722	www.hood.army.mil 4id	2006-03-22 18:23:21		
+2722	linen n things	2006-03-23 11:58:35	1	http://www.lnt.com
+2722	bed bath beyond	2006-03-23 12:02:02	1	http://www.bedbathandbeyond.com
+2722	home depot	2006-03-23 12:11:05		
+2722	wardrobe	2006-03-23 12:14:10		
+2722	wardrobe storage	2006-03-23 12:14:36	3	http://www.homevisions.com
+2722	wardrobe storage	2006-03-23 12:14:36	1	http://www.nextag.com
+2722	walmart	2006-03-23 12:20:23		
+2722	target	2006-03-23 12:27:54	1	http://www.target.com
+2722	va benefits	2006-03-30 13:38:59	1	http://www.va.gov
+2722	lost	2006-03-30 13:59:59	1	http://abc.go.com
+2722	nintendo ds trace memory	2006-03-30 14:27:22	3	http://ds.ign.com
+2722	avis.com	2006-03-31 11:56:21	1	http://www.avis.com
+2722	sixflags	2006-04-04 23:18:47		
+2722	mwr	2006-04-04 23:39:48	1	http://www.armymwr.com
+2722	mwr	2006-04-04 23:46:21		
+2722	mwr	2006-04-04 23:46:37		
+2722	mwr	2006-04-04 23:47:05	6	http://trol.redstone.army.mil
+2722	mwr fort mcpherson	2006-04-04 23:47:46	1	http://www.mcpherson.army.mil
+2722	mwr fort mcpherson	2006-04-04 23:47:46	1	http://www.mcpherson.army.mil
+2722	mwr fort mcpherson	2006-04-04 23:47:46	1	http://www.mcpherson.army.mil
+2722	mwr	2006-04-04 23:56:10	1	http://www.armymwr.com
+2722	preteen birthday party	2006-04-05 00:10:08	1	http://childparenting.about.com
+2722	preteen party	2006-04-05 00:22:23	2	http://www.amazingmoms.com
+2722	preteen party	2006-04-05 00:22:23	3	http://www.inbyten.com
+2722	preteen party	2006-04-05 00:22:23	5	http://www.partypalooza.com
+2722	preteen party	2006-04-05 00:52:13	17	http://www.jellyandicecream-kidsparties.com
+2722	preteen party	2006-04-05 00:52:13	20	http://www.partyelf.com
+2722	preteen party	2006-04-05 00:52:13	22	http://www.odyssey-world.org
+2722	preteen party	2006-04-05 00:52:13	24	http://mychildtoday.com
+2722	preteen party	2006-04-05 01:15:34	28	http://preteenagerstoday.com
+2722	preteen party	2006-04-05 01:15:34	33	http://www.itsapartyfullife.com
+2722	preteen party	2006-04-05 01:15:34	35	http://www.kidcraftsmagazine.com
+2722	preteen party	2006-04-05 01:28:53		
+2722	sciencetrek	2006-04-05 01:34:29		
+2722	science trek	2006-04-05 01:34:41		
+2722	sciencetrek	2006-04-05 01:34:55		
+2722	sciencetrek georgia	2006-04-05 01:35:25		
+2722	visit scitrek museum	2006-04-05 01:35:57		
+2722	scitrek museum	2006-04-05 01:36:14	1	http://www.tripadvisor.com
+2722	birthday party	2006-04-05 01:55:15	1	http://www.birthdaypartyideas.com
+2722	fandngo	2006-04-05 18:49:24		
+2722	fandango	2006-04-05 18:49:54	1	http://www.fandango.com
+2722	baby shower ideas	2006-04-05 18:55:49	2	http://www.babyzone.com
+2722	baby shower ideas	2006-04-05 18:55:49	1	http://www.baby-shower.com
+2722	baby shower ideas	2006-04-05 18:55:49	10	http://www.mommyparty.com
+2722	enterprise rent a car	2006-04-05 23:37:42	1	http://www.enterprise.com
+2722	avis	2006-04-05 23:41:09	1	http://www.avis.com
+2722	avis	2006-04-05 23:41:09	1	http://www.avis.com
+2722	priceline	2006-04-05 23:47:43	1	http://www.priceline.com
+2722	avis	2006-04-05 23:51:13	1	http://www.avis.com
+2722	enterprise	2006-04-05 23:52:09	1	http://www.enterprise.com
+2722	avis	2006-04-06 00:07:48	1	http://www.avis.com
+2722	enterprise	2006-04-06 07:11:08	1	http://www.enterprise.com
+2722	party city	2006-04-10 12:34:13	1	http://www.partycity.com
+2722	party city	2006-04-10 12:34:13	3	http://www.plumparty.com
+2722	party city	2006-04-10 12:34:13	6	http://www.partycityonline.com
+2722	mapquest	2006-04-10 20:25:37	1	http://www.mapquest.com
+2722	mapquest	2006-04-10 20:27:58	1	http://www.mapquest.com
+2722	brooke army medical center	2006-04-11 14:16:48	1	http://www.bamc.amedd.army.mil
+2722	brooke army medical center burn unit	2006-04-11 14:26:29	1	http://www.bamc.amedd.army.mil
+2722	suze orman	2006-04-11 14:36:10	1	http://www.suzeorman.com
+2722	georgia force	2006-04-12 09:47:55	1	http://www.georgiaforce.com
+2722	progressive.com	2006-04-12 11:59:23	1	http://www.progressive.com
+2722	progressive	2006-04-12 12:16:29	1	http://www.progressive.com
+2722	patina	2006-04-12 12:18:16		
+2722	patinia	2006-04-12 12:26:31		
+2722	hyundai gear shift	2006-04-12 12:26:59	1	http://performance.drivewire.com
+2722	hyundai gear shift	2006-04-12 12:26:59	2	http://www.thepartsbin.com
+2722	hyundai gear shift	2006-04-12 12:26:59	3	http://www.theautochannel.com
+2722	hyundai gear shift	2006-04-12 12:26:59	10	http://www.autoaccessorystore.com
+2722	hyundai gear shift	2006-04-12 12:30:35		
+2722	hyundai gear shift knob	2006-04-12 12:30:50	1	http://www.autoanything.com
+2722	hyundai gear shift knob	2006-04-12 12:30:50	9	http://shopping.msn.com
+2722	hyundai gear shift knob	2006-04-12 12:30:50	6	http://www.eautoworks.com
+2722	hyundai gear shift knob	2006-04-12 12:44:11		
+2722	pantina	2006-04-12 12:45:16	1	http://www.pantina.com
+2722	ingles	2006-04-12 12:47:47		
+2722	ingles grocery	2006-04-12 12:48:12	1	http://www.ingles-markets.com
+2722	publix	2006-04-12 12:50:27	1	http://www.publix.com
+2722	birthday cakes	2006-04-12 13:02:35	1	http://www.birthdayexpress.com
+2722	birthday cakes	2006-04-12 13:02:35	4	http://www.creativecakes.com
+2722	kroger	2006-04-12 13:16:12	1	http://www.kroger.com
+2722	butterfly birthday cakes	2006-04-12 13:18:43	1	http://www.kidsturncentral.com
+2722	butterfly birthday cakes	2006-04-12 13:18:43	1	http://www.kidsturncentral.com
+2722	butterfly birthday cakes	2006-04-12 13:18:43	8	http://www.razzledazzlerecipes.com
+2722	kids cake designs	2006-04-12 13:38:26		
+2722	butterfly party	2006-04-12 13:39:34	1	http://www.birthdaypartyideas.com
+2722	butterfly party	2006-04-12 13:39:34	3	http://www.partypoopers.com
+2722	butterfly party	2006-04-12 13:39:34	4	http://www.butterflyparty.be
+2722	butterfly party	2006-04-12 13:39:34	7	http://www.partywedding.com
+2722	butterfly party	2006-04-12 13:39:34	10	http://www.african-butterfly-home-decorating.com
+2722	butterfly party	2006-04-12 13:47:07	11	http://www.milkweedcafe.com
+2722	butterfly party	2006-04-12 13:47:07	12	http://www.donovansf.com
+2722	butterfly party	2006-04-12 13:47:07	14	http://www.birthdaypartyideas.com
+2722	butterfly party	2006-04-12 13:47:07	16	http://www.searsroomforkids.com
+2722	butterfly party	2006-04-12 13:47:07	20	http://www.partyproducts.com.au
+2722	butterfly party	2006-04-12 13:47:07	18	https://www.allthatstuff.net/butterflies/butterfli
+2722	butterfly party	2006-04-12 13:47:07	25	http://www.marsbrightideas.com
+2722	butterfly party	2006-04-12 13:47:07	24	http://www.annabean.com
+2722	butterfly party	2006-04-12 13:47:07	21	http://www.favorideas.com
+2722	butterfly party	2006-04-12 14:42:43	29	http://www.gltc.co.uk
+2722	butterfly party	2006-04-12 14:42:43	30	http://www.partysolver.com
+2722	butterfly party	2006-04-12 14:42:43	34	http://www.partylights.com
+2722	butterfly party	2006-04-12 14:42:43	35	http://www.partydirectory.com
+2722	butterfly party	2006-04-12 14:42:43	39	http://www.partypalooza.com
+2722	butterfly party	2006-04-12 14:48:17	41	http://www.announcingit.com
+2722	butterfly party	2006-04-12 14:48:17	42	http://www.kckpl.lib.ks.us
+2722	butterfly party	2006-04-12 14:48:17	45	http://store.americangirl.com
+2722	butterfly party	2006-04-12 14:48:17	46	http://www.bizrate.com
+2722	tulle butterflies	2006-04-12 15:01:24	1	http://www.toyscamp.com
+2722	tulle butterflies	2006-04-12 15:01:24	3	http://www.kidsurplus.com
+2722	tulle butterflies	2006-04-12 15:01:24	9	http://www.target.com
+2722	tulle butterflies	2006-04-12 15:02:52	14	http://shop.store.yahoo.com
+2722	tulle butterflies	2006-04-12 15:02:52	17	http://www.growingtreetoys.com
+2722	how to make tulle butterflies	2006-04-12 15:05:40	3	http://www.butterflybreeders.com
+2722	how to make tulle butterflies	2006-04-12 15:05:40	8	http://www.kreinik.com
+2722	how to make tulle butterflies	2006-04-12 15:05:40	9	http://www.sheer-finesse.com
+2722	how to make tulle butterflies	2006-04-12 15:05:40	10	http://www.save-on-crafts.com
+2722	how to make tulle butterflies	2006-04-12 15:14:30		
+2722	google	2006-04-12 15:18:12	1	http://www.google.com
+2722	amscan	2006-04-12 15:20:50	1	http://www.amscan.com
+2722	amscan	2006-04-12 15:20:50	5	http://www.bizrate.com
+2722	party city	2006-04-12 15:28:56	1	http://www.partycity.com
+2722	shimmering butterfly	2006-04-12 15:41:01		
+2722	shimmering butterfly	2006-04-12 15:41:38		
+2722	shimmering butterfly party	2006-04-12 15:43:48	1	http://www.birthdaydirect.com
+2722	ingles-market	2006-04-12 15:46:02	1	http://www.ingles-markets.com
+2722	publix	2006-04-12 15:46:48	1	http://www.publix.com
+2722	order irthday cakes online	2006-04-12 15:55:50		
+2722	order birthday cakes online	2006-04-12 15:55:54	1	http://singleparents.about.com
+2722	order birthday cakes online	2006-04-12 15:55:54	6	http://www.1-800-bakery.com
+2722	order birthday cakes online	2006-04-12 15:55:54	7	http://www.funcarepackages.com
+2722	order birthday cakes online	2006-04-12 15:55:54	8	http://www.ingles-markets.com
+2722	order birthday cakes online	2006-04-12 15:55:54	9	http://www.cakesacrossamerica.com
+2722	order birthday cakes online	2006-04-12 15:55:54	10	http://www.need-a-cake.co.uk
+2722	order birthday cakes online	2006-04-12 16:31:12		
+2722	kudzu	2006-04-12 16:33:08	3	http://www.kudzu.com
+2722	walmart	2006-04-12 16:36:54	1	http://www.walmart.com
+2722	dairy queen	2006-04-12 16:40:57	3	http://thedqcentral.com
+2722	virginia guardianship of a minor	2006-04-12 22:03:06	3	http://www.nssta.com
+2722	virginia guardianship of a minor	2006-04-12 22:03:06	4	http://www.co.loudoun.va.us
+2722	virginia guardianship of a minor	2006-04-12 22:03:06	10	http://legis.state.va.us
+2722	virginia guardianship of a minor	2006-04-12 22:12:16		
+2722	when is it necessary to be guardian of minors estate	2006-04-12 22:20:42		
+2722	when is it necessary to be guardian of minors estate virginia	2006-04-12 22:21:35	2	http://www.nssta.com
+2722	cakes.com	2006-04-13 20:53:13		
+2722	babies r us	2006-04-13 21:08:52		
+2722	target	2006-04-13 21:09:43		
+2722	target	2006-04-17 09:58:40	1	http://www.target.com
+2722	lowes	2006-04-17 21:25:44	1	http://www.lowes.com
+2722	door viewer	2006-04-17 21:41:04	1	http://www.qualityplans.com
+2722	door viewer	2006-04-17 21:41:04	2	http://www.directdoorhardware.com
+2722	door viewer	2006-04-17 21:41:04	3	http://www.alibaba.com
+2722	door viewer	2006-04-17 21:41:04	4	http://www.quietek.com.au
+2722	peep hole	2006-04-17 21:44:02	4	http://www.safetycentral.com
+2722	peephole	2006-04-17 21:44:56		
+2722	home depot	2006-04-17 21:49:21	1	http://www.homedepot.com
+2722	sears	2006-04-17 22:04:45		
+2722	walmart	2006-04-17 22:13:22		
+2722	target	2006-04-17 22:16:21		
+2722	door viewer	2006-04-17 22:19:50		
+2722	birthday cakes	2006-04-17 22:44:11	4	http://www.creativecakes.com
+2722	birthday cakes	2006-04-17 22:44:11	5	http://www.kidsturncentral.com
+2722	birthday cakes	2006-04-17 22:48:41	24	http://www.cakesacrossamerica.com
+2722	birthday cakes	2006-04-17 22:50:34	28	http://www.gocitykids.com
+2722	custom birthday cakes atlanta ga	2006-04-17 23:28:48	3	http://www.partypop.com
+2722	dolly madison	2006-04-17 23:30:36	5	http://www.dollymadison.com
+2722	siskind's atlanta custom cake	2006-04-17 23:31:14	1	http://www.gatheringguide.com
+2722	siskind's atlanta custom cake	2006-04-17 23:31:14	2	http://www.gatheringguide.com
+2722	siskind's atlanta custom cake	2006-04-17 23:31:14	4	http://clarkston.areaconnect.com
+2722	custom cake	2006-04-17 23:32:30		
+2722	custom cake georgia	2006-04-17 23:32:53	4	http://www.decidio.com
+2722	custom cake georgia	2006-04-17 23:32:53	5	http://www.cakeladyandcompany.com
+2722	custom cake georgia	2006-04-17 23:32:53	9	http://www.sugarplum-visions.com
+2722	custom cake georgia	2006-04-17 23:38:16	11	http://www.savannahcustomcakes.com
+2722	custom cake georgia	2006-04-17 23:38:16	21	http://www.kiwifleur.com
+2722	custom cake georgia	2006-04-17 23:39:19	32	http://www.kelsbabycakes.com
+2722	custom cake georgia	2006-04-17 23:39:19	40	http://www.buckheadweddingcakes.com
+2722	custom cake georgia	2006-04-17 23:41:53	41	http://www.acebakeries.com
+2722	midas	2006-04-18 21:00:18	1	http://www.midas.com
+2722	meineke	2006-04-18 21:02:11	1	http://www.meineke.com
+2722	firestone	2006-04-18 21:06:04	1	http://www.bridgestone-firestone.com
+2722	purple foot baby shower	2006-04-18 21:30:22	4	http://www.rosemarycompany.com
+2722	purple foot baby shower	2006-04-18 21:30:22	7	http://www.bestbabyshower.com
+2722	purple foot baby shower	2006-04-18 21:30:22	10	http://www.birthannouncementsgalore.com
+2722	purple foot baby shower	2006-04-18 21:33:09		
+2722	baby shower purple foot	2006-04-18 21:33:31	2	http://www.babyshowergamesatoz.com
+2722	baby shower purple foot	2006-04-18 21:33:31	6	http://www.tinyprints.com
+2722	baby shower purple	2006-04-18 21:36:33	3	http://www.tinyprints.com
+2722	baby shower purple	2006-04-18 21:36:33	4	http://cgi.ebay.com
+2722	baby shower purple	2006-04-18 21:38:13	17	http://www.purplestore.com
+2722	party express	2006-04-18 21:41:43	1	http://www.partyexpress.safeorders.net
+2722	kumon	2006-04-18 21:44:15	1	http://www.kumon.com
+2722	kumon	2006-04-18 21:44:15	1	http://www.kumon.com
+2722	sears	2006-04-20 14:08:23	1	http://www.sears.com
+2722	jeeves	2006-04-20 14:12:44	1	http://www.ask.com
+2722	jeeves	2006-04-20 14:12:44	1	http://www.ask.com
+2722	jeeves	2006-04-20 14:12:44	1	http://www.ask.com
+2722	michaels.com	2006-04-20 14:23:20	1	http://www.michaels.com
+2722	wamu	2006-04-20 14:38:03	1	http://www.wamu.com
+2722	ft mcpherson	2006-04-25 12:25:19	1	http://www.mcpherson.army.mil
+2722	build a bear	2006-04-25 12:47:50	1	http://www.buildabear.com
+2722	yahoo	2006-04-25 13:03:23	1	http://www.yahoo.com
+2722	yahoo	2006-04-25 13:03:23	1	http://www.yahoo.com
+2722	nkvd.us	2006-04-25 15:51:55	3	http://www.wilderssecurity.com
+2722	nkvd.us	2006-04-25 15:51:55	5	http://forum.majorgeeks.com
+2722	microsoft	2006-04-25 15:55:27	1	http://www.microsoft.com
+2722	jeeves	2006-04-25 15:59:27	1	http://www.ask.com
+2722	aim	2006-04-26 15:39:25	1	http://www.aim.com
+2722	aol.com	2006-04-26 15:43:46	1	http://www.aol.com
+2722	aol.com	2006-04-26 15:43:46	2	http://www.aim.com
+2722	aol.com	2006-04-26 15:43:46	2	http://www.aim.com
+2722	aol.com	2006-04-26 15:43:46	2	http://www.aim.com
+2722	aol.com	2006-04-26 15:43:46	2	http://www.aim.com
+2722	atlanta christian academy	2006-04-26 22:56:53	4	http://www.greateratlantachristian.org
+2722	atlanta christian academy	2006-04-26 22:56:53	3	http://www.atlantachristianweb.com
+2722	crossroads christian academy	2006-04-26 23:16:45	7	http://www.crossroadscccu.com
+2722	crossroads christian academy	2006-04-26 23:16:45	4	http://www.aacs.org
+2722	atlanta christian academy	2006-04-26 23:19:03	1	http://www.sacanet.com
+2722	atlanta christian academy	2006-04-26 23:19:03	8	http://www.greatschools.net
+2722	ellenwood allstars	2006-04-27 16:02:31	1	http://www.ellenwoodallstarcheerleading.com
+2722	georgia summer camp	2006-04-27 17:24:26	2	http://www.mysummercamps.com
+2722	trust fun	2006-04-27 20:51:43		
+2722	fool.com	2006-04-27 20:52:01	1	http://www.fool.com
+2722	ask.com	2006-04-27 20:55:52	1	http://www.ask.com
+2722	walmart.com	2006-04-28 00:37:20		
+2722	cingular	2006-04-29 14:00:47		
+2722	pizzahut	2006-05-01 14:36:39	1	http://www.pizzahut.com
+2722	columbus bank and trust routing number	2006-05-01 16:23:17	3	http://www.payroll.ucla.edu
+2722	columbus bank and trust routing number	2006-05-01 16:23:17	7	http://www.fdic.gov
+2722	routing number forcolumbus bank and trust	2006-05-01 16:32:13		
+2722	routing number for columbus bank and trust	2006-05-01 16:32:17		
+2722	virginia taxes	2006-05-01 17:05:48	1	http://www.tax.virginia.gov
+2722	georgia state university	2006-05-01 17:07:30		
+2722	gsu	2006-05-01 17:14:40	1	http://www.gsu.edu
+2722	georgia perimeter college	2006-05-01 17:27:45	1	http://www.gpc.edu
+2722	georgia perimeter college	2006-05-01 17:27:45	1	http://www.gpc.edu
+2722	clayton state	2006-05-01 18:35:37	1	http://www.clayton.edu
+2722	georgw washington university	2006-05-01 18:43:54		
+2722	george washington university	2006-05-01 18:43:59	1	http://www.gwu.edu
+2722	george washington university	2006-05-01 18:43:59	1	http://www.gwu.edu
+2722	kudzu.com	2006-05-02 07:31:18	1	http://www.kudzu.com
+2722	shurgard storage centers	2006-05-02 07:33:07	1	http://www.shurgard.com
+2722	storage centers	2006-05-02 08:00:19		
+2722	uhaul	2006-05-02 08:02:44	1	http://www.uhaul.com
+2722	uhaul	2006-05-02 08:02:44	1	http://www.uhaul.com
+2722	uhaul	2006-05-02 08:02:44	5	http://www.clanboyd.info
+2722	uhaul	2006-05-02 08:02:44	3	http://epistolary.org
+2722	uhaul	2006-05-02 08:02:44	9	http://boards.uhaul.com
+2722	oil change in atlanta georgia	2006-05-02 09:01:09	2	http://atlanta.citysearch.com
+2722	oil change in atlanta georgia	2006-05-02 09:01:09	8	http://www.kudzu.com
+2722	tune-up clinic	2006-05-02 09:04:53		
+2722	tune-up clinic auto	2006-05-02 09:05:38		
+2722	auto tune-up clinic	2006-05-02 09:06:02		
+2722	auto tune up clinic	2006-05-02 09:06:18		
+2722	tune up clinic	2006-05-02 09:06:39		
+2722	google	2006-05-02 09:09:19	1	http://www.google.com
+2722	meineke car care center	2006-05-02 09:12:49	1	http://www.meineke.com
+2722	virginia state taxes	2006-05-02 09:18:56	1	http://www.tax.virginia.gov
+2722	avis	2006-05-02 09:37:30	1	http://www.avis.com
+2722	enterprise	2006-05-02 09:39:28		
+2722	martha liing	2006-05-02 10:29:08		
+2722	martha living	2006-05-02 10:29:12	1	http://www.marthastewart.com
+2722	cato	2006-05-02 14:38:15	2	http://www.catofashions.com
+2722	gpc	2006-05-02 14:38:55	1	http://www.gpc.edu
+2722	yahoo	2006-05-02 15:10:35	1	http://www.yahoo.com
+2722	t-mobile	2006-05-04 22:53:11	1	http://www.t-mobile.com
+2722	target	2006-05-04 23:29:01	1	http://www.target.com
+2722	sears.com	2006-05-04 23:34:08	1	http://www.sears.com
+2722	jewelery	2006-05-04 23:36:46		
+2722	jewerly stores	2006-05-05 00:11:54		
+2722	jewelry stores	2006-05-05 00:12:05		
+2722	jewelry stores	2006-05-05 00:12:25		
+2722	mom rings	2006-05-05 00:12:46		
+2722	raven simone	2006-05-05 00:32:21	1	http://www.hollywood.com
+2722	raven simone	2006-05-05 00:32:21	3	http://www.dailyping.com
+2722	raven simone	2006-05-05 00:32:21	7	http://www.allhiphop.com
+2722	raven simone	2006-05-05 00:32:21	9	http://www.ringsurf.com
+2722	thats so raven	2006-05-05 00:58:28	1	http://psc.disney.go.com
+2722	thats so raven	2006-05-05 00:58:28	2	http://www.imdb.com
+2722	atlanta's north springs high school	2006-05-05 01:05:48	1	http://www.northspringshigh.com
+2722	atlanta's north springs high school	2006-05-05 01:05:48	1	http://www.northspringshigh.com
+2722	atlanta's north springs high school	2006-05-05 01:05:48	6	http://www.ajc.com
+2722	poison control	2006-05-05 11:52:03	1	http://www.aapcc.org
+2722	poison control	2006-05-05 11:52:03	5	http://www.poison.org
+2722	poison control	2006-05-05 11:52:03	6	http://www.medicinenet.com
+2722	hydocortisone	2006-05-05 11:55:27	1	http://www.medicinenet.com
+2722	hydocortisone	2006-05-05 11:55:27	7	http://experts.about.com
+2722	hydocortisone	2006-05-05 12:00:51	16	http://www.stanford.edu
+2722	hydocortisone	2006-05-05 12:00:51	24	http://www.babywhisperer.com
+2722	impetigo	2006-05-05 12:05:25	1	http://kidshealth.org
+2722	impetigo	2006-05-05 12:05:25	2	http://www.nlm.nih.gov
+2722	impetigo	2006-05-05 12:05:25	6	http://www.skinsite.com
+2722	yahoo	2006-05-07 14:19:49		
+2722	jvc	2006-05-08 23:58:30	1	http://www.jvc.com
+2722	hallmark	2006-05-11 07:05:43		
+2722	hallmark stores	2006-05-11 07:06:15	2	http://www.hallmark.com
+2722	best buy	2006-05-11 14:24:11		
+2722	cheese cake factory	2006-05-11 14:49:37		
+2722	cheesecake factory	2006-05-11 14:49:43	2	http://shop.thecheesecakefactory.com
+2722	www.rentalhouseads.com	2006-05-13 07:30:35	1	http://www.homerentalads.com
+2722	www.rentalhouseads.com	2006-05-13 07:30:35	2	http://www.rentclicks.com
+2722	apartments	2006-05-13 08:43:52		
+2722	apartments	2006-05-13 09:04:17	1	http://www.apartments.com
+2722	apartments	2006-05-13 09:04:17	1	http://www.apartments.com
+2722	cheerleading in georgia	2006-05-14 22:27:44	6	http://www.google.com
+2722	cheerleading in georgia	2006-05-14 22:27:44	2	http://cyberbuzz.gatech.edu
+2722	cheerleading in georgia	2006-05-14 22:27:44	1	http://cheerleading.about.com
+2722	cheerleading in georgia	2006-05-14 22:27:44	2	http://cyberbuzz.gatech.edu
+2722	cheerleading in georgia	2006-05-14 22:27:44	6	http://www.google.com
+2722	cheerleading in georgia lithonia	2006-05-14 22:34:05	1	http://www.ellenwoodallstarcheerleading.com
+2722	cheerleading in georgia lithonia	2006-05-14 22:34:05	5	http://www.cheergallerynoles.com
+2722	cheerleading in atlanta georgia	2006-05-14 22:41:10	2	http://www.usgyms.net
+2722	elllenwood allstars	2006-05-14 22:52:07		
+2722	ellenwood allstars	2006-05-14 22:52:15	1	http://www.ellenwoodallstarcheerleading.com
+2722	georgia force	2006-05-14 22:54:33		
+2722	georgia force	2006-05-14 22:54:58		
+2722	georgia force	2006-05-14 22:55:58	1	http://www.georgiaforce.com
+2722	belly dancing	2006-05-15 00:41:17		
+2722	belly dancing georgia	2006-05-15 00:41:53	2	http://www.orientaldancer.net
+2722	better business	2006-05-15 01:09:46		
+2722	jvc	2006-05-15 08:29:59	1	http://www.jvc.com
+2722	jvc kd-s5050	2006-05-15 08:35:14	1	http://www.epinions.com
+2722	death for marriage	2006-05-15 09:21:17		
+2722	grays anatomy	2006-05-15 23:34:14		
+2722	usps	2006-05-18 00:39:33	1	http://www.usps.com
+2722	ups	2006-05-18 00:44:29	1	http://www.ups.com
+2722	georgia b of investigation	2006-05-18 00:49:24	1	http://www.state.ga.us
+2722	aartstranscrips.army.mil	2006-05-18 12:21:20		
+2722	aartstranscript.army.mil	2006-05-18 12:22:00	1	https://aartstranscript.army.mil/
+2722	cool.army.mil	2006-05-18 12:30:30		
+2722	.army.mil	2006-05-18 12:32:36		
+2722	army.mil	2006-05-18 12:33:20	1	http://www.army.mil
+2722	army.mil	2006-05-18 12:33:20	1	http://www.army.mil
+2722	george washington university	2006-05-18 12:43:56	1	http://www.gwu.edu
+2722	st philips college	2006-05-18 12:55:06	1	http://www.accd.edu
+2722	georgia perimeter college	2006-05-18 13:00:37	1	http://www.gpc.edu
+2722	goodyear	2006-05-21 09:10:59	1	http://www.goodyear.com
+2722	hyundaiusa	2006-05-21 09:28:54	1	http://www.hyundaiusa.com
+2722	order hyundai parts	2006-05-21 09:51:02	2	http://www.hypartswholesale.com
+2722	order hyundai parts	2006-05-21 09:51:02	9	http://www.the-best-source.com
+2722	order hyundai parts	2006-05-21 09:51:02	6	http://www.racepages.com
+2722	napa aotu parts	2006-05-21 10:44:29		
+2722	napa auto parts	2006-05-21 10:45:02	1	http://www.napaonline.com
+2722	j c whitney	2006-05-21 10:54:21		
+2722	shift knob pattern plate	2006-05-21 10:55:54		
+2722	atozone com	2006-05-21 11:31:36		
+2722	autozone com	2006-05-21 11:31:44	1	http://www.autozone.com
+2722	autozone com	2006-05-21 11:31:44	1	http://www.autozone.com
+2722	advance auto parts	2006-05-21 11:47:17	1	http://www.advanceautoparts.com
+2722	how to remove adware from computer	2006-05-21 15:23:09	1	http://www.microsoft.com
+2722	mailbox	2006-05-23 00:08:39		
+2722	mailbox	2006-05-23 00:08:42		
+2722	jc whitney	2006-05-23 00:25:47	1	http://www.jcwhitney.com
+2722	new a c for hyndai elantra	2006-05-23 00:32:13		
+2722	new a c for hyundai elantra	2006-05-23 00:34:57	1	http://www.partstrain.com
+2722	recalls for hyundai elantra	2006-05-23 00:37:16	1	http://www.internetautoguide.com
+2722	meadow creek football	2006-05-23 15:12:00		
+2722	meadow creek youth football	2006-05-23 15:12:46		

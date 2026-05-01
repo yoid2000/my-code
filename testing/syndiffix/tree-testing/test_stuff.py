@@ -6,7 +6,7 @@ import os
 from df_builder import df_build, df_describe, name_from_params
 from plotter import plot_pdf, plot_scatter, plot_heat
 from syndiffix import Synthesizer
-from syndiffix.tools import tree_to_df, df_to_tree, dump_placeholder_tree, row_to_node, TestNodeForest, plot_2d_nodes_boxes, plot_1d_nodes_bars, plot_1d_orig_anon_cdf, ks_measure
+from syndiffix.tools import tree_to_df, df_to_tree, dump_placeholder_tree, row_to_node, TestNodeForest, plot_2d_nodes_boxes, plot_1d_nodes_bars, plot_1d_orig_anon_cdf, ks_measure, gower_distance
 from leaf_stuff import *
 import pprint
 
@@ -28,6 +28,15 @@ def run_test(nrows, cors, cols, range_extend_fraction=0.25, dump_nodes=False, le
     results['run_params'] = {'range_extend_fraction': range_extend_fraction,
                              'leafs_mode': leafs_mode}
     df, params = df_build(nrows=nrows, cors=cors, cols=cols)
+    print("First 10 rows of generated dataset:")
+    print(df.head(10))
+    # Get number of distinct rows
+    n_distinct = len(df.drop_duplicates())
+    print(f"Number of distinct rows in generated dataset: {n_distinct} out of {nrows} total rows.")
+    if n_distinct < 20:
+        # print the count of each distinct row
+        print("Counts of each distinct row:")
+        pp.pprint(df.value_counts().to_dict())
     results['dataset_params'] = params
     name = name_from_params(params)
     lmc = {'none': 'no', 'simple': 'sim', 'leaf_only': 'lfo'}
@@ -119,6 +128,19 @@ def run_test(nrows, cors, cols, range_extend_fraction=0.25, dump_nodes=False, le
                 print("Integrity problems found:")
                 pp.pprint(integrity_results)
             if len(comb) == 2:
+                df_in = syn.forest.orig_data
+                results['leafs_in_coverage'] = nodes.check_1d_leaf_coverage(nodes.leafs_in, comb)
+                results['subleafs_in_coverage'] = nodes.check_1d_leaf_coverage(nodes.sub_leafs_in, comb)
+                col_names = [df.columns[comb[0]], df.columns[comb[1]]]
+                df_in = df_in[col_names]
+                gd = gower_distance(df[col_names], df[col_names])
+                if gd['mean'] != 0.0:
+                    raise ValueError("Gower distance between identical datasets is not zero.")
+                pp.pprint(gd)
+                gd_sdx = gower_distance(df[col_names], df_sdx[col_names])
+                results['gower_distance_sdx'] = gd_sdx
+                gd_test = gower_distance(df[col_names], df_test[col_names])
+                results['gower_distance_test'] = gd_test
                 file_name = f"scat_cols_test_{'_'.join(map(str, comb))}"
                 plt = plot_scatter(df_orig, df2=df_test, file_name=file_name, labels=['Original', 'TestNodes'])
                 plt.savefig(f"{plot_dir}/{file_name}.png")
@@ -128,23 +150,23 @@ def run_test(nrows, cors, cols, range_extend_fraction=0.25, dump_nodes=False, le
                 plt.savefig(f"{plot_dir}/{file_name}.png")
                 plt.close()
                 file_name = f"2d_nodes_{'_'.join(map(str, comb))}"
-                plt = plot_2d_nodes_boxes(nodes.nodes_in, [0,1], file_name=name, display_counts=display_counts)
+                plt = plot_2d_nodes_boxes(nodes.nodes_in, [0,1], file_name=name, display_counts=display_counts, df=df_in)
                 plt.savefig(f"{plot_dir}/{file_name}.png")
                 plt.close()
                 file_name = f"2d_nodes_supp_temp{'_'.join(map(str, comb))}"
-                plt = plot_2d_nodes_boxes(nodes.nodes_supp_in_temp, [0,1], file_name=name, display_counts=display_counts)
+                plt = plot_2d_nodes_boxes(nodes.nodes_supp_in_temp, [0,1], file_name=name, display_counts=display_counts, df=df_in)
                 plt.savefig(f"{plot_dir}/{file_name}.png")
                 plt.close()
                 file_name = f"2d_nodes_supp_{'_'.join(map(str, comb))}"
-                plt = plot_2d_nodes_boxes(nodes.nodes_supp_in, [0,1], file_name=name, display_counts=display_counts)
+                plt = plot_2d_nodes_boxes(nodes.nodes_supp_in, [0,1], file_name=name, display_counts=display_counts, df=df_in)
                 plt.savefig(f"{plot_dir}/{file_name}.png")
                 plt.close()
                 file_name = f"2d_leafs_{'_'.join(map(str, comb))}"
-                plt = plot_2d_nodes_boxes(nodes.leafs_in, [0,1], file_name=name, display_counts=display_counts)
+                plt = plot_2d_nodes_boxes(nodes.leafs_in, [0,1], file_name=name, display_counts=display_counts, df=df_in)
                 plt.savefig(f"{plot_dir}/{file_name}.png")
                 plt.close()
                 file_name = f"2d_sub_leafs_in_{'_'.join(map(str, comb))}"
-                plt = plot_2d_nodes_boxes(nodes.sub_leafs_in, [0,1], file_name=name, display_counts=display_counts)
+                plt = plot_2d_nodes_boxes(nodes.sub_leafs_in, [0,1], file_name=name, display_counts=display_counts, df=df_in)
                 plt.savefig(f"{plot_dir}/{file_name}.png")
                 plt.close()
                 file_name = f"2d_sub_leafs_ex_{'_'.join(map(str, comb))}"
