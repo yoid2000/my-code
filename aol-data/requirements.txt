@@ -1,6 +1,8 @@
 pandas
 pyarrow
 matplotlib
+gliner
+usaddress
 email-validator
 phonenumbers
 python-stdnum
