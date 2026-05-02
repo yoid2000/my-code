@@ -3,6 +3,7 @@ pyarrow
 matplotlib
 gliner
 usaddress
+probablepeople
 email-validator
 phonenumbers
 python-stdnum

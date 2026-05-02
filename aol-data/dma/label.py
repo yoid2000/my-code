@@ -12,9 +12,14 @@ from __future__ import annotations
 import argparse
 from collections import Counter
 from pathlib import Path
+import re
 from typing import Any
 
+from email_validator import EmailNotValidError, validate_email
+import phonenumbers
 import pandas as pd
+import probablepeople
+from stdnum import luhn
 import usaddress
 from gliner import GLiNER
 
@@ -24,6 +29,7 @@ DEFAULT_RAW_PATH = BASE_DIR / "raw.parquet"
 DEFAULT_OUTPUT_PATH = BASE_DIR / "labeled.parquet"
 DEFAULT_DISTINCT_PATH = BASE_DIR / "distinct_queries.parquet"
 DEFAULT_LABEL_WORK_DIR = BASE_DIR / "label_work"
+DEFAULT_SAMPLE_OUTPUT_PATH = BASE_DIR / "samples.parquet"
 DEFAULT_NUM_CHUNKS = 200
 
 TARGET_LABELS = [
@@ -31,11 +37,13 @@ TARGET_LABELS = [
     "street_city_address",
     "place_name",
     "profession",
+    "disease",
+    "crime",
+    "finance",
     "social_security_number",
     "email_address",
     "credit_card_number",
     "phone_number",
-    "other_alpha_numeric_string",
 ]
 
 LOCATION_LABELS = {"street_city_address", "place_name"}
@@ -49,17 +57,29 @@ STREET_COMPONENT_KEYS = {
     "StreetNamePostModifier",
     "StreetNamePostType",
 }
+FULL_NAME_LABEL = "full_name"
+EMAIL_LABEL = "email_address"
+CREDIT_CARD_LABEL = "credit_card_number"
+PHONE_LABEL = "phone_number"
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Distributed labeler for raw.parquet. Modes: make_distinct, <chunk_index>, create."
+            "Distributed labeler for raw.parquet. Modes: make_distinct, sample, "
+            "<chunk_index>, create."
         )
     )
     parser.add_argument(
         "mode",
-        help="One of: make_distinct, create, or chunk index i (0-based integer).",
+        help="One of: make_distinct, sample, create, or chunk index i (0-based integer).",
+    )
+    parser.add_argument(
+        "sample_size",
+        nargs="?",
+        type=int,
+        default=1000,
+        help="Optional sample size used only with mode=sample (default: 1000).",
     )
     parser.add_argument(
         "--raw-path",
@@ -108,6 +128,18 @@ def parse_args() -> argparse.Namespace:
         default=128,
         help="Batch size for GLiNER inference (default: 128).",
     )
+    parser.add_argument(
+        "--full-name-threshold",
+        type=float,
+        default=0.8,
+        help="Minimum confidence for full_name labels after GLiNER (default: 0.8).",
+    )
+    parser.add_argument(
+        "--sample-output-path",
+        type=Path,
+        default=DEFAULT_SAMPLE_OUTPUT_PATH,
+        help=f"Output path for sample mode (default: {DEFAULT_SAMPLE_OUTPUT_PATH}).",
+    )
     return parser.parse_args()
 
 
@@ -140,10 +172,117 @@ def normalize_location_label(span_text: str) -> str | None:
     return "place_name"
 
 
-def normalize_entity(entity: dict[str, Any]) -> dict[str, Any] | None:
+def is_plausible_full_name_text(text: str) -> bool:
+    """
+    Heuristic pre-filter for names:
+    - require at least two alphabetic tokens
+    - reject url/email-like and alphanumeric/identifier-like strings
+    """
+    stripped = text.strip()
+    if not stripped:
+        return False
+
+    # Reject common non-name patterns quickly.
+    if re.search(r"(https?://|www\.|@|[0-9]|[\\/._])", stripped, flags=re.IGNORECASE):
+        return False
+
+    if re.search(r"[^A-Za-z\s'\-]", stripped):
+        return False
+
+    tokens = re.findall(r"[A-Za-z][A-Za-z'\-]*", stripped)
+    return len(tokens) >= 2
+
+
+def is_valid_full_name(text: str, score: float, full_name_threshold: float) -> bool:
+    """Validate that a full_name prediction is likely first+last name."""
+    if score < full_name_threshold:
+        return False
+    if not is_plausible_full_name_text(text):
+        return False
+
+    try:
+        tagged, entity_type = probablepeople.tag(text)
+    except probablepeople.RepeatedLabelError:
+        return False
+    except Exception:
+        return False
+
+    if str(entity_type) != "Person":
+        return False
+
+    keys = set(tagged.keys())
+    return "GivenName" in keys and "Surname" in keys
+
+
+def normalize_email_label(span_text: str) -> str | None:
+    """
+    Keep email labels only when they are real email-address shaped values.
+    Domain-only strings (e.g., example.com) are rejected.
+    """
+    candidate = span_text.strip().strip(".,;:()[]{}<>\"'")
+    if "@" not in candidate:
+        return None
+
+    try:
+        validated = validate_email(candidate, check_deliverability=False)
+        return validated.normalized
+    except EmailNotValidError:
+        return None
+
+
+def normalize_credit_card_label(span_text: str) -> str | None:
+    """
+    Keep credit-card labels only when they look like real PAN values:
+    - digits with optional spaces/hyphens
+    - 13-19 digits
+    - Luhn-valid
+    """
+    candidate = span_text.strip().strip(".,;:()[]{}<>\"'")
+    compact = re.sub(r"[\s\-]", "", candidate)
+    if not compact.isdigit():
+        return None
+    if len(compact) < 13 or len(compact) > 19:
+        return None
+    if not luhn.is_valid(compact):
+        return None
+    return compact
+
+
+def normalize_phone_label(span_text: str) -> str | None:
+    """
+    Keep phone labels only when parseable and valid in phonenumbers.
+    Normalize output to E.164.
+    """
+    candidate = span_text.strip().strip(".,;:()[]{}<>\"'")
+    if re.search(r"[A-Za-z]", candidate):
+        return None
+
+    digit_count = len(re.sub(r"\D", "", candidate))
+    if digit_count < 10 or digit_count > 15:
+        return None
+
+    try:
+        parsed = phonenumbers.parse(candidate, "US")
+    except phonenumbers.NumberParseException:
+        return None
+
+    if not phonenumbers.is_possible_number(parsed):
+        return None
+    if not phonenumbers.is_valid_number(parsed):
+        return None
+
+    return phonenumbers.format_number(parsed, phonenumbers.PhoneNumberFormat.E164)
+
+
+def normalize_entity(entity: dict[str, Any], full_name_threshold: float) -> dict[str, Any] | None:
     """Normalize one GLiNER entity dict and enforce location constraints."""
     label = str(entity["label"])
     text = str(entity["text"])
+    score = float(entity["score"])
+
+    if label == FULL_NAME_LABEL:
+        if not is_valid_full_name(text=text, score=score, full_name_threshold=full_name_threshold):
+            return None
 
     if label in LOCATION_LABELS:
         normalized = normalize_location_label(text)
@@ -151,16 +290,40 @@ def normalize_entity(entity: dict[str, Any]) -> dict[str, Any] | None:
             return None
         label = normalized
 
+    if label == EMAIL_LABEL:
+        normalized_email = normalize_email_label(text)
+        if normalized_email is None:
+            return None
+        text = normalized_email
+
+    if label == CREDIT_CARD_LABEL:
+        normalized_cc = normalize_credit_card_label(text)
+        if normalized_cc is None:
+            return None
+        text = normalized_cc
+
+    if label == PHONE_LABEL:
+        normalized_phone = normalize_phone_label(text)
+        if normalized_phone is None:
+            return None
+        text = normalized_phone
+
     return {
         "label": label,
         "text": text,
         "start": int(entity["start"]),
         "end": int(entity["end"]),
-        "score": float(entity["score"]),
+        "score": score,
     }
 
 
-def label_queries(queries: list[str], model: GLiNER, threshold: float, batch_size: int) -> list[list[dict[str, Any]]]:
+def label_queries(
+    queries: list[str],
+    model: GLiNER,
+    threshold: float,
+    batch_size: int,
+    full_name_threshold: float,
+) -> list[list[dict[str, Any]]]:
     """Label all distinct queries and return mapping query -> list of span labels."""
     all_labels: list[list[dict[str, Any]]] = []
 
@@ -177,7 +340,7 @@ def label_queries(queries: list[str], model: GLiNER, threshold: float, batch_siz
         for entities in batch_entities:
             normalized_entities: list[dict[str, Any]] = []
             for entity in entities:
-                normalized = normalize_entity(entity)
+                normalized = normalize_entity(entity, full_name_threshold=full_name_threshold)
                 if normalized is not None:
                     normalized_entities.append(normalized)
             all_labels.append(normalized_entities)
@@ -258,6 +421,7 @@ def run_chunk_labeling(
     model_id: str,
     threshold: float,
     batch_size: int,
+    full_name_threshold: float,
 ) -> None:
     """Label a single distinct-query chunk and write label_work/<i>.parquet."""
     if chunk_index < 0 or chunk_index >= num_chunks:
@@ -280,7 +444,13 @@ def run_chunk_labeling(
     print(f"Loading GLiNER model: {model_id}")
     model = GLiNER.from_pretrained(model_id)
 
-    labels = label_queries(queries, model=model, threshold=threshold, batch_size=batch_size)
+    labels = label_queries(
+        queries,
+        model=model,
+        threshold=threshold,
+        batch_size=batch_size,
+        full_name_threshold=full_name_threshold,
+    )
 
     out_df = pd.DataFrame({"Query": queries, "QueryLabels": labels})
     label_work_dir.mkdir(parents=True, exist_ok=True)
@@ -301,6 +471,9 @@ def run_chunk_labeling(
     print("Chunk span counts by label:")
     for label in TARGET_LABELS:
         print(f"  {label}: {label_counter[label]:,}")
+
+    print("\nChunk score extremes by label:")
+    print_sample_extremes(out_df)
 
 
 def create_labeled_parquet(
@@ -341,12 +514,118 @@ def create_labeled_parquet(
     print(f"Rows: {len(labeled_df):,}")
 
 
+def print_sample_extremes(sample_df: pd.DataFrame) -> None:
+    """Print highest and lowest 10 scores per label from sample labels."""
+    span_rows: list[dict[str, Any]] = []
+    for _, row in sample_df.iterrows():
+        query = str(row["Query"])
+        labels = row["QueryLabels"]
+        if not isinstance(labels, list):
+            continue
+        for span in labels:
+            if not isinstance(span, dict):
+                continue
+            span_rows.append(
+                {
+                    "label": str(span.get("label", "")),
+                    "score": float(span.get("score", 0.0)),
+                    "query": query,
+                    "text": str(span.get("text", "")),
+                    "start": int(span.get("start", -1)),
+                    "end": int(span.get("end", -1)),
+                }
+            )
+
+    if not span_rows:
+        print("No labeled spans found in sample output.")
+        return
+
+    spans_df = pd.DataFrame(span_rows)
+    for label in TARGET_LABELS:
+        label_df = spans_df.loc[spans_df["label"] == label].copy()
+        print(f"\nLabel: {label}")
+        if label_df.empty:
+            print("  No spans found.")
+            continue
+
+        high = label_df.sort_values("score", ascending=False).head(10)
+        low = label_df.sort_values("score", ascending=True).head(10)
+
+        print("  Highest 10:")
+        for _, r in high.iterrows():
+            print(
+                f"    score={r['score']:.4f} query={r['query']!r} "
+                f"span={r['text']!r} [{r['start']},{r['end']})"
+            )
+
+        print("  Lowest 10:")
+        for _, r in low.iterrows():
+            print(
+                f"    score={r['score']:.4f} query={r['query']!r} "
+                f"span={r['text']!r} [{r['start']},{r['end']})"
+            )
+
+
+def run_sample_labeling(
+    distinct_path: Path,
+    sample_output_path: Path,
+    model_id: str,
+    threshold: float,
+    batch_size: int,
+    full_name_threshold: float,
+    sample_size: int,
+) -> None:
+    """Label a random sample of distinct queries and write samples.parquet."""
+    if not distinct_path.exists():
+        raise FileNotFoundError(
+            f"Distinct query file not found: {distinct_path}. Run mode make_distinct first."
+        )
+    if sample_size <= 0:
+        raise ValueError(f"sample_size must be > 0, got {sample_size}.")
+
+    distinct_df = pd.read_parquet(distinct_path, columns=["Query"])
+    query_series = distinct_df["Query"].astype("string").fillna("")
+    sample_n = min(sample_size, len(query_series))
+    queries = query_series.sample(n=sample_n, replace=False).tolist()
+
+    print(f"Sample mode: randomly labeling {len(queries):,} distinct queries")
+    print(f"Loading GLiNER model: {model_id}")
+    model = GLiNER.from_pretrained(model_id)
+
+    labels = label_queries(
+        queries,
+        model=model,
+        threshold=threshold,
+        batch_size=batch_size,
+        full_name_threshold=full_name_threshold,
+    )
+
+    sample_df = pd.DataFrame({"Query": queries, "QueryLabels": labels})
+    sample_output_path.parent.mkdir(parents=True, exist_ok=True)
+    sample_df.to_parquet(sample_output_path, index=False)
+    print(f"Wrote sample labels: {sample_output_path}")
+
+    print_sample_extremes(sample_df)
+
+
 def main() -> None:
     args = parse_args()
     mode = args.mode.strip().lower()
 
     if mode == "make_distinct":
         build_distinct_queries(args.raw_path, args.distinct_path)
+        return
+
+    if mode == "sample":
+        run_sample_labeling(
+            distinct_path=args.distinct_path,
+            sample_output_path=args.sample_output_path,
+            model_id=args.model_id,
+            threshold=args.threshold,
+            batch_size=args.batch_size,
+            full_name_threshold=args.full_name_threshold,
+            sample_size=args.sample_size,
+        )
         return
 
     if mode == "create":
@@ -362,7 +641,7 @@ def main() -> None:
         chunk_index = int(mode)
     except ValueError as exc:
         raise ValueError(
-            "Mode must be make_distinct, create, or an integer chunk index."
+            "Mode must be make_distinct, sample, create, or an integer chunk index."
         ) from exc
 
     run_chunk_labeling(
@@ -373,6 +652,7 @@ def main() -> None:
         model_id=args.model_id,
         threshold=args.threshold,
         batch_size=args.batch_size,
+        full_name_threshold=args.full_name_threshold,
     )
 
 
